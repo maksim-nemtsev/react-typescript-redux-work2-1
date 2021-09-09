@@ -1,0 +1,64 @@
+.navbar.navbar-botton {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.nav-link,
+.bottom-nav-link {
+  color: #55575b;
+}
+.bottom-nav-link.active {
+  color: #922c88;
+}
+.bottom-tab-label {
+  font-size: 12px;
+}
+.link {
+  color: #9faab3;
+}
+.avatar {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.drop-menu {
+  width: 299px;
+  height: 478px;
+  padding: 2rem;
+}
+.avatar__dropdown {
+  top: 4rem;
+}
+.drop-profile {
+  width: 16px;
+  height: 16px;
+}
+.drop-down-menu {
+  width: 299px;
+  height: 478px;
+  border-radius: 20px;
+  top: 60px;
+}
+.drop-down-header {
+  flex-direction: column;
+}
+.drop-button-content {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin: 10px;
+}
+.drop-button-image {
+  margin: -3px 20px 15px 0;
+}
+.drop-name {
+  display: block;
+  font-weight: 700;
+}
+.drop-button-content.main {
+  margin: 0 10px 0;
+}
+.drop-name.main {
+  font-weight: 500;
+}
+.drop-name.footer {
+  font-weight: 300;
+}
