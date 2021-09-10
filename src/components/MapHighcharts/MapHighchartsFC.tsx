@@ -145,7 +145,6 @@
 // };
 // export default React.memo(MapHighchartsFC);
 
-
 import React from "react";
 import { render } from "react-dom";
 // Import Highcharts
@@ -155,6 +154,7 @@ import HighchartsReact from "highcharts-react-official";
 
 import map from "@highcharts/map-collection/custom/world.geo.json";
 import "./MapHighcharts.css";
+import MapNews from "../MapNews/MapNews";
 
 HighchartsMap(Highcharts);
 
@@ -177,10 +177,9 @@ let _selectorsBadge = {
 };
 
 class MapHighchartsFC extends React.Component {
-
   options = {
     chart: {
-      width: 1920,
+      width: 1320,
       height: 900,
       map: map,
       marginTop: 70,
@@ -245,6 +244,7 @@ class MapHighchartsFC extends React.Component {
           options={this.options}
           constructorType={"mapChart"}
         />
+        <MapNews />
       </div>
     );
   }

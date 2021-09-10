@@ -231,7 +231,7 @@ div.highcharts-tooltip {
 }
 
 .highcharts-selection-marker {
-  fill: #335cad;
+  fill: #e8e8e8e8;
   fill-opacity: 0.25;
 }
 
@@ -851,7 +851,6 @@ input.highcharts-range-selector {
 /* Highmaps */
 .highcharts-map-series .highcharts-point {
   transition: fill 500ms, fill-opacity 500ms, stroke-width 250ms;
-  stroke: #606063;
 }
 
 .highcharts-map-series .highcharts-point-hover {
@@ -883,7 +882,7 @@ input.highcharts-range-selector {
 }
 
 .highcharts-null-point {
-  fill: #40b4e9;
+  fill: #e8e8e8;
 }
 
 /* 3d charts */

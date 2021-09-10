@@ -1,0 +1,11 @@
+.news {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 200px;
+  height: 634px;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 30px;
+  border-radius: 8px;
+}

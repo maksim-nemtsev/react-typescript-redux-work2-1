@@ -1,0 +1,14 @@
+.item__news {
+  display: flex;
+  flex-direction: column;
+}
+.item__country,
+.item__info {
+  display: block;
+  word-wrap: break-word;
+}
+
+.item__country {
+  color: #64af8b;
+  font-weight: bold;
+}
