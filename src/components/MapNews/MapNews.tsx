@@ -1,6 +1,8 @@
 import React from "react";
 import MapNewsItem from "./MapNewsItem/MapNewsItem";
 import "./MapNews.css";
+import ButtonsToolbar from "../UI/ButtonsToolbar/ButtonsToolbarBoottom";
+import ButtonSettings from "../UI/ButtonSettings/ButtonSettings";
 
 interface Props {}
 
@@ -11,7 +13,10 @@ const MapNews = (props: Props) => {
         <div className="news__content">
           <MapNewsItem />
         </div>
-        <div className="news__footer"></div>
+      </div>
+      <div className="news__footer">
+        <ButtonSettings />
+        <ButtonsToolbar />
       </div>
     </div>
   );

@@ -155,6 +155,9 @@ import HighchartsReact from "highcharts-react-official";
 import map from "@highcharts/map-collection/custom/world.geo.json";
 import "./MapHighcharts.css";
 import MapNews from "../MapNews/MapNews";
+import GrowthLeaders from "../Leaders/GrowthLeaders/GrowthLeaders";
+import DeclineLeaders from "../Leaders/DeclineLeaders/DeclineLeaders";
+import ActivityLeaders from "../Leaders/ActivityLeaders/ActivityLeaders";
 
 HighchartsMap(Highcharts);
 
@@ -245,6 +248,9 @@ class MapHighchartsFC extends React.Component {
           constructorType={"mapChart"}
         />
         <MapNews />
+        <ActivityLeaders />
+        <GrowthLeaders />
+        <DeclineLeaders />
       </div>
     );
   }

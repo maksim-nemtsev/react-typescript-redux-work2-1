@@ -6,9 +6,15 @@
 .item__info {
   display: block;
   word-wrap: break-word;
+  background-color: #fff;
 }
 
 .item__country {
   color: #64af8b;
   font-weight: bold;
+}
+.item__title {
+  width: 100%;
+  display: inline-block;
+  background-color: #fff;
 }

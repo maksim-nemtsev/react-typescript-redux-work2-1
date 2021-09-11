@@ -7,10 +7,39 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "ArticulatCF";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7f7;
+}
+/* Fonts */
+@font-face {
+  font-family: "ArticulatCF";
+  font-style: normal;
+  font-weight: 500;
+  src: local("ArticulatCF-Medium"),
+    url(./assets/fonts/ArticulatCF/ArticulatCF-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  font-style: normal;
+  font-weight: 500;
+  src: local("ArticulatCF-Medium"),
+    url(./assets/fonts/ArticulatCF/ArticulatCF-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  font-style: bold;
+  font-weight: 700;
+  src: local("ArticulatCF-Bold"),
+    url(./assets/fonts/ArticulatCF/ArticulatCF-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  font-style: bold;
+  font-weight: 700;
+  src: local("ArticulatCF-Bold"),
+    url(./assets/fonts/ArticulatCF/ArticulatCF-Bold.woff2) format("woff2");
 }

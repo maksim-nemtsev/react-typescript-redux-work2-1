@@ -1,11 +1,24 @@
 .news {
   position: absolute;
-  top: 200px;
-  left: 100px;
+  top: 400px;
+  left: 30px;
   width: 200px;
-  height: 634px;
-  background-color: #ffffff;
+  height: 334px;
+  background-color: #fff;
   overflow: auto;
   padding: 30px;
   border-radius: 8px;
+}
+.news__footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 736px;
+  left: 30px;
+  width: 200px;
+  height: 14px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #fff;
 }

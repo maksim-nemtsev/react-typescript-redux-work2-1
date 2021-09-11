@@ -7,7 +7,7 @@ const MapNewsItem = (props: Props) => {
   return (
     <div className="item__news">
       <div className="item">
-        <h6 className="item__title">08/05/2021</h6>
+        <span className="item__title">08/05/2021</span>
         <div className="item__content">
           <span className="item__country">Болгария:</span>
           <span className="item__info">Разведка и добыча газа </span>
@@ -18,7 +18,7 @@ const MapNewsItem = (props: Props) => {
         </div>
       </div>
       <div className="item">
-        <h6 className="item__title">08/05/2021</h6>
+        <span className="item__title">08/05/2021</span>
         <div className="item__content">
           <span className="item__country">Болгария:</span>
           <span className="item__info">Разведка и добыча газа </span>
@@ -29,7 +29,7 @@ const MapNewsItem = (props: Props) => {
         </div>
       </div>
       <div className="item">
-        <h6 className="item__title">08/05/2021</h6>
+        <span className="item__title">08/05/2021</span>
         <div className="item__content">
           <span className="item__country">Болгария:</span>
           <span className="item__info">Разведка и добыча газа </span>
@@ -40,7 +40,7 @@ const MapNewsItem = (props: Props) => {
         </div>
       </div>
       <div className="item">
-        <h6 className="item__title">08/05/2021</h6>
+        <span className="item__title">08/05/2021</span>
         <div className="item__content">
           <span className="item__country">Болгария:</span>
           <span className="item__info">Разведка и добыча газа </span>
@@ -51,7 +51,7 @@ const MapNewsItem = (props: Props) => {
         </div>
       </div>
       <div className="item">
-        <h6 className="item__title">08/05/2021</h6>
+        <span className="item__title">08/05/2021</span>
         <div className="item__content">
           <span className="item__country">Болгария:</span>
           <span className="item__info">Разведка и добыча газа </span>
@@ -62,7 +62,7 @@ const MapNewsItem = (props: Props) => {
         </div>
       </div>
       <div className="item">
-        <h6 className="item__title">08/05/2021</h6>
+        <span className="item__title">08/05/2021</span>
         <div className="item__content">
           <span className="item__country">Болгария:</span>
           <span className="item__info">Разведка и добыча газа </span>

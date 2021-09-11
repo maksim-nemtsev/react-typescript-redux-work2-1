@@ -1,0 +1,54 @@
+/* Leaders Header */
+.gleaders__header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 478px;
+  left: 270px;
+  width: 300px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.gleaders__title {
+  display: inline-block;
+  margin-left: 19px;
+  background-color: #ffffff;
+}
+
+/* Leaders Main Content */
+.gleaders {
+  position: absolute;
+  top: 514px;
+  left: 270px;
+  width: 300px;
+  height: 220px;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 10px 10px 0 0;
+  border-radius: 8px;
+}
+.gleaders__footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 736px;
+  left: 270px;
+  width: 300px;
+  height: 14px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+/* Leaders List */
+.gleader__list {
+  background-color: #ffffff;
+}
+.gleader__item {
+  background-color: #ffffff;
+  list-style: none;
+  margin-bottom: 10px;
+}
