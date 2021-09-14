@@ -1,37 +1,18 @@
 import React from "react";
 import { Nav, Navbar, NavItem, NavbarBrand } from "reactstrap";
+import "./NavMenu.css";
 
 interface Props {}
 
 const NavMenu = (props: Props) => {
   return (
-    <Navbar>
-      <Nav className="nav">
-        <NavItem>
-          <NavbarBrand to="/map" className="nav-link">
-            CAPITALIZATION
-          </NavbarBrand>
-        </NavItem>
-        <NavItem>
-          <NavbarBrand to="/lab" className="nav-link">
-            ACTIVITY & GROWTH
-          </NavbarBrand>
-        </NavItem>
-        <NavItem>
-          <NavbarBrand to="/portfolio" className="nav-link">
-            CORPORATE DEBT
-          </NavbarBrand>
-        </NavItem>
-        <NavItem>
-          <NavbarBrand to="/home" className="nav-link">
-            PROFITABILITY
-          </NavbarBrand>
-        </NavItem>
-        <NavItem>
-          <NavbarBrand to="/main" className="nav-link">
-            MARGINALITY
-          </NavbarBrand>
-        </NavItem>
+    <Navbar className="map nav-bar">
+      <Nav className="nav-map">
+        <NavItem className="nav-map__item">CAPITALIZATION</NavItem>
+        <NavItem className="nav-map__item">ACTIVITY & GROWTH</NavItem>
+        <NavItem className="nav-map__item">CORPORATE DEBT</NavItem>
+        <NavItem className="nav-map__item">PROFITABILITY</NavItem>
+        <NavItem className="nav-map__item">MARGINALITY</NavItem>
       </Nav>
     </Navbar>
   );

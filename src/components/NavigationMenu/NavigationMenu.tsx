@@ -77,29 +77,75 @@ const NavigationMenu: React.FC = (props: Props) => {
           <Media left href="/home">
             <Media src={LogoWS} alt="Logo-WS" />
           </Media>
-          <Nav className="m-auto">
-            <NavItem>
-              <Link to="/map" className="nav-link">
+          <Nav className="m-auto mr-2">
+            <NavItem className="list-item">
+              <NavLink
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#000b20",
+                }}
+                to="/map"
+                exact={true}
+                className="link-inactive"
+                activeClassName="active"
+              >
                 MAP
-              </Link>
+              </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="/lab" className="nav-link">
+            <NavItem className="list-item">
+              <NavLink
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#000b20",
+                  backgroundColor: "#f7f7f7",
+                }}
+                to="/lab"
+                exact={true}
+                className="link-inactive"
+                activeClassName="active"
+              >
                 LABARATORY
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="/portfolio" className="nav-link">
+            <NavItem className="list-item">
+              <NavLink
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#000b20",
+                }}
+                to="/portfolio"
+                exact={true}
+                className="link-inactive"
+                activeClassName="active"
+              >
                 PORTFOLIO
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="/home" className="nav-link">
+            <NavItem className="list-item">
+              <NavLink
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#000b20",
+                }}
+                to="/home"
+                exact={true}
+                className="link-inactive"
+                activeClassName="active"
+              >
                 HOME PAGE
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="/main" className="nav-link">
+            <NavItem className="list-item">
+              <NavLink
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#000b20",
+                }}
+                to="/main"
+                exact={true}
+                className="link-inactive"
+                activeClassName="active"
+              >
                 MAIN PAGE
               </NavLink>
             </NavItem>

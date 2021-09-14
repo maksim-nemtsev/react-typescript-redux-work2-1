@@ -48,7 +48,28 @@
   background-color: #ffffff;
 }
 .gleader__item {
-  background-color: #ffffff;
-  list-style: none;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: ArticulatCF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+  margin-bottom: 1rem;
+}
+.gleader__count {
+  font-family: ArticulatCF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #64af8b;
 }

@@ -17,15 +17,7 @@ body {
   font-style: normal;
   font-weight: 500;
   src: local("ArticulatCF-Medium"),
-    url(./assets/fonts/ArticulatCF/ArticulatCF-Medium.woff) format("woff");
-}
-
-@font-face {
-  font-family: "ArticulatCF";
-  font-style: normal;
-  font-weight: 500;
-  src: local("ArticulatCF-Medium"),
-    url(./assets/fonts/ArticulatCF/ArticulatCF-Medium.woff2) format("woff2");
+    url(./assets/fonts/ArticulatCF/ArticulatCF-Medium.otf) format("opentype");
 }
 
 @font-face {
@@ -33,13 +25,5 @@ body {
   font-style: bold;
   font-weight: 700;
   src: local("ArticulatCF-Bold"),
-    url(./assets/fonts/ArticulatCF/ArticulatCF-Bold.woff) format("woff");
-}
-
-@font-face {
-  font-family: "ArticulatCF";
-  font-style: bold;
-  font-weight: 700;
-  src: local("ArticulatCF-Bold"),
-    url(./assets/fonts/ArticulatCF/ArticulatCF-Bold.woff2) format("woff2");
+    url(./assets/fonts//ArticulatCF/ArticulatCF-Bold.otf) format("opentype");
 }
