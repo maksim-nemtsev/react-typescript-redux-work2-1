@@ -158,6 +158,7 @@ import MapNews from "../MapNews/MapNews";
 import GrowthLeaders from "../Leaders/GrowthLeaders/GrowthLeaders";
 import DeclineLeaders from "../Leaders/DeclineLeaders/DeclineLeaders";
 import ActivityLeaders from "../Leaders/ActivityLeaders/ActivityLeaders";
+import MapMacroStock from "../MapMacroStock/MapMacroStock";
 
 HighchartsMap(Highcharts);
 
@@ -183,7 +184,7 @@ class MapHighchartsFC extends React.Component {
   options = {
     chart: {
       width: 1320,
-      height: 900,
+      height: 880,
       map: map,
       marginTop: 70,
       ackgroundColor: "transparent",
@@ -251,6 +252,7 @@ class MapHighchartsFC extends React.Component {
         <ActivityLeaders />
         <GrowthLeaders />
         <DeclineLeaders />
+        <MapMacroStock />
       </div>
     );
   }

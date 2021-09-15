@@ -1,0 +1,9 @@
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn.btn-toolbar-top {
+  background-color: #fff;
+}

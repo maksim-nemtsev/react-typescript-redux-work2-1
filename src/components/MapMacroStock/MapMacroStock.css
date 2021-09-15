@@ -1,0 +1,114 @@
+/* Leaders Header */
+.map-stock__header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 108px;
+  right: 50px;
+  width: 300px;
+  height: 55px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.map-stock__title {
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+/* Leaders Main Content */
+.map-stock {
+  position: absolute;
+  top: 164px;
+  right: 50px;
+  width: 300px;
+  height: 480px;
+  background-color: #ffffff;
+  padding: 10px 10px 0 0;
+  border-radius: 8px;
+}
+.map-stock__footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 175px;
+  right: 50px;
+  width: 300px;
+  height: 14px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.map-stock__list {
+  background-color: #ffffff;
+}
+.map-stock__item {
+  background-color: #ffffff;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.country {
+  margin: 0 10px 0 20px;
+}
+.map-stock__title {
+  font-family: ArticulatCF;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+}
+/* map stock list */
+.map__macro-stock {
+  list-style: none;
+  margin: 1rem;
+}
+.map__macro-stock,
+.map-macro-years,
+.map-macro-gpd {
+  font-family: ArticulatCF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
+.map__macro-stock-info,
+.map__macro-yars-info {
+  font-family: ArticulatCF;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #64af8b;
+}
+.map-stock__icon-arrow {
+  margin: 0 5px;
+  width: 5px;
+}
+.map-stock__icon-plus {
+  margin: 0 5px;
+  width: 9px;
+}
+.btn.map-stock__btn {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5448c8;
+}

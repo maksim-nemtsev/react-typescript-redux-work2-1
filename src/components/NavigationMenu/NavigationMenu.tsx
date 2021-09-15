@@ -70,7 +70,7 @@ const NavigationMenu: React.FC = (props: Props) => {
   return (
     <div>
       <nav
-        className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top"
+        className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top mb-5"
         role="navigation"
       >
         <div className="container-fluid">

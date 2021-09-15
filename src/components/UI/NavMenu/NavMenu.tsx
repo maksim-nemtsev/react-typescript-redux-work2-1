@@ -6,7 +6,7 @@ interface Props {}
 
 const NavMenu = (props: Props) => {
   return (
-    <Navbar className="map nav-bar">
+    <Navbar className="map nav-bar mt-4">
       <Nav className="nav-map">
         <NavItem className="nav-map__item">CAPITALIZATION</NavItem>
         <NavItem className="nav-map__item">ACTIVITY & GROWTH</NavItem>
