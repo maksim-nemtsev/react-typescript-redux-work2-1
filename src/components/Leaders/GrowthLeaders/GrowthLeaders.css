@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 478px;
+  top: 366px;
   left: 270px;
   width: 300px;
   height: 35px;
@@ -21,7 +21,7 @@
 /* Leaders Main Content */
 .gleaders {
   position: absolute;
-  top: 514px;
+  top: 402px;
   left: 270px;
   width: 300px;
   height: 220px;
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 736px;
+  top: 623px;
   left: 270px;
   width: 300px;
   height: 14px;

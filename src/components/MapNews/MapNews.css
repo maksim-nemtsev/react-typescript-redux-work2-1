@@ -1,9 +1,9 @@
 .news {
   position: absolute;
   top: 50px;
-  left: 30px;
+  left: 50px;
   width: 200px;
-  height: 634px;
+  height: 534px;
   background-color: #fff;
   overflow: auto;
   padding: 30px;
@@ -14,8 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 686px;
-  left: 30px;
+  top: 586px;
+  left: 50px;
   width: 200px;
   height: 14px;
   padding: 30px;

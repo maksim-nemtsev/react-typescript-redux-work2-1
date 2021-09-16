@@ -1,0 +1,168 @@
+.main-page__menu {
+  margin: 60px 0 40px;
+}
+
+.main-page__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.main-page__item {
+  display: block;
+  list-style: none;
+  margin-right: 60px;
+}
+
+.main-page__item:first-child {
+  margin-left: 40px;
+}
+
+.main-page__link {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "ArticulatCF";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+}
+
+.main-page__link:hover {
+  font-weight: bold;
+  color: #000b20;
+}
+.nav.main {
+  margin-top: 3.75rem;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav__toggle {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+}
+.nav__item {
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.nav__info {
+  display: inline-block;
+  margin: 0 0 0 0.5rem;
+}
+/* drop-down segment */
+.dropdown-toggle__menu-title {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+}
+.dropdown-toggle__menu-title:hover,
+.dropdown-toggle__menu-title.active {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
+.drop-down-menu.portfolio,
+.drop-down-menu.timeframes {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+.drop-down__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.drop-down__list {
+  display: flex;
+}
+.form-check {
+  padding: 0;
+}
+.drop-name.portfolio {
+  position: relative;
+  right: 3rem;
+}
+.form-check.form-check {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.dropdown__count {
+  display: inline-block;
+}
+.portfolio-segment__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.btn.portfolio-segment__btn {
+  text-decoration: none;
+}
+.badge__count.badge.badge-secondary {
+  color: #1a8d9c;
+  font-size: 0.9rem;
+}
+/* countries and regions */
+.drop-down__country-input {
+  margin: 0 2.5rem 2.5rem 0;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+}
+.drop-down-menu.regions {
+  width: 25rem;
+  height: 36.688rem;
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+.drop-down__overflow {
+  height: 25rem;
+  width: 22.5rem;
+  overflow: auto;
+}
+.drop-input.countries {
+  margin-right: 1.5rem;
+}
+.drop-down-menu.timeframes {
+  width: 25rem;
+  height: 27rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2.5rem;
+}
+.drop-down-menu.size {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2.5rem;
+}

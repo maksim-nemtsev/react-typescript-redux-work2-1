@@ -184,7 +184,7 @@ class MapHighchartsFC extends React.Component {
   options = {
     chart: {
       width: 1320,
-      height: 880,
+      height: 690,
       map: map,
       marginTop: 70,
       ackgroundColor: "transparent",
