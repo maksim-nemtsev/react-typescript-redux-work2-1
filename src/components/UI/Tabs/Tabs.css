@@ -1,0 +1,73 @@
+.nav-tabs {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+  cursor: pointer;
+  margin-right: 4rem;
+  margin-left: 2.5em;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+.nav-tabs:hover {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
+.nav-tabs:active {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
+.nav-tabs:hover::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 2px;
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  background-color: #5448c8;
+}
+
+.nav-tabs.nav-link {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+  border: none;
+}
+.nav-tabs.nav-link:hover {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+  border: none;
+}

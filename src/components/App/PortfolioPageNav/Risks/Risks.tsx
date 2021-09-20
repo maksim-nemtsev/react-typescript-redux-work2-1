@@ -107,6 +107,7 @@
 
 import React, { useState } from "react";
 import { Dropdown, DropdownMenu, DropdownToggle } from "reactstrap";
+import MultiSlider from "../../../UI/MultiSlider/MultiSlider";
 
 const Risks = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -123,11 +124,8 @@ const Risks = () => {
       >
         RISKS
       </DropdownToggle>
-      <DropdownMenu>
-        <div onClick={toggle}>Custom dropdown item</div>
-        <div onClick={toggle}>Custom dropdown item</div>
-        <div onClick={toggle}>Custom dropdown item</div>
-        <div onClick={toggle}>Custom dropdown item</div>
+      <DropdownMenu className="drop-down-menu risks">
+        <MultiSlider/>
       </DropdownMenu>
     </Dropdown>
   );

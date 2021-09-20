@@ -1,0 +1,226 @@
+.card-contant {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card-contant_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 2.5rem;
+}
+.card-contant__svg {
+  margin-left: 20px;
+}
+.card-contant_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Perfomance {
+  background-color: #ffffff;
+  margin: 3.75rem 0;
+  padding: 1.875rem 2.5rem;
+}
+.Perfomance__info {
+  position: relative;
+  top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.perfomance__content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.Perfomance__title {
+  margin: 40px 0;
+}
+
+.Perfomance__progress {
+  display: flex;
+  flex-direction: row;
+}
+
+.Perfomance__percent {
+  font-family: ArticulatCF;
+  font-size: 1.375rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #64af8b;
+}
+
+.Perfomance__years {
+  display: inline-block;
+  margin-right: 1.25rem;
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
+
+.Perfomance__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Perfomance__footer-onfo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list.card-page {
+  display: flex;
+  justify-content: start;
+}
+.nav__item.card-page {
+  display: inline-block;
+  margin: 40px 30px;
+  text-transform: uppercase;
+  padding: 10px 5px;
+}
+
+.charts__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.highcharts-analitics__gold {
+  width: 48%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.highcharts-analitics__summory {
+  width: 48%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.highcharts-analitics__charts {
+  display: flex;
+  align-items: center;
+}
+.highcharts-analitics {
+  display: flex;
+  justify-content: space-between;
+}
+.highcharts-analitics__title-right {
+  margin-bottom: 50px;
+}
+.charts__list-info {
+  display: block;
+  background-color: #887cc9;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 10px 0 10px 10px;
+  cursor: pointer;
+}
+/* Growth */
+.highcharts__growth {
+  background-color: #ffffff;
+}
+
+.highcharts__growth-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style: none;
+  padding: 5px;
+}
+.highcharts__growth-listItem {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.highcharts__growth-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.highcharts__growth-button {
+  display: flex;
+  align-items: center;
+}
+.highcharts-quarter__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* footer */
+.highcharts-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highcharts-footer__overview {
+  width: 48%;
+  height: 506px;
+  overflow: auto;
+}
+
+.highcharts-footer__details {
+  width: 48%;
+  height: 506px;
+}
+
+.highcharts-footer__info {
+  display: flex;
+  height: 506px;
+}
+.highcharts-footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+.highcharts-footer__date-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.highcharts-footer_column {
+  width: 40%;
+  padding: 20px 0;
+  width: 506px;
+  margin: 0 20px;
+}
+.highcharts-footer__date-title {
+  display: inline-block;
+  padding: 10px 0;
+  color: rgb(163, 163, 163);
+}
+.subtitle__date {
+  color: rgb(163, 163, 163);
+}
+.highcharts-footer__date-moneyy {
+  border-bottom: 1px solid rgb(207, 207, 207);
+  padding: 15px 0;
+}
+.highcharts-footer__date-moneyy:nth-last-child(-n + 1) {
+  border-bottom: none;
+}
+.subtitle__value {
+  font-weight: bold;
+}
+.card-page__svg {
+  cursor: pointer;
+  display: block;
+  margin-right: 1rem;
+}

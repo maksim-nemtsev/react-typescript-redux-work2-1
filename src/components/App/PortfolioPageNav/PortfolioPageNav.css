@@ -166,3 +166,39 @@
   background-color: #fff;
   padding: 2.5rem;
 }
+/* Risks */
+.drop-down-menu.risks {
+  width: 25rem;
+  height: 12.75rem;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.range-slider__wrap {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.range-slider__tooltip.range-slider__tooltip--auto.range-slider__tooltip--bottom {
+  width: 9.375rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.625rem 4.75rem 0.688rem;
+  
+  border-radius: 20px;
+  background-color: #f7f7f7;
+}
+.range-slider__tooltip__label {
+  position: relative;
+  right: 7px;
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}

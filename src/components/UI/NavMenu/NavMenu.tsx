@@ -1,18 +1,20 @@
 import React from "react";
-import { Nav, Navbar, NavItem, NavbarBrand } from "reactstrap";
+import { Nav, Navbar, NavItem } from "reactstrap";
 import "./NavMenu.css";
 
-interface Props {}
-
-const NavMenu = (props: Props) => {
+const NavMenu = (props: any) => {
   return (
     <Navbar className="map nav-bar mt-4">
       <Nav className="nav-map">
-        <NavItem className="nav-map__item">CAPITALIZATION</NavItem>
-        <NavItem className="nav-map__item">ACTIVITY & GROWTH</NavItem>
-        <NavItem className="nav-map__item">CORPORATE DEBT</NavItem>
-        <NavItem className="nav-map__item">PROFITABILITY</NavItem>
-        <NavItem className="nav-map__item">MARGINALITY</NavItem>
+        <NavItem className="nav-map__item">
+          {props.titles.capitalization}
+        </NavItem>
+        <NavItem className="nav-map__item">{props.titles.activity}</NavItem>
+        <NavItem className="nav-map__item">{props.titles.corporate}</NavItem>
+        <NavItem className="nav-map__item">
+          {props.titles.profitability}
+        </NavItem>
+        <NavItem className="nav-map__item">{props.titles.marginality}</NavItem>
       </Nav>
     </Navbar>
   );
