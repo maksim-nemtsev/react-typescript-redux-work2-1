@@ -3,13 +3,12 @@ import {
   TabContent,
   TabPane,
   Nav,
-  NavItem,
-  NavLink,
   Row,
   Col,
+  Container,
 } from "reactstrap";
-import classnames from "classnames";
 import "./Tabs.css";
+import Analytics from "../../cardComponents/Summary/Analytics";
 
 const Tabs = (props: any) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -19,10 +18,10 @@ const Tabs = (props: any) => {
   };
 
   return (
-    <div>
+    <Container>
       <Nav className="mb-4">
         <span
-          className="nav-tabs"
+          className="tabs-navigation"
           onClick={() => {
             toggle("1");
           }}
@@ -30,7 +29,7 @@ const Tabs = (props: any) => {
           Summary
         </span>
         <span
-          className="nav-tabs"
+          className="tabs-navigation"
           onClick={() => {
             toggle("2");
           }}
@@ -38,7 +37,7 @@ const Tabs = (props: any) => {
           Performance
         </span>
         <span
-          className="nav-tabs"
+          className="tabs-navigation"
           onClick={() => {
             toggle("3");
           }}
@@ -46,7 +45,7 @@ const Tabs = (props: any) => {
           Ratings & Risk
         </span>
         <span
-          className="nav-tabs"
+          className="tabs-navigation"
           onClick={() => {
             toggle("4");
           }}
@@ -54,7 +53,7 @@ const Tabs = (props: any) => {
           Composition
         </span>
         <span
-          className="nav-tabs"
+          className="tabs-navigation"
           onClick={() => {
             toggle("5");
           }}
@@ -65,8 +64,11 @@ const Tabs = (props: any) => {
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <Row>
-            <Col sm="12">
-              <h4>Tab 1 Contents</h4>
+            <Col sm="6">
+              <Analytics />
+            </Col>
+            <Col sm="6">
+              <h4>Tab 1.1 Contents</h4>
             </Col>
           </Row>
         </TabPane>
@@ -96,7 +98,7 @@ const Tabs = (props: any) => {
           </Row>
         </TabPane>
       </TabContent>
-    </div>
+    </Container>
   );
 };
 

@@ -1,4 +1,4 @@
-.nav-tabs {
+.tabs-navigation {
   font-family: ArticulatCF;
   font-size: 1rem;
   font-weight: 500;
@@ -14,7 +14,7 @@
   border-bottom: none;
   text-transform: uppercase;
 }
-.nav-tabs:hover {
+.tabs-navigation:hover {
   font-family: ArticulatCF;
   font-size: 1rem;
   font-weight: 500;
@@ -25,7 +25,7 @@
   text-align: left;
   color: #000b20;
 }
-.nav-tabs:active {
+.tabs-navigation:active {
   font-family: ArticulatCF;
   font-size: 1rem;
   font-weight: 500;
@@ -36,7 +36,7 @@
   text-align: left;
   color: #000b20;
 }
-.nav-tabs:hover::before {
+.tabs-navigation:hover::before {
   position: absolute;
   display: inline-block;
   content: "";
@@ -47,7 +47,7 @@
   background-color: #5448c8;
 }
 
-.nav-tabs.nav-link {
+.tabs-navigation.nav-link {
   font-family: ArticulatCF;
   font-size: 1rem;
   font-weight: 500;
@@ -59,7 +59,7 @@
   color: #000b20;
   border: none;
 }
-.nav-tabs.nav-link:hover {
+.tabs-navigation.nav-link:hover {
   font-family: ArticulatCF;
   font-size: 1rem;
   font-weight: 500;
