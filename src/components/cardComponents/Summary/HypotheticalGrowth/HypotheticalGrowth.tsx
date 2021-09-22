@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Col, Container, Nav, Row, TabContent, TabPane } from "reactstrap";
+import { Col, Container, Row, TabContent, TabPane } from "reactstrap";
 import styled from "styled-components";
-import HighchartsCircular from "../../HighchartsComponents/HighchartsCircular";
+import HighchartsMultipleSeries from "../../../HighchartsComponents/HighchartsMultipleSeries";
+import HighchartsPolar from "../../../HighchartsComponents/HighchartsPolar";
 // reactstrap
-import "./Analitycs.css";
+import "./HypotheticalGrowth.css";
 
 const AnalitycsTitle = styled.h4`
   display: inline-block;
@@ -53,7 +54,7 @@ const AnalitycsListItem = styled.li`
 
 interface Props {}
 
-const Analytics = (props: Props) => {
+const HypotheticalGrowth = (props: Props) => {
   const [activeTab, setActiveTab] = useState("1");
 
   const toggle = (tab: string) => {
@@ -61,59 +62,59 @@ const Analytics = (props: Props) => {
   };
 
   return (
-    <Container className="Analitycs">
-      <AnalitycsTitle>Analytics</AnalitycsTitle>
+    <Container className="Hypothetical-Growth">
+      <AnalitycsTitle>Hypothetical Growth of $ 10,000</AnalitycsTitle>
       <AnalitycsNav>
         <AnalitycsListItem
           onClick={() => {
             toggle("1");
           }}
         >
-          assets
+          СЕГМЕНТ <p className="hypothetical__count">3</p>
         </AnalitycsListItem>
         <AnalitycsListItem
           onClick={() => {
             toggle("2");
           }}
         >
-          company
+          СЕГМЕНТ <p className="hypothetical__count">1</p>
         </AnalitycsListItem>
         <AnalitycsListItem
           onClick={() => {
             toggle("3");
           }}
         >
-          industries
+          СЕГМЕНТ <p className="hypothetical__count">2</p>
         </AnalitycsListItem>
         <AnalitycsListItem
           onClick={() => {
             toggle("4");
           }}
         >
-          currency
+          СЕГМЕНТ <p className="hypothetical__count">1</p>
         </AnalitycsListItem>
       </AnalitycsNav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <Row>
             <Col>
-              <HighchartsCircular />
+              <HighchartsMultipleSeries />
             </Col>
           </Row>
         </TabPane>
         <TabPane tabId="2">
           <Row>
-            <h4>Tab 2 Contents</h4>
+            <HighchartsMultipleSeries />
           </Row>
         </TabPane>
         <TabPane tabId="3">
           <Row>
-            <h4>Tab 3 Contents</h4>
+            <HighchartsMultipleSeries />
           </Row>
         </TabPane>
         <TabPane tabId="4">
           <Row>
-            <h4>Tab 4 Contents</h4>
+            <HighchartsMultipleSeries />
           </Row>
         </TabPane>
       </TabContent>
@@ -121,4 +122,4 @@ const Analytics = (props: Props) => {
   );
 };
 
-export default Analytics;
+export default HypotheticalGrowth;

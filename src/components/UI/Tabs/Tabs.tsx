@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import {
-  TabContent,
-  TabPane,
-  Nav,
-  Row,
-  Col,
-  Container,
-} from "reactstrap";
+import { TabContent, TabPane, Nav, Row, Col, Container } from "reactstrap";
 import "./Tabs.css";
-import Analytics from "../../cardComponents/Summary/Analytics";
+import Analytics from "../../cardComponents/Summary/Analytics/Analytics";
+import Executive from "../../cardComponents/Summary/Executive/Executive";
+import HypotheticalGrowth from "../../cardComponents/Summary/HypotheticalGrowth/HypotheticalGrowth";
+import AverageAnnual from "../../cardComponents/Summary/AverageAnnual/AverageAnnual";
+import Quarter from "../../cardComponents/Summary/Quarter/Quarter";
+import Details from "../../cardComponents/Summary/Details/Details";
+import Overview from "../../cardComponents/Summary/Overview/Overview";
 
 const Tabs = (props: any) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -68,14 +67,35 @@ const Tabs = (props: any) => {
               <Analytics />
             </Col>
             <Col sm="6">
-              <h4>Tab 1.1 Contents</h4>
+              <Executive />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <HypotheticalGrowth />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <AverageAnnual />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Quarter />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="6">
+              <Details />
+            </Col>
+            <Col sm="6">
+              <Overview />
             </Col>
           </Row>
         </TabPane>
         <TabPane tabId="2">
-          <Row>
-            <h4>Tab 2 Contents</h4>
-          </Row>
+          <Row></Row>
         </TabPane>
         <TabPane tabId="3">
           <Row>
