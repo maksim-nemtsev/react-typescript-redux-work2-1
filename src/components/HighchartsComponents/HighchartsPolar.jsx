@@ -1,6 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
-
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
 import highcharts3d from "highcharts/highcharts-3d";

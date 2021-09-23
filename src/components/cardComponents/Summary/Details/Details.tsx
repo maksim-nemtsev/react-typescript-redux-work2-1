@@ -14,20 +14,95 @@ const DetailsTitle = styled.h4`
   color: #000b20;
 `;
 
+const DetailsContainer = styled.div`
+  width: 100%;
+  /* height: 31.625rem; */
+  flex-grow: 0;
+  margin: 2.5rem 2.5rem 5rem 0;
+  padding: 1.875rem 5.625rem 1.875rem 2.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+`;
+
 interface Props {}
 
 const Details = (props: Props) => {
   return (
-    <div>
+    <DetailsContainer>
       <DetailsTitle>Details</DetailsTitle>
       <Row>
-        <Col sm="3">
+        <Col className="details__maincol pb-4" sm="6">
           <Col>Morningstar Category</Col>
           <Col>Large Value</Col>
         </Col>
-        <Col sm="3"></Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Total DIV</Col>
+          <Col>$530.00</Col>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Exp Ratio (Gross)</Col>
+          <Row>
+            <Col sm="6">0.63%</Col>
+            <Col sm="6">9/29/2020</Col>
+          </Row>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Exp Ratio (Gross)</Col>
+          <Row>
+            <Col sm="6">0.63%</Col>
+            <Col sm="6">9/29/2020</Col>
+          </Row>
+        </Col>
       </Row>
-    </div>
+      <Row>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Morningstar Category</Col>
+          <Col>Large Value</Col>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Total DIV</Col>
+          <Col>$530.00</Col>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Exp Ratio (Gross)</Col>
+          <Row>
+            <Col sm="6">0.63%</Col>
+            <Col sm="6">9/29/2020</Col>
+          </Row>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Exp Ratio (Gross)</Col>
+          <Row>
+            <Col sm="6">0.63%</Col>
+            <Col sm="6">9/29/2020</Col>
+          </Row>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Morningstar Category</Col>
+          <Col>Large Value</Col>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Total DIV</Col>
+          <Col>$530.00</Col>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Exp Ratio (Gross)</Col>
+          <Row>
+            <Col sm="6">0.63%</Col>
+            <Col sm="6">9/29/2020</Col>
+          </Row>
+        </Col>
+        <Col className="details__maincol pb-4" sm="6">
+          <Col>Exp Ratio (Gross)</Col>
+          <Row>
+            <Col sm="6">0.63%</Col>
+            <Col sm="6">9/29/2020</Col>
+          </Row>
+        </Col>
+      </Row>
+    </DetailsContainer>
   );
 };
 

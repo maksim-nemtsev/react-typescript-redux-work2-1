@@ -7,6 +7,20 @@ import { DropdownItem } from "reactstrap";
 import Rating from "../../components/UI/rating/rating";
 import ProgressBar from "../../components/UI/ProgressBar/ProgressBar";
 import Tabs from "../../components/UI/Tabs/Tabs";
+import styled from "styled-components";
+
+const OverviewWater = styled.p`
+  display: block;
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #9faab3;
+`;
 
 interface Props {}
 
@@ -237,6 +251,7 @@ export const CardPage = (props: Props) => {
       <div className="App-div">
         <Tabs />
       </div>
+      <OverviewWater>© World Screener 2021</OverviewWater>
     </div>
   );
 };
