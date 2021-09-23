@@ -67,7 +67,7 @@ interface Props {}
 
 const AverageAnnual = (props: Props) => {
   return (
-    <Container className="Executive">
+    <Container className="Average">
       <AverageAnnualTitle>Executive Summary</AverageAnnualTitle>
       <AverageAnnualSubTitle>123 Companies</AverageAnnualSubTitle>
       <Row>

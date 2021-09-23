@@ -8,6 +8,11 @@ import AverageAnnual from "../../cardComponents/Summary/AverageAnnual/AverageAnn
 import Quarter from "../../cardComponents/Summary/Quarter/Quarter";
 import Details from "../../cardComponents/Summary/Details/Details";
 import Overview from "../../cardComponents/Summary/Overview/Overview";
+import Volatility from "../../cardComponents/Perfomance/Volatility/Volatility";
+import CalendarTable from "../../cardComponents/Perfomance/CalendarTable/CalendarTable";
+import ComulativeTable from "../../cardComponents/Perfomance/Comulative/ComulativeTable";
+import Distribution from "../../cardComponents/Perfomance/Distribution/Distribution";
+import Expenses from "../../cardComponents/Perfomance/Expenses/Expenses";
 
 const Tabs = (props: any) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -95,12 +100,32 @@ const Tabs = (props: any) => {
           </Row>
         </TabPane>
         <TabPane tabId="2">
-          <Row></Row>
+          <Row>
+            <Col>
+              <Volatility />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <CalendarTable />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <ComulativeTable />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="6">
+              <Distribution />
+            </Col>
+            <Col sm="6">
+              <Expenses />
+            </Col>
+          </Row>
         </TabPane>
         <TabPane tabId="3">
-          <Row>
-            <h4>Tab 3 Contents</h4>
-          </Row>
+          <Row></Row>
         </TabPane>
         <TabPane tabId="4">
           <Row>
