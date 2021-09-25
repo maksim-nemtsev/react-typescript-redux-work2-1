@@ -1,6 +1,6 @@
 import "./Expenses.css";
 import React from "react";
-import { Col, Row, Table } from "reactstrap";
+import { Col, DropdownItem, Row, Table } from "reactstrap";
 import styled from "styled-components";
 
 const ExpensesTitle = styled.h4`
@@ -41,7 +41,7 @@ const ExpensesDescription = styled.h4`
 
 const ExpensesContainer = styled.div`
   width: 100%;
-  height: 31.625rem;
+  height: 32.625rem;
   flex-grow: 0;
   margin: 2.5rem 2.5rem 5rem 0;
   padding: 1.875rem 0 2.5rem 2.1rem;
@@ -60,30 +60,39 @@ const Expenses = (props: Props) => {
         </Col>
       </Row>
       <Row>
-        <Col className="mb-5" sm="7">
-          <ExpensesSubTitle>9/29/2020</ExpensesSubTitle>
-          <ExpensesDescription>Exp Ratio (Gross)</ExpensesDescription>
-        </Col>
-        <Col className="mb-5" sm="5">
-          <ExpensesSubTitle>Expenses</ExpensesSubTitle>
-          <ExpensesDescription>Expenses</ExpensesDescription>
-        </Col>
-        <Col className="mb-5" sm="7">
-          <ExpensesSubTitle>Expenses</ExpensesSubTitle>
-          <ExpensesDescription>Expenses</ExpensesDescription>
-        </Col>
-        <Col className="mb-5" sm="5">
-          <ExpensesSubTitle>Expenses</ExpensesSubTitle>
-          <ExpensesDescription>Expenses</ExpensesDescription>
-        </Col>
-        <Col className="mb-5" sm="7">
-          <ExpensesSubTitle>Expenses</ExpensesSubTitle>
-          <ExpensesDescription>Expenses</ExpensesDescription>
-        </Col>
-        <Col className="mb-5" sm="5">
-          <ExpensesSubTitle>Expenses</ExpensesSubTitle>
-          <ExpensesDescription>Expenses</ExpensesDescription>
-        </Col>
+        <Row className="d-flex justify-content-between">
+          <Col className="mb-5" sm="7">
+            <ExpensesSubTitle className="m-3">9/29/2020</ExpensesSubTitle>
+            <ExpensesDescription>Exp Ratio (Gross)</ExpensesDescription>
+          </Col>
+
+          <Col className="mb-5" sm="5">
+            <ExpensesSubTitle className="m-3">9/29/2020</ExpensesSubTitle>
+            <ExpensesDescription>Exp Ratio (Net)</ExpensesDescription>
+          </Col>
+        </Row>
+        <DropdownItem divider />
+        <Row className="d-flex justify-content-between">
+          <Col className="mb-5" sm="7">
+            <ExpensesSubTitle className="m-3">Expenses</ExpensesSubTitle>
+            <ExpensesDescription>Exp Ratio (Net)</ExpensesDescription>
+          </Col>
+          <Col className="mb-5" sm="5">
+            <ExpensesSubTitle className="m-3">9/29/2020</ExpensesSubTitle>
+            <ExpensesDescription>Exp Ratio (Net)</ExpensesDescription>
+          </Col>
+        </Row>
+        <DropdownItem divider />
+        <Row className="d-flex justify-content-between">
+          <Col className="mb-5" sm="7">
+            <ExpensesSubTitle className="m-3">Expenses</ExpensesSubTitle>
+            <ExpensesDescription>Exp Ratio (Net)</ExpensesDescription>
+          </Col>
+          <Col className="mb-5" sm="5">
+            <ExpensesSubTitle className="m-3">9/29/2020</ExpensesSubTitle>
+            <ExpensesDescription>Exp Ratio (Net)</ExpensesDescription>
+          </Col>
+        </Row>
       </Row>
     </ExpensesContainer>
   );

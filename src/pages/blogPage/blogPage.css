@@ -1,0 +1,13 @@
+.blog_author {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-top: 1px solid #eeeff2;
+  padding-top: 1rem;
+}
+.author_img {
+  border-radius: 50%;
+}
+.author_content {
+  margin-left: 1rem;
+}

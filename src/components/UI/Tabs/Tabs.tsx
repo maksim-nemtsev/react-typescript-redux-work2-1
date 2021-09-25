@@ -13,6 +13,10 @@ import CalendarTable from "../../cardComponents/Perfomance/CalendarTable/Calenda
 import ComulativeTable from "../../cardComponents/Perfomance/Comulative/ComulativeTable";
 import Distribution from "../../cardComponents/Perfomance/Distribution/Distribution";
 import Expenses from "../../cardComponents/Perfomance/Expenses/Expenses";
+import CompanyRatings from "../../cardComponents/Ratings/CompanyRatings/CompanyRatings";
+import CompanyRisk from "../../cardComponents/Ratings/CompanyRisk/CompanyRisk";
+import AllRatings from "../../cardComponents/Ratings/AllRatings/AllRatings";
+import Blog from "../../Blog/Blog";
 
 const Tabs = (props: any) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -54,7 +58,7 @@ const Tabs = (props: any) => {
             toggle("4");
           }}
         >
-          Composition
+          View All Tabs
         </span>
         <span
           className="tabs-navigation"
@@ -62,7 +66,7 @@ const Tabs = (props: any) => {
             toggle("5");
           }}
         >
-          View All Tabs
+          Blog
         </span>
       </Nav>
       <TabContent activeTab={activeTab}>
@@ -125,16 +129,61 @@ const Tabs = (props: any) => {
           </Row>
         </TabPane>
         <TabPane tabId="3">
-          <Row></Row>
+          <Row>
+            <Col sm="6">
+              <CompanyRatings />
+            </Col>
+            <Col sm="6">
+              <CompanyRisk />
+            </Col>
+          </Row>
+          <Row>
+            <Col className="d-flex flex-wrap">
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+              <Col className="mb-3" sm="6">
+                <AllRatings />
+              </Col>
+            </Col>
+          </Row>
         </TabPane>
         <TabPane tabId="4">
-          <Row>
-            <h4>Tab 4 Contents</h4>
-          </Row>
+          <Row></Row>
         </TabPane>
         <TabPane tabId="5">
           <Row>
-            <h4>Tab 5 Contents</h4>
+            <Blog />
           </Row>
         </TabPane>
         <TabPane tabId="6">
