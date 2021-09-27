@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Col, Container, Row, TabContent, TabPane } from "reactstrap";
 import styled from "styled-components";
 import HighchartsMultipleSeries from "../../../HighchartsComponents/HighchartsMultipleSeries";
-import HighchartsPolar from "../../../HighchartsComponents/HighchartsPolar";
-// reactstrap
 import "./HypotheticalGrowth.css";
 
 const AnalitycsTitle = styled.h4`

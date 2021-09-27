@@ -75,7 +75,6 @@
 }
 .drop-button-content {
   width: 100%;
-  display: flex;
   justify-content: start;
   margin: 10px;
 }

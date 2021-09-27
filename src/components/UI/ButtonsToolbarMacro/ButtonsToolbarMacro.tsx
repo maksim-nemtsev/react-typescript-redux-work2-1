@@ -6,9 +6,10 @@ import clearSVG from "../../../assets/svg/clear.svg";
 import pinSVG from "../../../assets/svg/pin.svg";
 import checkSVG from "../../../assets/svg/сheck.svg";
 
-interface Props {}
-
-const ButtonsToolbarMacro = (props: Props) => {
+const ButtonsToolbarMacro = (props: any) => {
+  const openMenuHandler = () => {
+    props.openStockMenuHandler();
+  };
   return (
     <div className="button-group">
       <ButtonGroup size="sm">
@@ -17,7 +18,12 @@ const ButtonsToolbarMacro = (props: Props) => {
         </Button>
       </ButtonGroup>
       <ButtonGroup size="sm">
-        <Button className="btn btn-toolbar-top" outline color="secondary">
+        <Button
+          onClick={() => openMenuHandler()}
+          className="btn btn-toolbar-top"
+          outline
+          color="secondary"
+        >
           <img src={collapseSVG} alt="collapse" />
         </Button>
         <Button className="btn btn-toolbar-top" outline color="secondary">

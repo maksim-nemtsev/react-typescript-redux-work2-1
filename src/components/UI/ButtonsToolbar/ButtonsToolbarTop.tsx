@@ -5,12 +5,21 @@ import collapseSVG from "../../../assets/svg/collapse.svg";
 import clearSVG from "../../../assets/svg/clear.svg";
 import pinSVG from "../../../assets/svg/pin.svg";
 
-interface Props {}
+const ButtonsToolbarTop = (props: any) => {
+  const openMenu = () => {
+    props.openActivityMenuHandler();
+  };
 
-const ButtonsToolbarTop = (props: Props) => {
   return (
     <ButtonGroup size="sm">
-      <Button className="btn btn-toolbar-top" outline color="secondary">
+      <Button
+        onClick={() => {
+          openMenu();
+        }}
+        className="btn btn-toolbar-top"
+        outline
+        color="secondary"
+      >
         <img src={collapseSVG} alt="collapse" />
       </Button>
       <Button className="btn btn-toolbar-top" outline color="secondary">

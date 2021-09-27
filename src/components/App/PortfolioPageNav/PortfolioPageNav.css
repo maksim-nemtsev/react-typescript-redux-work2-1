@@ -2,12 +2,6 @@
   margin: 60px 0 40px;
 }
 
-.main-page__list {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
 .main-page__item {
   display: block;
   list-style: none;
@@ -96,7 +90,6 @@
   padding: 2.5rem;
 }
 .drop-down__form {
-  display: flex;
   flex-direction: column;
   justify-content: start;
 }

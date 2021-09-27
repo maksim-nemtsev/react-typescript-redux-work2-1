@@ -1,6 +1,6 @@
 import "./Volatility.css";
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import CardBasicArea from "../../../HighchartsComponents/CardBasicArea";
 import styled from "styled-components";
 
@@ -25,9 +25,7 @@ const VolatilityTitle = styled.h4`
   color: #000b20;
 `;
 
-interface Props {}
-
-const Volatility = (props: Props) => {
+const Volatility = () => {
   return (
     <VolatilityContainer>
       <VolatilityTitle>Volatility Measure</VolatilityTitle>

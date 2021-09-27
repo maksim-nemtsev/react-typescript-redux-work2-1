@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Col } from "reactstrap";
 import styled from "styled-components";
 
 const OverviewTitle = styled.h4`

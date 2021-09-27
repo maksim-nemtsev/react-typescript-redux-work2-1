@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Container, Nav, Row, TabContent, TabPane } from "reactstrap";
+import { Col, Container, Row, TabContent, TabPane } from "reactstrap";
 import styled from "styled-components";
 import HighchartsCircular from "../../../HighchartsComponents/HighchartsCircular";
 // reactstrap
@@ -51,9 +51,7 @@ const AnalitycsListItem = styled.li`
   }
 `;
 
-interface Props {}
-
-const Analytics = (props: Props) => {
+const Analytics = () => {
   const [activeTab, setActiveTab] = useState("1");
 
   const toggle = (tab: string) => {

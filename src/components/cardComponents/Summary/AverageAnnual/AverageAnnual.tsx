@@ -3,7 +3,6 @@ import { Col, Container, Row } from "reactstrap";
 import styled from "styled-components";
 import AverageCol from "../../../HighchartsComponents/AverageCol";
 import "./AverageAnnual.css";
-import AverageColTable from "./AverageColTable/AverageColTable";
 
 const AverageAnnualTitle = styled.h4`
   display: inline-block;
@@ -31,41 +30,7 @@ const AverageAnnualSubTitle = styled.p`
   color: #000b20;
 `;
 
-const AverageAnnualNav = styled.nav``;
-
-const AverageAnnualListItem = styled.li`
-  display: inline-block;
-  font-family: ArticulatCF;
-  font-size: 1rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #9faab3;
-  cursor: pointer;
-  margin-right: 0.75rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  &:hover {
-    color: #000b20;
-  }
-  &:hover::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 40px;
-    height: 2px;
-    margin-top: 1.5rem;
-    border-radius: 2px;
-    background-color: #5448c8;
-  }
-`;
-
-interface Props {}
-
-const AverageAnnual = (props: Props) => {
+const AverageAnnual = () => {
   return (
     <Container className="Average">
       <AverageAnnualTitle>Executive Summary</AverageAnnualTitle>

@@ -4,7 +4,7 @@ import blog2 from "../../assets/img/blog2.jpg";
 import blog3 from "../../assets/img/blog3.jpg";
 import CardBlog from "./CardBlog/CardBlog";
 import styled from "styled-components";
-import { useHistory, useParams } from "react-router";
+import { useHistory } from "react-router";
 
 const BlogContainer = styled.section`
   display: flex;
@@ -25,10 +25,8 @@ export type Params = {
 };
 
 const Blog = () => {
-  const params = useParams<Params>();
-
   const history = useHistory();
-  const [cardInfo, setCardInfo] = useState<CardInfo[]>([
+  const [cardInfo] = useState<CardInfo[]>([
     { idBlog: "8", img: blog1 },
     { idBlog: "7", img: blog2 },
     { idBlog: "6", img: blog3 },

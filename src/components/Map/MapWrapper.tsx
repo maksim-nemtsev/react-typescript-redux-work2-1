@@ -6,8 +6,6 @@ interface IDisplayMode {
 }
 
 const MapWrapper: React.FC<IDisplayMode> = (props: IDisplayMode) => {
-  console.log("🚀 ~ file: Map.tsx ~ line 13 ~ Map");
-
   let show = props.displayMode ? "block" : "none";
   return (
     <div style={{ display: show }}>

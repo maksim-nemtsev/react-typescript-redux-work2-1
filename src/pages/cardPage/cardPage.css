@@ -88,11 +88,6 @@
   display: flex;
   align-items: center;
 }
-
-.nav__list.card-page {
-  display: flex;
-  justify-content: start;
-}
 .nav__item.card-page {
   display: inline-block;
   margin: 40px 30px;

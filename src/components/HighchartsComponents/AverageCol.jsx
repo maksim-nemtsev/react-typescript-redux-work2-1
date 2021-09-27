@@ -1,20 +1,13 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
+import React from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
-import { json_data } from "../../averageDB.js";
 import { Col, Row, Table } from "reactstrap";
 
-const sensors = json_data.sensor_data;
-
 const AverageCol = () => {
-  const [filteredSensors, setFilteredSensors] = useState(sensors.slice(0, 5));
-  const [chartType, setChartType] = useState("column");
-
-  const chartTypesList = ["line", "bar", "column", "area"];
+  const filteredSensors = [0, 1, 2, 3, 4, 5];
   const options = {
     chart: {
-      type: chartType,
+      type: "column",
     },
     title: {
       text: "Sensor Utilization Values",
@@ -85,7 +78,6 @@ const AverageCol = () => {
         padding: "30px",
       }}
     >
-      {/* <pre>{JSON.stringify(options, null, 2)}</pre> */}
       <div>
         <HighchartsReact highcharts={Highcharts} options={options} />
         <div>

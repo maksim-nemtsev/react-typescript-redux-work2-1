@@ -120,10 +120,10 @@ import {
 
 const Segment = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [submit, setSubmit] = useState({});
+  // const [submit, setSubmit] = useState({});
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
-  const handleSubmit = (val: any) => setSubmit({ val });
+  // const handleSubmit = (val: any) => setSubmit({ val });
 
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -142,7 +142,7 @@ const Segment = () => {
         style={{ borderRadius: "20px" }}
         className="drop-down-menu portfolio"
       >
-        <AvForm className="drop-down__form" onSubmit={handleSubmit}>
+        <AvForm className="drop-down__form">
           <AvGroup className="form-check p-0" check>
             <div className="drop-down__image">
               <Media

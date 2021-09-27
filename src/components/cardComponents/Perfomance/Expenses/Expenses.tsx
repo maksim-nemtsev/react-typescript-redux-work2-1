@@ -1,6 +1,6 @@
 import "./Expenses.css";
 import React from "react";
-import { Col, DropdownItem, Row, Table } from "reactstrap";
+import { Col, DropdownItem, Row } from "reactstrap";
 import styled from "styled-components";
 
 const ExpensesTitle = styled.h4`
@@ -49,9 +49,7 @@ const ExpensesContainer = styled.div`
   background-color: #fff;
 `;
 
-interface Props {}
-
-const Expenses = (props: Props) => {
+const Expenses = () => {
   return (
     <ExpensesContainer>
       <Row>

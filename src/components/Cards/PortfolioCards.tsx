@@ -3,16 +3,14 @@ import { useHistory } from "react-router";
 import { PortfolioCard } from "./PortfolioCard";
 import "./PortfolioCards.css";
 
-interface Props {}
-
 type CardInfo = {
   title: string;
   id: string;
 };
 
-const PortfolioCards = (props: Props) => {
+const PortfolioCards = () => {
   const history = useHistory();
-  const [cardInfo, setCardInfo] = useState<CardInfo[]>([
+  const [cardInfo] = useState<CardInfo[]>([
     { title: "Уоррен Баффет", id: "8" },
     { title: "Портфель", id: "7" },
     { title: "Джордж Сорос", id: "6" },

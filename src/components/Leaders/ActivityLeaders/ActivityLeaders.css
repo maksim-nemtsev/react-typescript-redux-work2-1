@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 10px;
   top: 28px;
   left: 270px;
   width: 300px;
@@ -13,9 +14,15 @@
 }
 
 .aleaders__title {
-  display: inline-block;
-  margin-left: 19px;
-  background-color: #ffffff;
+  font-family: ArticulatCF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #9faab3;
 }
 
 /* Leaders Main Content */
@@ -30,6 +37,9 @@
   padding: 10px 10px 0 0;
   border-radius: 8px;
 }
+.aleaders--hide {
+  display: none;
+}
 .aleaders__footer {
   position: absolute;
   display: flex;
@@ -43,6 +53,11 @@
   border-radius: 8px;
   background-color: #ffffff;
 }
+
+.aleaders__footer--hide {
+  display: none;
+}
+
 /* Leaders List */
 .aleader__list {
   background-color: #ffffff;

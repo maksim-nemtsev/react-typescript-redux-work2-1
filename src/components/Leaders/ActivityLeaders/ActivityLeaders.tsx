@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import LeadersList from "./ActivityLeadersList";
 import "./ActivityLeaders.css";
 import ButtonsToolbarTop from "../../UI/ButtonsToolbar/ButtonsToolbarTop";
 import ButtonSettings from "../../UI/ButtonSettings/ButtonSettings";
+import ButtonsToolbarBoottom from "../../UI/ButtonsToolbar/ButtonsToolbarBoottom";
 
-interface Props {}
+const ActivityLeaders: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(true);
 
-const ActivityLeaders: React.FC = (props: Props) => {
+  const openActivityMenuHandler = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="aleaders-wrapper">
       <div className="aleaders__header">
-        <span className="aleaders__title">Decline Leaders</span>
-        <ButtonsToolbarTop />
+        <span className="aleaders__title">Activity Leaders</span>
+        <ButtonsToolbarTop openActivityMenuHandler={openActivityMenuHandler} />
       </div>
-      <div className="aleaders">
+      <div className={isOpen ? "aleaders" : "aleaders--hide"}>
         <div className="aleaders__content">
           <LeadersList />
         </div>
       </div>
-      <div className="aleaders__footer">
+      <div className={isOpen ? "aleaders__footer" : "aleaders__footer--hide"}>
         <ButtonSettings />
-        <ButtonsToolbarTop />
+        <ButtonsToolbarBoottom />
       </div>
     </div>
   );

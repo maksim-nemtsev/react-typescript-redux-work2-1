@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import {
-  Col,
   Nav,
   NavItem,
   NavLink,
-  Row,
   TabContent,
   TabPane,
 } from "reactstrap";
 import "./MapMacroStock.css";
 import classnames from "classnames";
 
-interface Props {}
-
-const ActivityLeadersList = (props: Props) => {
+const ActivityLeadersList = () => {
   const [activeTab, setActiveTab] = useState("1");
 
   const toggle = (tab: string) => {

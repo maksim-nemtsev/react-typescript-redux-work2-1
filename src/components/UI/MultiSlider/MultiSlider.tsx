@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import RangeSlider from "react-bootstrap-range-slider";
 import "./MultiSlider.css";
-import { AvForm, AvGroup, AvInput } from "availity-reactstrap-validation";
+import { AvForm, AvGroup } from "availity-reactstrap-validation";
 import { Button, DropdownItem, FormGroup } from "reactstrap";
 
 export const MultiSlider = () => {
   const [value1, setValue1] = useState<number | string>(2);
   const [value2, setValue2] = useState<number | string>(0);
-  const [submit, setSubmit] = useState({});
-
-  const handleSubmit = (val: number) => setSubmit({ val });
 
   return (
-    <AvForm className="drop-down__form" onSubmit={handleSubmit}>
+    <AvForm className="drop-down__form">
       <AvGroup className="form-check p-0" check>
         <RangeSlider
           value={value1}

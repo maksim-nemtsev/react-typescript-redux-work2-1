@@ -16,10 +16,7 @@ import {
 
 const Industries = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [submit, setSubmit] = useState({});
-
   const toggle = () => setDropdownOpen((prevState) => !prevState);
-  const handleSubmit = (val: any) => setSubmit({ val });
 
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -37,7 +34,7 @@ const Industries = () => {
         style={{ borderRadius: "20px" }}
         className="drop-down-menu regions"
       >
-        <AvForm className="drop-down__form" onSubmit={handleSubmit}>
+        <AvForm className="drop-down__form">
           <Input className="drop-down__country-input" />
           <div className="drop-down__overflow">
             <AvGroup className="form-check p-0" check>

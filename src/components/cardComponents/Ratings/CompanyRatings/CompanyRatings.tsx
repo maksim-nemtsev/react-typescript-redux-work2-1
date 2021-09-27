@@ -1,11 +1,8 @@
 import "./CompanyRatings.css";
 import React, { useState } from "react";
-import { Col, Container, Row, TabContent, TabPane } from "reactstrap";
+import { Col, Row, TabContent, TabPane } from "reactstrap";
 import styled from "styled-components";
-import {
-  DinamicArrowDown,
-  DinamicArrowUp,
-} from "../../../UI/DynamicArrows/DynamicArrows";
+import { DinamicArrowDown } from "../../../UI/DynamicArrows/DynamicArrows";
 import StarGrey from "../../../../assets/svg/card-page/star-grey.svg";
 
 const CopanyRatingsContainer = styled.section`
@@ -104,9 +101,7 @@ const TabDiv = styled.div`
   justify-content: space-between;
 `;
 
-interface Props {}
-
-const CompanyRatings = (props: Props) => {
+const CompanyRatings = () => {
   const [activeTab, setActiveTab] = useState("1");
 
   const toggle = (tab: string) => {

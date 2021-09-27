@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MapMacroStockList from "./MapMacroStockList";
 import "./MapMacroStock.css";
 import ButtonsToolbarMacro from "../UI/ButtonsToolbarMacro/ButtonsToolbarMacro";
@@ -10,6 +10,11 @@ import plusSVG from "../../assets/svg/plus.svg";
 interface Props {}
 
 const MapMacroStock = (props: Props) => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const openStockMenuHandler = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="map-stock-wrapper">
       <div className="map-stock__header">
@@ -17,14 +22,14 @@ const MapMacroStock = (props: Props) => {
         <div className="map-stock__country">
           <span className="map-stock__title">Арабские Эммираты</span>
         </div>
-        <ButtonsToolbarMacro />
+        <ButtonsToolbarMacro openStockMenuHandler={openStockMenuHandler} />
       </div>
-      <div className="map-stock">
+      <div className={isOpen ? "map-stock" : "map-stock--hide"}>
         <div className="map-stock__content">
           <MapMacroStockList />
         </div>
       </div>
-      <div className="map-stock__footer">
+      <div className={isOpen ? "map-stock__footer" : "map-stock__footer--hide"}>
         <Button className="btn map-stock__btn" color="link">
           ADD ANOTHER
           <img className="map-stock__icon-plus" src={plusSVG} alt="right" />

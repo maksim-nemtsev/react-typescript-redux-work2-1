@@ -1,6 +1,6 @@
 import "./CompanyRisk.css";
-import React, { useState } from "react";
-import { Col, Row, TabContent, TabPane } from "reactstrap";
+import React from "react";
+import { Col, Row } from "reactstrap";
 import styled from "styled-components";
 import ProgressBar from "../../../UI/ProgressBar/ProgressBar";
 
@@ -69,33 +69,6 @@ const CompanyRiskDate = styled.p`
   text-align: end;
   letter-spacing: normal;
   color: #9faab3;
-`;
-
-const CompanyRiskYear = styled.p`
-  display: inline-block;
-  font-family: ArticulatCF;
-  font-size: 0.875rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #9faab3;
-`;
-
-const CompanyRiskStar = styled.span`
-  display: inline-block;
-  font-family: ArticulatCF;
-  font-size: 1rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000b20;
-  margin-right: 0.5rem;
 `;
 
 const CompanyRisk = () => {

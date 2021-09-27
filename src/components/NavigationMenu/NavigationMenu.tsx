@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./NavigationMenu.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Media,
   Dropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Container,
   Nav,
   NavItem,
 } from "reactstrap";
@@ -25,12 +24,6 @@ import dropPortfolioSVG from "../../assets/svg/drop-portfolio.svg";
 import dropMyPortfolioSVG from "../../assets/svg/drop-my-portfolio.svg";
 import dropSettingsSVG from "../../assets/svg/drop-settings.svg";
 import dropNitificationSVG from "../../assets/svg/drop-notification.svg";
-
-type Tabs = {
-  route: string;
-  icon: HTMLElement;
-  label: string;
-};
 
 const tabs = [
   {

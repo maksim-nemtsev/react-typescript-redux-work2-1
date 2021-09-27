@@ -29,20 +29,6 @@ const DistributionSubTitle = styled.h4`
   text-align: left;
   color: #000b20;
 `;
-const DistributionDescription = styled.h4`
-  display: inline-block;
-  margin-bottom: 2.5rem;
-  margin-right: 2.5rem;
-  font-family: ArticulatCF;
-  font-size: 1rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000b20;
-`;
 
 const DistributionContainer = styled.div`
   width: 100%;
@@ -59,9 +45,7 @@ const DistributionOverflow = styled.div`
   overflow: auto;
 `;
 
-interface Props {}
-
-const Distribution = (props: Props) => {
+const Distribution = () => {
   return (
     <DistributionContainer>
       <Row>
