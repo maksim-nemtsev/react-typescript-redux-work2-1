@@ -2,7 +2,6 @@ import React from "react";
 import Highcharts from "highcharts";
 import HighchartsMap from "highcharts/modules/map";
 import HighchartsReact from "highcharts-react-official";
-
 import map from "@highcharts/map-collection/custom/world.geo.json";
 import "./MapHighcharts.css";
 import MapNews from "../MapNews/MapNews";
