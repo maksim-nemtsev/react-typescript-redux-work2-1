@@ -9,9 +9,9 @@ export const DinamicArrowUp = () => (
     <path
       d="M51 1L26 17.7143V10.2857L1 27M51 1L49 8.5M51 1H43"
       stroke="#64AF8B"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -26,9 +26,9 @@ export const DinamicArrowDown = () => (
     <path
       d="M51 27L26 10.2857V17.7143L1 1M51 27L49 19.5M51 27H43"
       stroke="#DB7880"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );

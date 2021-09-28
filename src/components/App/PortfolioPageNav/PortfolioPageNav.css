@@ -112,7 +112,6 @@
   display: inline-block;
 }
 .portfolio-segment__footer {
-  display: flex;
   align-items: flex-end;
   justify-content: end;
 }

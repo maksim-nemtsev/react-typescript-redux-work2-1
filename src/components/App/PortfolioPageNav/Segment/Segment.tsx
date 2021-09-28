@@ -149,7 +149,7 @@ const Segment = () => {
                 src={GrowthOrientedSVG}
                 alt="profile"
                 className="drop-profile mr-2"
-                s
+                
               />
             </div>
             <Label className="drop-name portfolio" check>
@@ -169,7 +169,7 @@ const Segment = () => {
                 src={GrowthOrientedSVG}
                 alt="profile"
                 className="drop-profile mr-2"
-                s
+                
               />
             </div>
             <Label className="drop-name portfolio" check>
@@ -189,7 +189,7 @@ const Segment = () => {
                 src={GrowthOrientedSVG}
                 alt="profile"
                 className="drop-profile mr-2"
-                s
+                
               />
             </div>
             <Label className="drop-name portfolio" check>

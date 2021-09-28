@@ -46,7 +46,6 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
                 />
               </div>
               <Label className="drop-name main" check>
@@ -66,7 +65,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -86,7 +85,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+        
                 />
               </div>
               <Label className="drop-name main" check>
@@ -106,7 +105,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -126,7 +125,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -146,7 +145,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -166,7 +165,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -186,7 +185,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -206,7 +205,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -226,7 +225,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -246,7 +245,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -266,7 +265,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -286,7 +285,7 @@ const CountriesAndRegions = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>

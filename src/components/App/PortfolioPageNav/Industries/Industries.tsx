@@ -43,7 +43,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -63,7 +63,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -83,7 +83,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -103,7 +103,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -123,7 +123,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -143,7 +143,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -163,7 +163,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -183,7 +183,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -203,7 +203,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -223,7 +223,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -243,7 +243,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -263,7 +263,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>
@@ -283,7 +283,7 @@ const Industries = () => {
                   src={GrowthOrientedSVG}
                   alt="profile"
                   className="drop-profile mr-2"
-                  s
+                  
                 />
               </div>
               <Label className="drop-name main" check>

@@ -151,9 +151,9 @@ export const BlogPage = (props: Props) => {
                   width="50.6321"
                   height="35.3051"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -172,9 +172,9 @@ export const BlogPage = (props: Props) => {
                   width="47.9625"
                   height="29.9738"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -194,8 +194,8 @@ export const BlogPage = (props: Props) => {
                   y2="5.50171"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#FFDE74" />
-                  <stop offset="1" stop-color="#FFB000" />
+                  <stop stopColor="#FFDE74" />
+                  <stop offset="1" stopColor="#FFB000" />
                 </linearGradient>
               </defs>
             </svg>

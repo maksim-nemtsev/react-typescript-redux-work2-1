@@ -158,7 +158,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropProfileSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -176,7 +176,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropMapSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -191,7 +191,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropLabSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -206,7 +206,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropPortfolioSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -222,7 +222,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropNitificationSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -237,7 +237,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropMyPortfolioSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -252,7 +252,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropSettingsSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      s
+                      
                     />
                   </div>
                   <div className="drop-name-package">

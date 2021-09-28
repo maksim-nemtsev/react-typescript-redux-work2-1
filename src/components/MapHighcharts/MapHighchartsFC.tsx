@@ -70,8 +70,6 @@ class MapHighchartsFC extends React.Component {
   };
 
   render() {
-    console.log("render LineChart");
-
     return (
       <div className="highcharts-container" id="highcharts-container">
         <HighchartsReact
