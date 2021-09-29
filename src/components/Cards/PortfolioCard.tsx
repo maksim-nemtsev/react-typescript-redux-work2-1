@@ -13,6 +13,7 @@ import percentSVG from "../../assets/svg/percent.svg";
 import favoritesSVG from "../../assets/svg/favorites.svg";
 import notificationSVG from "../../assets/svg/notification.svg";
 import arrowGrowthSVG from "../../assets/svg/arrow-growth.svg";
+import planSVG from "../../assets/svg/plan-ws.svg";
 import autoSVG from "../../assets/svg/auto.svg";
 import industrythSVG from "../../assets/svg/industry.svg";
 import financeSVG from "../../assets/svg/finance.svg";
@@ -49,6 +50,11 @@ export const PortfolioCard = (props: CardInfo) => {
             src={notificationSVG}
             alt="notification"
           />
+          <img
+            className="card-header__notification--plan"
+            src={planSVG}
+            alt="notification"
+          />
         </div>
       </CardBody>
       <CardBody className="pt-0">
@@ -59,7 +65,7 @@ export const PortfolioCard = (props: CardInfo) => {
           {props.title}
         </CardTitle>
         <div className="card-body-graf">
-          <ListGroup className="list-group col-7">
+          <div className="card-body-graf--left">
             <div className="d-flex p-0">
               <div className="banks">
                 <span className="banks-name">SBERP</span>
@@ -116,10 +122,10 @@ export const PortfolioCard = (props: CardInfo) => {
                 <span className="banks-count">5.00%</span>
               </div>
             </div>
-          </ListGroup>
-          <ListGroup className="col-3">
-            <img src={graf1} width="65px" height="100px" alt="graf" />
-          </ListGroup>
+          </div>
+          <div className="card-body-graf--right">
+            <img src={graf1} width="280px" height="166px" alt="graf" />
+          </div>
         </div>
         <Button size="sm" color="light" className="m-1">
           more
@@ -127,13 +133,13 @@ export const PortfolioCard = (props: CardInfo) => {
       </CardBody>
       <CardBody className="d-flex justify-content-between align-items-center pt-0">
         <ButtonGroup size="sm">
-          <Button outline color="secondary">
+          <Button id="card-btn-1" outline color="secondary">
             10Y
           </Button>
-          <Button outline color="secondary">
+          <Button id="card-btn-2" outline color="secondary">
             Y
           </Button>
-          <Button outline color="secondary">
+          <Button id="card-btn-3" outline color="secondary">
             D
           </Button>
         </ButtonGroup>

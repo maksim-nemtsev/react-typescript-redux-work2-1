@@ -12,20 +12,19 @@ const ButtonsToolbarTop = (props: any) => {
 
   return (
     <ButtonGroup size="sm">
-      <Button
+      <Button id="btn-top-e"
         onClick={() => {
           openMenu();
         }}
-        className="btn btn-toolbar-top"
         outline
         color="secondary"
       >
         <img src={collapseSVG} alt="collapse" />
       </Button>
-      <Button className="btn btn-toolbar-top" outline color="secondary">
+      <Button id="btn-top-p" outline color="secondary">
         <img src={pinSVG} alt="pin" />
       </Button>
-      <Button className="btn btn-toolbar-top" outline color="secondary">
+      <Button id="btn-top-c" outline color="secondary">
         <img src={clearSVG} alt="clear" />
       </Button>
     </ButtonGroup>

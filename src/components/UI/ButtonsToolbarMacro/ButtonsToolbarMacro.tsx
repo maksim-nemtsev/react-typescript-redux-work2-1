@@ -13,23 +13,23 @@ const ButtonsToolbarMacro = (props: any) => {
   return (
     <div className="button-group">
       <ButtonGroup size="sm">
-        <Button className="btn btn-toolbar-top" outline color="secondary">
-          <img src={checkSVG} alt="collapse" />
+        <Button id="btn-check" outline color="secondary">
+          <img src={checkSVG} alt="check" />
         </Button>
       </ButtonGroup>
       <ButtonGroup size="sm">
         <Button
+        id="btn-collapse"
           onClick={() => openMenuHandler()}
-          className="btn btn-toolbar-top"
           outline
           color="secondary"
         >
           <img src={collapseSVG} alt="collapse" />
         </Button>
-        <Button className="btn btn-toolbar-top" outline color="secondary">
+        <Button id="btn-pin" outline color="secondary">
           <img src={pinSVG} alt="pin" />
         </Button>
-        <Button className="btn btn-toolbar-top" outline color="secondary">
+        <Button id="btn-clear" outline color="secondary">
           <img src={clearSVG} alt="clear" />
         </Button>
       </ButtonGroup>

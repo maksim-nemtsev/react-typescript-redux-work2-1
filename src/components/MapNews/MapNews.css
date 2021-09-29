@@ -9,6 +9,15 @@
   padding: 30px;
   border-radius: 8px;
 }
+.news::-webkit-scrollbar {
+  height: 16px;
+}
+.news::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  border-radius: 15px;
+}
 .news__footer {
   position: absolute;
   display: flex;

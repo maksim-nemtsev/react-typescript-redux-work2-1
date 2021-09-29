@@ -36,6 +36,11 @@
 .card-header__notification {
   cursor: pointer;
 }
+.card-header__notification--plan {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+}
 .card-header-count {
   width: 1.625rem;
   height: 1.625rem;
@@ -104,12 +109,46 @@
 .banks {
   margin-right: 1rem;
 }
+
 .card-body-graf {
+  position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
+.card-body-graf--left {
+  height: 135px;
+  width: 130px;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.719);
+  z-index: 1;
+}
+.card-body-graf--left::-webkit-scrollbar {
+  width: 16px;
+}
+.card-body-graf--left::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  border-radius: 15px;
+}
+.card-body-graf--right {
+  position: absolute;
+  opacity: 0.3;
+}
+#card-btn-1,
+#card-btn-2,
+#card-btn-3 {
+  border: none;
+  border-color: none;
+}
+#card-btn-1:hover,
+#card-btn-2:hover,
+#card-btn-3:hover {
+  background-color: #f3f3f3;
+  color: black;
+}
+
 .growth-count {
   font-family: ArticulatCF;
   font-size: 1.375rem;
