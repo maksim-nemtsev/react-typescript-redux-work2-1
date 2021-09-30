@@ -1,7 +1,7 @@
 .tabs-navigation {
   font-family: ArticulatCF;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -14,10 +14,23 @@
   border-bottom: none;
   text-transform: uppercase;
 }
+
+.tabs-navigation.active {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
+
 .tabs-navigation:hover {
   font-family: ArticulatCF;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -25,17 +38,7 @@
   text-align: left;
   color: #000b20;
 }
-.tabs-navigation:active {
-  font-family: ArticulatCF;
-  font-size: 1rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000b20;
-}
+
 .tabs-navigation:hover::before {
   position: absolute;
   display: inline-block;

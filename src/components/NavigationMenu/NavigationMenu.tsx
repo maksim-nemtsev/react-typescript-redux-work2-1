@@ -77,6 +77,21 @@ const NavigationMenu: React.FC = (props: Props) => {
                   fontWeight: "bold",
                   color: "#000b20",
                 }}
+                to="/main"
+                exact={true}
+                className="link-inactive"
+                activeClassName="active"
+              >
+                MAIN PAGE
+              </NavLink>
+            </NavItem>
+            <NavItem className="list-item">
+              <NavLink
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#000b20",
+                  backgroundColor: "#f7f7f7",
+                }}
                 to="/map"
                 exact={true}
                 className="link-inactive"
@@ -90,9 +105,8 @@ const NavigationMenu: React.FC = (props: Props) => {
                 activeStyle={{
                   fontWeight: "bold",
                   color: "#000b20",
-                  backgroundColor: "#f7f7f7",
                 }}
-                to="/lab"
+                to="/portfolio"
                 exact={true}
                 className="link-inactive"
                 activeClassName="active"
@@ -128,20 +142,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                 HOME PAGE
               </NavLink>
             </NavItem>
-            <NavItem className="list-item">
-              <NavLink
-                activeStyle={{
-                  fontWeight: "bold",
-                  color: "#000b20",
-                }}
-                to="/main"
-                exact={true}
-                className="link-inactive"
-                activeClassName="active"
-              >
-                MAIN PAGE
-              </NavLink>
-            </NavItem>
           </Nav>
           <Dropdown direction="left" isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle tag="span">
@@ -158,7 +158,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropProfileSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -176,7 +175,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropMapSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -191,7 +189,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropLabSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -206,7 +203,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropPortfolioSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -222,7 +218,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropNitificationSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -237,7 +232,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropMyPortfolioSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">
@@ -252,7 +246,6 @@ const NavigationMenu: React.FC = (props: Props) => {
                       src={dropSettingsSVG}
                       alt="profile"
                       className="drop-profile mr-2"
-                      
                     />
                   </div>
                   <div className="drop-name-package">

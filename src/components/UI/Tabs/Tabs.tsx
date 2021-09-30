@@ -29,7 +29,9 @@ const Tabs = (props: any) => {
     <Container>
       <Nav className="mb-4">
         <span
-          className="tabs-navigation"
+          className={
+            activeTab === "1" ? "tabs-navigation active" : "tabs-navigation"
+          }
           onClick={() => {
             toggle("1");
           }}
@@ -37,7 +39,9 @@ const Tabs = (props: any) => {
           Summary
         </span>
         <span
-          className="tabs-navigation"
+          className={
+            activeTab === "2" ? "tabs-navigation active" : "tabs-navigation"
+          }
           onClick={() => {
             toggle("2");
           }}
@@ -45,7 +49,9 @@ const Tabs = (props: any) => {
           Performance
         </span>
         <span
-          className="tabs-navigation"
+          className={
+            activeTab === "3" ? "tabs-navigation active" : "tabs-navigation"
+          }
           onClick={() => {
             toggle("3");
           }}
@@ -53,7 +59,9 @@ const Tabs = (props: any) => {
           Ratings & Risk
         </span>
         <span
-          className="tabs-navigation"
+          className={
+            activeTab === "4" ? "tabs-navigation active" : "tabs-navigation"
+          }
           onClick={() => {
             toggle("4");
           }}
@@ -61,7 +69,9 @@ const Tabs = (props: any) => {
           View All Tabs
         </span>
         <span
-          className="tabs-navigation"
+          className={
+            activeTab === "5" ? "tabs-navigation active" : "tabs-navigation"
+          }
           onClick={() => {
             toggle("5");
           }}
