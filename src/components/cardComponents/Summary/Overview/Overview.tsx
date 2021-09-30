@@ -46,7 +46,6 @@ const OverviewDescription = styled.h4`
 
 const OverviewContainer = styled.div`
   width: 100%;
-  /* height: 31.625rem; */
   flex-grow: 0;
   margin: 2.5rem 2.5rem 5rem 0;
   padding: 1.875rem 0 2.5rem 2.1rem;

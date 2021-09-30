@@ -29,7 +29,7 @@ const ComulativeTableSubTitle = styled.p`
 
 const ComulativeTable = () => {
   return (
-    <Container className="Executive">
+    <Container className="Comulative">
       <Row>
         <ComulativeTableTitle>Cumulative Total Returns</ComulativeTableTitle>
         <ComulativeTableSubTitle>As of 5/31/2021 | *As of 6/18/2021</ComulativeTableSubTitle>

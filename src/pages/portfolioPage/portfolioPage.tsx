@@ -4,9 +4,7 @@ import PortfolioCards from "../../components/Cards/PortfolioCards";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 import "./portfolioPage.css";
 
-interface Props {}
-
-const portfolioPage: React.FC = (props: Props) => {
+const portfolioPage: React.FC = () => {
   return (
     <div>
       <NavigationMenu />

@@ -29,7 +29,7 @@ const CalendarTableSubTitle = styled.p`
 
 const CalendarTable = () => {
   return (
-    <Container className="Executive">
+    <Container className="Calendar">
       <Row>
         <CalendarTableTitle>Calendar-Year Total Returns</CalendarTableTitle>
         <CalendarTableSubTitle>As of 5/31/2021</CalendarTableSubTitle>

@@ -19,26 +19,31 @@ const QuarterTitle = styled.h4`
 
 const QuarterSubTitle = styled.p`
   font-family: ArticulatCF;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
-  color: #000b20;
+  text-align: right;
+  color: #9faab3;
 `;
 
 interface Props {}
 
 const Quarter = (props: Props) => {
   return (
-    <Container className="Executive">
-      <QuarterTitle>Quarter-End Average Annual Total Returns</QuarterTitle>
-      <QuarterSubTitle>
-        As of 5/31/2021 | Fund Inception 6/17/2003 | Expense Ratio (Gross) 0.63%
-        as of 9/29/2020
-      </QuarterSubTitle>
+    <Container className="Quarter">
+      <Row>
+        <Col className="Quarter_header">
+          <QuarterTitle>Quarter-End Average Annual Total Returns</QuarterTitle>
+          <QuarterSubTitle>
+            As of 5/31/2021 | Fund Inception 6/17/2003 | Expense Ratio (Gross)
+            0.63% as of 9/29/2020
+          </QuarterSubTitle>
+        </Col>
+      </Row>
+
       <Row>
         <Col>
           <Table>

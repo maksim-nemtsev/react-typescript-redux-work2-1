@@ -33,7 +33,7 @@ const AverageAnnualSubTitle = styled.p`
 const AverageAnnual = () => {
   return (
     <Container className="Average">
-      <AverageAnnualTitle>Executive Summary</AverageAnnualTitle>
+      <AverageAnnualTitle>Average Annual Total Returns</AverageAnnualTitle>
       <AverageAnnualSubTitle>123 Companies</AverageAnnualSubTitle>
       <Row>
         <Col>

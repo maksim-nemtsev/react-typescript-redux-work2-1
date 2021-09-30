@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const DistributionTitle = styled.h4`
   display: inline-block;
-  margin-bottom: 2.5rem;
+  margin: 0 2.5rem 2.5rem 0;
   font-family: ArticulatCF;
   font-size: 1.375rem;
   font-weight: bold;
