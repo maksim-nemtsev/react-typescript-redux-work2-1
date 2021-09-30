@@ -106,7 +106,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                   fontWeight: "bold",
                   color: "#000b20",
                 }}
-                to="/portfolio"
+                to="/lab"
                 exact={true}
                 className="link-inactive"
                 activeClassName="active"
