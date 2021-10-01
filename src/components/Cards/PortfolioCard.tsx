@@ -123,7 +123,7 @@ export const PortfolioCard = (props: CardInfo) => {
             </div>
           </div>
           <div className="card-body-graf--right">
-            <img src={graf1} width="270px" height="166px" alt="graf" />
+            <img src={graf1} width="260px" height="166px" alt="graf" />
           </div>
         </div>
         <Button size="sm" color="light" className="m-1">

@@ -70,6 +70,17 @@
   text-align: left;
   color: #9faab3;
 }
+.drop-name.portfolio {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}
 .dropdown-toggle__menu-title:hover,
 .dropdown-toggle__menu-title.active {
   font-family: ArticulatCF;
@@ -84,10 +95,13 @@
 }
 .drop-down-menu.portfolio,
 .drop-down-menu.timeframes {
-  width: 25rem;
-  height: 15rem;
+  width: 17rem;
+  height: 11rem;
   border-radius: 20px;
-  padding: 2.5rem;
+  padding: 1.5rem 1rem;
+}
+.drop-profile {
+  margin-right: 0.5rem;
 }
 .drop-down__form {
   flex-direction: column;
@@ -96,17 +110,9 @@
 .drop-down__list {
   display: flex;
 }
-.form-check {
-  padding: 0;
-}
-.drop-name.portfolio {
-  position: relative;
-  right: 3rem;
-}
 .form-check.form-check {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.4rem;
 }
 .dropdown__count {
   display: inline-block;
@@ -139,9 +145,10 @@
   width: 22.5rem;
   overflow: auto;
 }
-.drop-input.countries {
-  margin-right: 1.5rem;
+.form-check.form-check-input {
+  margin-left: 0;
 }
+
 .drop-down-menu.timeframes {
   width: 25rem;
   height: 27rem;
@@ -157,6 +164,9 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
   padding: 2.5rem;
+}
+.form-check .form-check-input {
+  margin-left: 0;
 }
 /* Risks */
 .drop-down-menu.risks {
@@ -177,7 +187,7 @@
   margin-bottom: 1rem;
   text-align: center;
   padding: 0.625rem 4.75rem 0.688rem;
-  
+
   border-radius: 20px;
   background-color: #f7f7f7;
 }

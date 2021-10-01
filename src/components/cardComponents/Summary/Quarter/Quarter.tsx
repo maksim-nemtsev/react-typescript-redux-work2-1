@@ -1,7 +1,19 @@
 import React from "react";
-import { Col, Container, Row, Table } from "reactstrap";
+import { Col, Row, Table } from "reactstrap";
 import styled from "styled-components";
-import "./Quarter.css";
+
+const QuarterContainer = styled.div`
+  margin: 2.5rem 0;
+  padding: 1.875rem 2.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+`;
+
+const QuarterHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 const QuarterTitle = styled.h4`
   display: inline-block;
@@ -29,19 +41,17 @@ const QuarterSubTitle = styled.p`
   color: #9faab3;
 `;
 
-interface Props {}
-
-const Quarter = (props: Props) => {
+const Quarter = () => {
   return (
-    <Container className="Quarter">
+    <QuarterContainer>
       <Row>
-        <Col className="Quarter_header">
+        <QuarterHeader>
           <QuarterTitle>Quarter-End Average Annual Total Returns</QuarterTitle>
           <QuarterSubTitle>
             As of 5/31/2021 | Fund Inception 6/17/2003 | Expense Ratio (Gross)
             0.63% as of 9/29/2020
           </QuarterSubTitle>
-        </Col>
+        </QuarterHeader>
       </Row>
 
       <Row>
@@ -118,7 +128,7 @@ const Quarter = (props: Props) => {
           </Table>
         </Col>
       </Row>
-    </Container>
+    </QuarterContainer>
   );
 };
 

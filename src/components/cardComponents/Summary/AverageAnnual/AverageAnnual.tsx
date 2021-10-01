@@ -1,8 +1,13 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
 import styled from "styled-components";
 import AverageCol from "../../../HighchartsComponents/AverageCol";
-import "./AverageAnnual.css";
+
+const AverageAnnualContainer = styled.div`
+  margin: 2.5rem 0;
+  padding: 1.875rem 2.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+`;
 
 const AverageAnnualTitle = styled.h4`
   display: inline-block;
@@ -32,15 +37,11 @@ const AverageAnnualSubTitle = styled.p`
 
 const AverageAnnual = () => {
   return (
-    <Container className="Average">
+    <AverageAnnualContainer>
       <AverageAnnualTitle>Average Annual Total Returns</AverageAnnualTitle>
       <AverageAnnualSubTitle>123 Companies</AverageAnnualSubTitle>
-      <Row>
-        <Col>
-          <AverageCol />
-        </Col>
-      </Row>
-    </Container>
+      <AverageCol />
+    </AverageAnnualContainer>
   );
 };
 

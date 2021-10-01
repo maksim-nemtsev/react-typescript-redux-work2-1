@@ -1,7 +1,12 @@
-import "./ComulativeTable.css";
 import React from "react";
-import { Col, Container, Row, Table } from "reactstrap";
+import { Col, Row, Table } from "reactstrap";
 import styled from "styled-components";
+
+const ComulativeContainer = styled.div`
+  margin-top: 2.5rem;
+  padding: 1.875rem 2.5rem;
+  background-color: #fff;
+`;
 
 const ComulativeTableTitle = styled.p`
   font-family: ArticulatCF;
@@ -29,10 +34,12 @@ const ComulativeTableSubTitle = styled.p`
 
 const ComulativeTable = () => {
   return (
-    <Container className="Comulative">
+    <ComulativeContainer>
       <Row>
         <ComulativeTableTitle>Cumulative Total Returns</ComulativeTableTitle>
-        <ComulativeTableSubTitle>As of 5/31/2021 | *As of 6/18/2021</ComulativeTableSubTitle>
+        <ComulativeTableSubTitle>
+          As of 5/31/2021 | *As of 6/18/2021
+        </ComulativeTableSubTitle>
       </Row>
       <Row>
         <Col>
@@ -149,7 +156,7 @@ const ComulativeTable = () => {
           </Table>
         </Col>
       </Row>
-    </Container>
+    </ComulativeContainer>
   );
 };
 

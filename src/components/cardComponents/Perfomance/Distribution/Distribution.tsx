@@ -32,9 +32,7 @@ const DistributionSubTitle = styled.h4`
 
 const DistributionContainer = styled.div`
   width: 100%;
-  /* height: 31.625rem; */
-  flex-grow: 0;
-  margin: 2.5rem 2.5rem 5rem 0;
+  margin: 2.5rem 2.5rem 0 0;
   padding: 1.875rem 0 2.5rem 2.1rem;
   border-radius: 8px;
   background-color: #fff;

@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { Col, Container, Row, TabContent, TabPane } from "reactstrap";
+import { Col, Row, TabContent, TabPane } from "reactstrap";
 import styled from "styled-components";
 import HighchartsMultipleSeries from "../../../HighchartsComponents/HighchartsMultipleSeries";
-import "./HypotheticalGrowth.css";
+
+const HypotheticalGrowthContainer = styled.div`
+  padding: 1.875rem 2.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+`;
 
 const AnalitycsTitle = styled.h4`
   display: inline-block;
@@ -50,9 +55,12 @@ const AnalitycsListItem = styled.li`
   }
 `;
 
-interface Props {}
+const HypotheticalCount = styled.p`
+  display: inline-block;
+  margin-left: 0.2rem;
+`;
 
-const HypotheticalGrowth = (props: Props) => {
+const HypotheticalGrowth = () => {
   const [activeTab, setActiveTab] = useState("1");
 
   const toggle = (tab: string) => {
@@ -60,7 +68,7 @@ const HypotheticalGrowth = (props: Props) => {
   };
 
   return (
-    <Container className="Hypothetical-Growth">
+    <HypotheticalGrowthContainer>
       <AnalitycsTitle>Hypothetical Growth of $ 10,000</AnalitycsTitle>
       <AnalitycsNav>
         <AnalitycsListItem
@@ -68,28 +76,28 @@ const HypotheticalGrowth = (props: Props) => {
             toggle("1");
           }}
         >
-          СЕГМЕНТ <p className="hypothetical__count">3</p>
+          СЕГМЕНТ <HypotheticalCount>3</HypotheticalCount>
         </AnalitycsListItem>
         <AnalitycsListItem
           onClick={() => {
             toggle("2");
           }}
         >
-          СЕГМЕНТ <p className="hypothetical__count">1</p>
+          СЕГМЕНТ <HypotheticalCount>1</HypotheticalCount>
         </AnalitycsListItem>
         <AnalitycsListItem
           onClick={() => {
             toggle("3");
           }}
         >
-          СЕГМЕНТ <p className="hypothetical__count">2</p>
+          СЕГМЕНТ <HypotheticalCount>2</HypotheticalCount>
         </AnalitycsListItem>
         <AnalitycsListItem
           onClick={() => {
             toggle("4");
           }}
         >
-          СЕГМЕНТ <p className="hypothetical__count">1</p>
+          СЕГМЕНТ <HypotheticalCount>1</HypotheticalCount>
         </AnalitycsListItem>
       </AnalitycsNav>
       <TabContent activeTab={activeTab}>
@@ -116,7 +124,7 @@ const HypotheticalGrowth = (props: Props) => {
           </Row>
         </TabPane>
       </TabContent>
-    </Container>
+    </HypotheticalGrowthContainer>
   );
 };
 

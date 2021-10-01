@@ -58,9 +58,7 @@ const OverviewOverflow = styled.div`
   overflow: auto;
 `;
 
-interface Props {}
-
-const Overview = (props: Props) => {
+const Overview = () => {
   return (
     <OverviewContainer>
       <OverviewTitle>Overview</OverviewTitle>

@@ -178,7 +178,14 @@ const NavigationMenu: React.FC = (props: Props) => {
                     />
                   </div>
                   <div className="drop-name-package">
-                    <span className="drop-name main">Map</span>
+                  <NavLink
+                      to="/map"
+                      exact={true}
+                      className="link-drop"
+                      activeClassName="active"
+                    >
+                      Map
+                    </NavLink>
                   </div>
                 </div>
               </DropdownItem>
@@ -192,7 +199,14 @@ const NavigationMenu: React.FC = (props: Props) => {
                     />
                   </div>
                   <div className="drop-name-package">
-                    <span className="drop-name main">Laboratory</span>
+                    <NavLink
+                      to="/lab"
+                      exact={true}
+                      className="link-drop"
+                      activeClassName="active"
+                    >
+                      Labaratory
+                    </NavLink>
                   </div>
                 </div>
               </DropdownItem>
@@ -206,7 +220,14 @@ const NavigationMenu: React.FC = (props: Props) => {
                     />
                   </div>
                   <div className="drop-name-package">
-                    <span className="drop-name main">Portfolio</span>
+                    <NavLink
+                      to="/portfolio"
+                      exact={true}
+                      className="link-drop"
+                      activeClassName="active"
+                    >
+                      Portfolio
+                    </NavLink>
                   </div>
                 </div>
               </DropdownItem>

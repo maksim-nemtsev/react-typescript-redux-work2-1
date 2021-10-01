@@ -24,9 +24,7 @@ const DetailsContainer = styled.div`
   background-color: #fff;
 `;
 
-interface Props {}
-
-const Details = (props: Props) => {
+const Details = () => {
   return (
     <DetailsContainer>
       <DetailsTitle>Details</DetailsTitle>

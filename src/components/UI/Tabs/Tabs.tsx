@@ -17,6 +17,7 @@ import CompanyRatings from "../../cardComponents/Ratings/CompanyRatings/CompanyR
 import CompanyRisk from "../../cardComponents/Ratings/CompanyRisk/CompanyRisk";
 import AllRatings from "../../cardComponents/Ratings/AllRatings/AllRatings";
 import Blog from "../../Blog/Blog";
+import Facts from "../../cardComponents/Ratings/Facts/Facts";
 
 const Tabs = (props: any) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -81,7 +82,7 @@ const Tabs = (props: any) => {
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
-          <Row>
+          <Row className="d-flex justify-content-between">
             <Col sm="6">
               <Analytics />
             </Col>
@@ -185,6 +186,11 @@ const Tabs = (props: any) => {
               <Col className="mb-3" sm="6">
                 <AllRatings />
               </Col>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Facts />
             </Col>
           </Row>
         </TabPane>

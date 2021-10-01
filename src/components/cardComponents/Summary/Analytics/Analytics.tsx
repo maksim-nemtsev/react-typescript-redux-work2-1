@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import { Col, Container, Row, TabContent, TabPane } from "reactstrap";
+import { Col, Row, TabContent, TabPane } from "reactstrap";
 import styled from "styled-components";
 import HighchartsCircular from "../../../HighchartsComponents/HighchartsCircular";
-// reactstrap
-import "./Analitycs.css";
+
+const ContainerAnalitics = styled.div`
+  width: 33.75rem;
+  margin: 2.5rem 0;
+  padding: 1.875rem;
+  border-radius: 8px;
+  background-color: #fff;
+`;
 
 const AnalitycsTitle = styled.h4`
   display: inline-block;
@@ -59,7 +65,7 @@ const Analytics = () => {
   };
 
   return (
-    <Container className="Analitycs">
+    <ContainerAnalitics>
       <AnalitycsTitle>Analytics</AnalitycsTitle>
       <AnalitycsNav>
         <AnalitycsListItem
@@ -115,7 +121,7 @@ const Analytics = () => {
           </Row>
         </TabPane>
       </TabContent>
-    </Container>
+    </ContainerAnalitics>
   );
 };
 

@@ -8,6 +8,8 @@ import Rating from "../../components/UI/rating/rating";
 import ProgressBar from "../../components/UI/ProgressBar/ProgressBar";
 import Tabs from "../../components/UI/Tabs/Tabs";
 import styled from "styled-components";
+import favoritesSVG from "../../assets/svg/favorites.svg";
+import notificationSVG from "../../assets/svg/notification.svg";
 
 const OverviewWater = styled.p`
   display: block;
@@ -173,9 +175,22 @@ export const CardPage = (props: Props) => {
             </svg>
           </div>
           <div className="card-contant_options">
-            <span>Favuorites</span>
-
-            <span>Subscribe</span>
+            <div className="card-content__favor">
+              <img
+                className="card-content__img"
+                src={favoritesSVG}
+                alt="favor"
+              />
+            </div>
+            <span className="m-2">Favourites</span>
+            <div className="card-content__sub">
+              <img
+                className="card-content__img"
+                src={notificationSVG}
+                alt="sub"
+              />
+            </div>
+            <span className="m-2">Favourites</span>
           </div>
         </div>
       </div>

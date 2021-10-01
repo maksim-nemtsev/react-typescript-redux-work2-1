@@ -28,6 +28,19 @@
   color: #000b20;
 }
 
+.link-drop {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+  text-decoration: none;
+}
+
 .link-active {
   font-family: ArticulatCF;
   font-size: 1rem;

@@ -1,107 +1,3 @@
-// import React from "react";
-// import Menu from "@material-ui/core/Menu";
-// import MenuItem from "@material-ui/core/MenuItem";
-// import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-// import MainPageSegmentLabel from "./MainPageSegmentLabel/MainPageSegmentLabel";
-// import Divider from "@material-ui/core/Divider";
-// import {
-//   IconButton,
-//   InputBase,
-//   Paper,
-//   Button,
-//   Container,
-// } from "@material-ui/core";
-// import SearchIcon from "@material-ui/icons/Search";
-
-// const useStyles = makeStyles((theme: Theme) =>
-//   createStyles({
-//     root: {
-//       display: "flex",
-//     },
-//     menu: {
-//       marginLeft: theme.spacing(1),
-//       marginTop: theme.spacing(8),
-//       borderRadius: theme.spacing(2),
-//       maxHeight: "578px",
-//     },
-//     menuItem: {
-//       flexDirection: "column",
-//       padding: "0px 20px",
-//     },
-//     containerForButtons: {
-//       display: "flex",
-//       alignItems: "center",
-//       justifyContent: "flex-end",
-//       paddingTop: theme.spacing(1),
-//       margin: "10px 0",
-//     },
-//     paper: {
-//       margin: theme.spacing(3),
-//       backgroundColor: "#ffffff",
-//     },
-//     input: {
-//       padding: "0px 10px",
-//     },
-//   })
-// );
-
-// export default function MainPageSegment() {
-//   const classes = useStyles();
-//   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-//   let [numberOfSegments, setNumberOfSegments] = React.useState<
-//     Number | HTMLElement
-//   >(0);
-
-//   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-//     setAnchorEl(event.currentTarget);
-//   };
-
-//   const handleClose = () => {
-//     setAnchorEl(null);
-//   };
-
-//   return (
-//     <div className={classes.root}>
-//       <Button
-//         aria-controls="simple-menu"
-//         aria-haspopup="true"
-//         onClick={handleClick}
-//       >
-//         Сегмент {numberOfSegments}
-//       </Button>
-//       <Menu
-//         className={classes.menu}
-//         id="simple-menu"
-//         anchorEl={anchorEl}
-//         keepMounted
-//         open={Boolean(anchorEl)}
-//         onClose={handleClose}
-//       >
-//         <Paper component="form" className={classes.paper}>
-//           <InputBase
-//             className={classes.input}
-//             placeholder="Search Keywords"
-//             inputProps={{ "aria-label": "search google maps" }}
-//           />
-//           <IconButton type="submit" aria-label="search">
-//             <SearchIcon />
-//           </IconButton>
-//         </Paper>
-//         {["Сегмент 1", "Сегмент 2", "Сегмент 3"].map((label, idx) => (
-//           <MenuItem className={classes.menuItem}>
-//             <MainPageSegmentLabel key={label + idx} label={label} />
-//           </MenuItem>
-//         ))}
-//         <Divider />
-//         <Container className={classes.containerForButtons}>
-//           <Button>Сбросить</Button>
-//           <Button color="primary">Применить</Button>
-//         </Container>
-//       </Menu>
-//     </div>
-//   );
-// }
-
 import React, { useState } from "react";
 import GrowthOrientedSVG from "../../../../assets/svg/growth-orientedSVG.svg";
 import { AvForm, AvGroup, AvInput } from "availity-reactstrap-validation";
@@ -114,8 +10,6 @@ import {
   DropdownMenu,
   DropdownToggle,
   FormGroup,
-  Label,
-  Media,
 } from "reactstrap";
 
 const Segment = () => {
@@ -145,17 +39,15 @@ const Segment = () => {
         <AvForm className="drop-down__form">
           <AvGroup className="form-check p-0" check>
             <div className="drop-down__image">
-              <Media
+              <img
                 src={GrowthOrientedSVG}
                 alt="profile"
-                className="drop-profile mr-2"
-                
+                className="drop-profile"
               />
             </div>
-            <Label className="drop-name portfolio" check>
-              Ростоориентированные
-            </Label>
+            <label className="drop-name portfolio">Ростоориентированные</label>
             <AvInput
+              style={{ marginLeft: "8px", cursor: "pointer" }}
               className="drop-input"
               type="checkbox"
               name="inOrOut"
@@ -165,17 +57,15 @@ const Segment = () => {
           </AvGroup>
           <AvGroup className="form-check p-0" check>
             <div className="drop-down__image">
-              <Media
+              <img
                 src={GrowthOrientedSVG}
                 alt="profile"
-                className="drop-profile mr-2"
-                
+                className="drop-profile"
               />
             </div>
-            <Label className="drop-name portfolio" check>
-              Ростоориентированные
-            </Label>
+            <span className="drop-name portfolio">Ростоориентированные</span>
             <AvInput
+              style={{ marginLeft: "8px", cursor: "pointer" }}
               className="drop-input"
               type="checkbox"
               name="inOrOut"
@@ -185,17 +75,15 @@ const Segment = () => {
           </AvGroup>
           <AvGroup className="form-check p-0" check>
             <div className="drop-down__image">
-              <Media
+              <img
                 src={GrowthOrientedSVG}
                 alt="profile"
                 className="drop-profile mr-2"
-                
               />
             </div>
-            <Label className="drop-name portfolio" check>
-              Ростоориентированные
-            </Label>
+            <span className="drop-name portfolio">Ростоориентированные</span>
             <AvInput
+              style={{ marginLeft: "8px", cursor: "pointer" }}
               className="drop-input"
               type="checkbox"
               name="inOrOut"

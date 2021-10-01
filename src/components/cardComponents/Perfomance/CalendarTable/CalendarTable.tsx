@@ -1,7 +1,11 @@
-import "./CalendarTable.css";
 import React from "react";
-import { Col, Container, Row, Table } from "reactstrap";
+import { Col, Row, Table } from "reactstrap";
 import styled from "styled-components";
+
+const CalendarContainer = styled.div`
+  padding: 1.875rem 2.5rem;
+  background-color: #fff;
+`;
 
 const CalendarTableTitle = styled.p`
   font-family: ArticulatCF;
@@ -29,7 +33,7 @@ const CalendarTableSubTitle = styled.p`
 
 const CalendarTable = () => {
   return (
-    <Container className="Calendar">
+    <CalendarContainer>
       <Row>
         <CalendarTableTitle>Calendar-Year Total Returns</CalendarTableTitle>
         <CalendarTableSubTitle>As of 5/31/2021</CalendarTableSubTitle>
@@ -156,7 +160,7 @@ const CalendarTable = () => {
           </Table>
         </Col>
       </Row>
-    </Container>
+    </CalendarContainer>
   );
 };
 
