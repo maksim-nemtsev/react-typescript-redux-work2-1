@@ -405,12 +405,12 @@ export const BlogPage = (props: Props) => {
                 placerat convallis mi, in sollicitudin enim cursus quis. Nunc et
                 scelerisque nibh.
               </p>
-              <div className="blog_author">
+              <div className="blog_author d-flex">
                 <img
                   width="44px"
                   height="44px"
                   src={blog_author}
-                  alt=""
+                  alt="author"
                   className="author_img"
                 />
                 <div className="author_content">

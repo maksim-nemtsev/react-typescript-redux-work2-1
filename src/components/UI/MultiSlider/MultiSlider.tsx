@@ -3,6 +3,13 @@ import RangeSlider from "react-bootstrap-range-slider";
 import "./MultiSlider.css";
 import { AvForm, AvGroup } from "availity-reactstrap-validation";
 import { Button, DropdownItem, FormGroup } from "reactstrap";
+import styled from "styled-components";
+
+const RiskslioDropFormBtnGroup = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
 
 export const MultiSlider = () => {
   const [value1, setValue1] = useState<number | string>(0);
@@ -30,14 +37,14 @@ export const MultiSlider = () => {
       </AvGroup>
       <DropdownItem divider />
       <FormGroup>
-        <div className="portfolio-segment__footer">
+        <RiskslioDropFormBtnGroup>
           <Button className="btn portfolio-segment__btn" color="link">
-            Сбросить
+            Cancel
           </Button>
           <Button className="btn portfolio-segment__btn" color="link">
-            Применить
+            Add
           </Button>
-        </div>
+        </RiskslioDropFormBtnGroup>
       </FormGroup>
     </AvForm>
   );

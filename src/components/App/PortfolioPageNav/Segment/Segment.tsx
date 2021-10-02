@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import GrowthOrientedSVG from "../../../../assets/svg/growth-orientedSVG.svg";
 import { AvForm, AvGroup, AvInput } from "availity-reactstrap-validation";
-
 import {
   Badge,
   Button,
@@ -11,6 +10,19 @@ import {
   DropdownToggle,
   FormGroup,
 } from "reactstrap";
+import styled from "styled-components";
+
+const DropDownImgLabel = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const PortfolioDropFormBtnGroup = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
 
 const Segment = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -37,15 +49,19 @@ const Segment = () => {
         className="drop-down-menu portfolio"
       >
         <AvForm className="drop-down__form">
-          <AvGroup className="form-check p-0" check>
-            <div className="drop-down__image">
+          <AvGroup
+            className="form-check p-0 d-flex justify-content-between"
+            check
+          >
+            <DropDownImgLabel>
               <img
                 src={GrowthOrientedSVG}
                 alt="profile"
                 className="drop-profile"
               />
-            </div>
-            <label className="drop-name portfolio">Ростоориентированные</label>
+              <label className="drop-name portfolio">growth</label>
+            </DropDownImgLabel>
+
             <AvInput
               style={{ marginLeft: "8px", cursor: "pointer" }}
               className="drop-input"
@@ -55,15 +71,19 @@ const Segment = () => {
               falseValue="NOPE!"
             />
           </AvGroup>
-          <AvGroup className="form-check p-0" check>
-            <div className="drop-down__image">
+          <AvGroup
+            className="form-check p-0 d-flex justify-content-between"
+            check
+          >
+            <DropDownImgLabel>
               <img
                 src={GrowthOrientedSVG}
                 alt="profile"
                 className="drop-profile"
               />
-            </div>
-            <span className="drop-name portfolio">Ростоориентированные</span>
+              <label className="drop-name portfolio">growth</label>
+            </DropDownImgLabel>
+
             <AvInput
               style={{ marginLeft: "8px", cursor: "pointer" }}
               className="drop-input"
@@ -73,15 +93,19 @@ const Segment = () => {
               falseValue="NOPE!"
             />
           </AvGroup>
-          <AvGroup className="form-check p-0" check>
-            <div className="drop-down__image">
+          <AvGroup
+            className="form-check p-0 d-flex justify-content-between"
+            check
+          >
+            <DropDownImgLabel>
               <img
                 src={GrowthOrientedSVG}
                 alt="profile"
-                className="drop-profile mr-2"
+                className="drop-profile"
               />
-            </div>
-            <span className="drop-name portfolio">Ростоориентированные</span>
+              <label className="drop-name portfolio">growth</label>
+            </DropDownImgLabel>
+
             <AvInput
               style={{ marginLeft: "8px", cursor: "pointer" }}
               className="drop-input"
@@ -93,14 +117,14 @@ const Segment = () => {
           </AvGroup>
           <DropdownItem divider />
           <FormGroup>
-            <div className="portfolio-segment__footer">
+            <PortfolioDropFormBtnGroup>
               <Button className="btn portfolio-segment__btn" color="link">
-                Сбросить
+                Cancel
               </Button>
               <Button className="btn portfolio-segment__btn" color="link">
-                Применить
+                Add
               </Button>
-            </div>
+            </PortfolioDropFormBtnGroup>
           </FormGroup>
         </AvForm>
       </DropdownMenu>

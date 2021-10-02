@@ -1,326 +1,6 @@
-// import React, { useState } from "react";
-// import GrowthOrientedSVG from "../../../../assets/svg/growth-orientedSVG.svg";
-// import { AvForm, AvGroup, AvInput } from "availity-reactstrap-validation";
-
-// import {
-//   Button,
-//   Dropdown,
-//   DropdownItem,
-//   DropdownMenu,
-//   DropdownToggle,
-//   FormGroup,
-//   Input,
-//   Label,
-//   Media,
-// } from "reactstrap";
-
-// const Industries = () => {
-//   const [dropdownOpen, setDropdownOpen] = useState(false);
-//   const toggle = () => setDropdownOpen((prevState) => !prevState);
-
-//   return (
-//     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-//       <DropdownToggle
-//         className={
-//           dropdownOpen === false
-//             ? `dropdown-toggle__menu-title`
-//             : `dropdown-toggle__menu-title active`
-//         }
-//         tag="span"
-//       >
-//         INDUSTRIES
-//       </DropdownToggle>
-//       <DropdownMenu
-//         style={{ borderRadius: "20px" }}
-//         className="drop-down-menu regions"
-//       >
-//         <AvForm className="drop-down__form">
-//           <Input className="drop-down__country-input" />
-//           <div className="drop-down__overflow">
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Грузия
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//             <AvGroup className="form-check p-0" check>
-//               <div className="drop-down__image">
-//                 <Media
-//                   src={GrowthOrientedSVG}
-//                   alt="profile"
-//                   className="drop-profile mr-2"
-
-//                 />
-//               </div>
-//               <Label className="drop-name main" check>
-//                 Эстония
-//               </Label>
-//               <AvInput
-//                 className="drop-input countries"
-//                 type="checkbox"
-//                 name="inOrOut"
-//                 trueValue="Yes, I'm in!"
-//                 falseValue="NOPE!"
-//               />
-//             </AvGroup>
-//           </div>
-//           <DropdownItem divider />
-//           <FormGroup>
-//             <div className="portfolio-segment__footer">
-//               <Button className="btn portfolio-segment__btn" color="link">
-//                 Сбросить
-//               </Button>
-//               <Button className="btn portfolio-segment__btn" color="link">
-//                 Применить
-//               </Button>
-//             </div>
-//           </FormGroup>
-//         </AvForm>
-//       </DropdownMenu>
-//     </Dropdown>
-//   );
-// };
-
-// export default Industries;
-
 import React, { useState } from "react";
 import GrowthOrientedSVG from "../../../../assets/svg/growth-orientedSVG.svg";
 import { AvForm, AvGroup, AvInput } from "availity-reactstrap-validation";
-
 import {
   Badge,
   Button,
@@ -329,7 +9,15 @@ import {
   DropdownMenu,
   DropdownToggle,
   FormGroup,
+  Input,
 } from "reactstrap";
+import styled from "styled-components";
+
+const DropDownImgLabel = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 const Industries = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -348,76 +36,512 @@ const Industries = () => {
         }
         tag="span"
       >
-        SEGMENT
+        INDUSTRIES
         <Badge className="badge__count">1</Badge>
       </DropdownToggle>
       <DropdownMenu
         style={{ borderRadius: "20px" }}
-        className="drop-down-menu portfolio"
+        className="drop-down-menu regions"
       >
         <AvForm className="drop-down__form">
-          <AvGroup className="form-check p-0" check>
-            <div className="drop-down__image">
-              <img
-                src={GrowthOrientedSVG}
-                alt="profile"
-                className="drop-profile"
+          <Input
+            id="drop-down__country-input"
+            className="drop-down__country-input"
+          />
+          <div className="drop-down__overflow">
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
               />
-            </div>
-            <label className="drop-name portfolio">Ростоориентированные</label>
-            <AvInput
-              style={{ marginLeft: "8px", cursor: "pointer" }}
-              className="drop-input"
-              type="checkbox"
-              name="inOrOut"
-              trueValue="Yes, I'm in!"
-              falseValue="NOPE!"
-            />
-          </AvGroup>
-          <AvGroup className="form-check p-0" check>
-            <div className="drop-down__image">
-              <img
-                src={GrowthOrientedSVG}
-                alt="profile"
-                className="drop-profile"
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
               />
-            </div>
-            <span className="drop-name portfolio">Ростоориентированные</span>
-            <AvInput
-              style={{ marginLeft: "8px", cursor: "pointer" }}
-              className="drop-input"
-              type="checkbox"
-              name="inOrOut"
-              trueValue="Yes, I'm in!"
-              falseValue="NOPE!"
-            />
-          </AvGroup>
-          <AvGroup className="form-check p-0" check>
-            <div className="drop-down__image">
-              <img
-                src={GrowthOrientedSVG}
-                alt="profile"
-                className="drop-profile mr-2"
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
               />
-            </div>
-            <span className="drop-name portfolio">Ростоориентированные</span>
-            <AvInput
-              style={{ marginLeft: "8px", cursor: "pointer" }}
-              className="drop-input"
-              type="checkbox"
-              name="inOrOut"
-              trueValue="Yes, I'm in!"
-              falseValue="NOPE!"
-            />
-          </AvGroup>
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">option</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+            <AvGroup
+              className="form-check p-0 d-flex justify-content-between"
+              check
+            >
+              <DropDownImgLabel>
+                <img
+                  src={GrowthOrientedSVG}
+                  alt="profile"
+                  className="drop-profile"
+                />
+                <label className="drop-name portfolio">growth</label>
+              </DropDownImgLabel>
+
+              <AvInput
+                style={{ marginLeft: "8px", cursor: "pointer" }}
+                className="drop-input"
+                type="checkbox"
+                name="inOrOut"
+                trueValue="Yes, I'm in!"
+                falseValue="NOPE!"
+              />
+            </AvGroup>
+          </div>
           <DropdownItem divider />
           <FormGroup>
             <div className="portfolio-segment__footer">
               <Button className="btn portfolio-segment__btn" color="link">
-                Сбросить
+                Cancel
               </Button>
               <Button className="btn portfolio-segment__btn" color="link">
-                Применить
+                Add
               </Button>
             </div>
           </FormGroup>
