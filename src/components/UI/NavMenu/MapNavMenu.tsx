@@ -32,20 +32,7 @@ const MapNavItem = styled.div`
   margin-bottom: 2.5rem;
 `;
 
-const MapNavTitle = styled.span`
-  font-family: ArticulatCF;
-  font-size: 1rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000b20;
-`;
-
 const MapNavMenu: React.FC = () => {
-  const [menuToggle, setMenuTogle] = useState(false);
   const [tooltipOpen1, setTooltipOpen1] = useState(false);
   const [tooltipOpen2, setTooltipOpen2] = useState(false);
   const [tooltipOpen3, setTooltipOpen3] = useState(false);
@@ -56,21 +43,9 @@ const MapNavMenu: React.FC = () => {
   const toggle3 = () => setTooltipOpen3(!tooltipOpen3);
   const toggle4 = () => setTooltipOpen4(!tooltipOpen4);
 
-  const onMouseEnterMenuItem = () => {
-    console.log("entere");
-    setMenuTogle(true);
-  };
-  const onMouseLeaveMenuItem = () => {
-    console.log("entere");
-    setMenuTogle(false);
-  };
-
   return (
     <MapNavContainer>
-      <MapNavItem
-        onMouseEnter={() => onMouseEnterMenuItem()}
-        onMouseLeave={() => onMouseLeaveMenuItem()}
-      >
+      <MapNavItem>
         <MapNavBlock>
           <img id="Search" className="map-nav__img" src={search} alt="search" />
         </MapNavBlock>
@@ -83,10 +58,7 @@ const MapNavMenu: React.FC = () => {
           Search
         </Tooltip>
       </MapNavItem>
-      <MapNavItem
-        onMouseEnter={() => onMouseEnterMenuItem()}
-        onMouseLeave={() => onMouseLeaveMenuItem()}
-      >
+      <MapNavItem>
         <MapNavBlock>
           <img
             id="TooltipExample"
@@ -104,10 +76,7 @@ const MapNavMenu: React.FC = () => {
           Mode
         </Tooltip>
       </MapNavItem>
-      <MapNavItem
-        onMouseEnter={() => onMouseEnterMenuItem()}
-        onMouseLeave={() => onMouseLeaveMenuItem()}
-      >
+      <MapNavItem>
         <MapNavBlock>
           <img id="Type" className="map-nav__img" src={graf} alt="search" />
         </MapNavBlock>
@@ -120,10 +89,7 @@ const MapNavMenu: React.FC = () => {
           Type
         </Tooltip>
       </MapNavItem>
-      <MapNavItem
-        onMouseEnter={() => onMouseEnterMenuItem()}
-        onMouseLeave={() => onMouseLeaveMenuItem()}
-      >
+      <MapNavItem>
         <MapNavBlock>
           <img id="Save" className="map-nav__img" src={save} alt="Save" />
         </MapNavBlock>
