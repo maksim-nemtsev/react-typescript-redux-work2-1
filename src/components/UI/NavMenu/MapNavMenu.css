@@ -1,0 +1,25 @@
+.map-nav__img {
+  cursor: pointer;
+}
+.tooltip > div.tooltip-inner {
+  position: relative !important;
+  background-color: #f7f7f7 !important;
+  font-family: ArticulatCF;
+  margin-left: 1rem !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000b20;
+}
+
+.tooltip.show {
+  opacity: 1 !important;
+}
+
+.tooltip > div.arrow::before {
+  border-bottom-color: white !important;
+  color: black !important;
+}

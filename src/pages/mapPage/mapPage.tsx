@@ -1,23 +1,19 @@
 import React from "react";
+import { Col, Row } from "reactstrap";
 import MapWrapper from "../../components/Map/MapWrapper";
-import MapNavigation from "../../components/MapNavigation/MapNavigation";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
-
-  const titles = {
-    capitalization: "CAPITALIZATION",
-    activity: "ACTIVITY & GROWTH",
-    corporate: "CORPORATE DEBT",
-    profitability: "PROFITABILITY",
-    marginality: "MARGINALITY",
-  };
+import ButtonsYears from "../../components/UI/ButtonsYears/ButtonsYears";
 
 const mapPage: React.FC = () => {
-
   return (
     <div className="map-page">
       <NavigationMenu />
       <h2 className="map__title">MAP</h2>
-      <MapNavigation titles={titles}  />
+      <Row>
+        <Col sm={{ size: 4, order: 2, offset: 9 }}>
+          <ButtonsYears />
+        </Col>
+      </Row>
       <MapWrapper displayMode={true} />
     </div>
   );

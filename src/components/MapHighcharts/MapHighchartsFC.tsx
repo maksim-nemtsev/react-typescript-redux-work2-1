@@ -7,6 +7,24 @@ import "./MapHighcharts.css";
 import MapNews from "../MapNews/MapNews";
 import ActivityLeaders from "../Leaders/ActivityLeaders/ActivityLeaders";
 import MapMacroStock from "../MapMacroStock/MapMacroStock";
+import chevron from "../../assets/svg/map/сhevron-right.svg";
+import styled from "styled-components";
+import MapNavMenu from "../UI/NavMenu/MapNavMenu";
+
+const Chevron = styled.div`
+  position: absolute;
+  display: flex;
+  top: 40%;
+  right: 220px;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-grow: 0;
+  margin: 1.685rem 0.452rem 1.726rem 13.5rem;
+  padding: 0.813rem 0.938rem 0.813rem 1.063rem;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+`;
 
 HighchartsMap(Highcharts);
 
@@ -71,12 +89,16 @@ class MapHighchartsFC extends React.Component {
   render() {
     return (
       <div className="highcharts-container" id="highcharts-container">
+        <MapNavMenu/>
         <HighchartsReact
           highcharts={Highcharts}
           options={this.options}
           constructorType={"mapChart"}
         />
         <MapNews />
+        <Chevron className="chevron">
+          <img src={chevron} alt="toggle" />
+        </Chevron>
         <ActivityLeaders />
         <MapMacroStock />
       </div>

@@ -4,9 +4,7 @@ import "./MapNews.css";
 import ButtonsToolbar from "../UI/ButtonsToolbar/ButtonsToolbarBoottom";
 import ButtonSettings from "../UI/ButtonSettings/ButtonSettings";
 
-interface Props {}
-
-const MapNews = (props: Props) => {
+const MapNews = () => {
   return (
     <div className="news-wrapper">
       <div className="news">

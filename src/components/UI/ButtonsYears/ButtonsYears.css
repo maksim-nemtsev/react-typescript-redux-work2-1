@@ -1,0 +1,39 @@
+#btn-years-wrapper {
+  position: relative;
+  width: 200px;
+  right: 0;
+}
+#btn-years1,
+#btn-years2,
+#btn-years3,
+#btn-years4,
+#btn-years5,
+#btn-years6,
+#btn-years7 {
+  color: #000000;
+  background-color: #f7f7f7;
+  border-color: white;
+  border-color: #f7f7f7;
+}
+#btn-years1:hover,
+#btn-years2:hover,
+#btn-years3:hover,
+#btn-years4:hover,
+#btn-years5:hover,
+#btn-years6:hover,
+#btn-years7:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+#btn-years1:focus,
+#btn-years2:focus,
+#btn-years3:focus,
+#btn-years4:focus,
+#btn-years5:focus,
+#btn-years6:focus,
+#btn-years7:focus {
+  color: #000000;
+  background-color: #f7f7f7;
+  border-color: white;
+  border-color: #f7f7f7;
+}
