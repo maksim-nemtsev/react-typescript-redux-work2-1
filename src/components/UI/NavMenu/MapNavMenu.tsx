@@ -5,7 +5,8 @@ import world from "../../../assets/svg/map/world.svg";
 import graf from "../../../assets/svg/map/graf.svg";
 import save from "../../../assets/svg/map/save.svg";
 import styled from "styled-components";
-import { Tooltip } from "reactstrap";
+import { Input, Nav, TabContent, TabPane, Tooltip } from "reactstrap";
+import { Modal, ModalHeader, ModalBody } from "reactstrap";
 
 const MapNavContainer = styled.div`
   position: absolute;
@@ -32,12 +33,45 @@ const MapNavItem = styled.div`
   margin-bottom: 2.5rem;
 `;
 
+const ModalHeaderTitle = styled.h3`
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+`;
+const ModalHeaderSubTitle = styled.p`
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+`;
+
 const MapNavMenu: React.FC = () => {
   const [tooltipOpen1, setTooltipOpen1] = useState(false);
   const [tooltipOpen2, setTooltipOpen2] = useState(false);
   const [tooltipOpen3, setTooltipOpen3] = useState(false);
   const [tooltipOpen4, setTooltipOpen4] = useState(false);
+  const [modalSearch, setModalSearch] = useState(false);
 
+  const [activeTab, setActiveTab] = useState("1");
+  const toggle = (tab: string) => {
+    if (activeTab !== tab) setActiveTab(tab);
+  };
+
+  const toggleModalSearch = () => setModalSearch(!modalSearch);
+  const externalCloseBtn = (
+    <button className="modal-search__close" onClick={toggleModalSearch}>
+      &times;
+    </button>
+  );
   const toggle1 = () => setTooltipOpen1(!tooltipOpen1);
   const toggle2 = () => setTooltipOpen2(!tooltipOpen2);
   const toggle3 = () => setTooltipOpen3(!tooltipOpen3);
@@ -45,7 +79,7 @@ const MapNavMenu: React.FC = () => {
 
   return (
     <MapNavContainer>
-      <MapNavItem>
+      <MapNavItem onClick={() => toggleModalSearch()}>
         <MapNavBlock>
           <img id="Search" className="map-nav__img" src={search} alt="search" />
         </MapNavBlock>
@@ -57,6 +91,79 @@ const MapNavMenu: React.FC = () => {
         >
           Search
         </Tooltip>
+        <Modal
+          isOpen={modalSearch}
+          toggle={toggleModalSearch}
+          className="modal-search"
+          external={externalCloseBtn}
+        >
+          <ModalHeader className="modal-search__header">
+            <ModalHeaderTitle>Search</ModalHeaderTitle>
+            <ModalHeaderSubTitle>Searching...</ModalHeaderSubTitle>
+          </ModalHeader>
+          <ModalBody>
+            <Input className="mb-4" placeholder="Search" />
+            <Nav>
+              <span
+                className={
+                  activeTab === "1" ? "modal-tabs active" : "modal-tabs"
+                }
+                onClick={() => {
+                  toggle("1");
+                }}
+              >
+                Summary
+              </span>
+              <span
+                className={
+                  activeTab === "2" ? "modal-tabs active" : "modal-tabs"
+                }
+                onClick={() => {
+                  toggle("2");
+                }}
+              >
+                Performance
+              </span>
+              <span
+                className={
+                  activeTab === "3" ? "modal-tabs active" : "modal-tabs"
+                }
+                onClick={() => {
+                  toggle("3");
+                }}
+              >
+                Ratings & Risk
+              </span>
+              <span
+                className={
+                  activeTab === "4" ? "modal-tabs active" : "modal-tabs"
+                }
+                onClick={() => {
+                  toggle("4");
+                }}
+              >
+                View All Tabs
+              </span>
+              <span
+                className={
+                  activeTab === "5" ? "modal-tabs active" : "modal-tabs"
+                }
+                onClick={() => {
+                  toggle("5");
+                }}
+              >
+                Blog
+              </span>
+            </Nav>
+            <TabContent activeTab={activeTab}>
+              <TabPane tabId="1"></TabPane>
+              <TabPane tabId="2"></TabPane>
+              <TabPane tabId="3"></TabPane>
+              <TabPane tabId="4"></TabPane>
+              <TabPane tabId="5"></TabPane>
+            </TabContent>
+          </ModalBody>
+        </Modal>
       </MapNavItem>
       <MapNavItem>
         <MapNavBlock>

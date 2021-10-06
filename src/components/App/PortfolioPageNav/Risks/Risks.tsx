@@ -10,7 +10,7 @@ const Risks = () => {
   // const handleSubmit = (val: any) => setSubmit({ val });
 
   return (
-    <Dropdown direction="left" isOpen={dropdownOpen} toggle={toggle}>
+    <Dropdown isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle
         className={
           dropdownOpen === false
@@ -19,8 +19,8 @@ const Risks = () => {
         }
         tag="span"
       >
-        RISKS
-        <Badge className="badge__count">1</Badge>
+        RANGE
+        <Badge className="badge__count">0-100</Badge>
       </DropdownToggle>
       <DropdownMenu className="drop-down-menu risks">
         <MultiSlider />

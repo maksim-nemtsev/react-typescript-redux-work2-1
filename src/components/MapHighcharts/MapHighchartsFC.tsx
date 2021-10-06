@@ -10,6 +10,7 @@ import MapMacroStock from "../MapMacroStock/MapMacroStock";
 import chevron from "../../assets/svg/map/сhevron-right.svg";
 import styled from "styled-components";
 import MapNavMenu from "../UI/NavMenu/MapNavMenu";
+import MapFooterFilter from "../MapFooterFilter/MapFooterFilter";
 
 const Chevron = styled.div`
   position: absolute;
@@ -85,11 +86,10 @@ class MapHighchartsFC extends React.Component {
       },
     ],
   };
-
   render() {
     return (
       <div className="highcharts-container" id="highcharts-container">
-        <MapNavMenu/>
+        <MapNavMenu />
         <HighchartsReact
           highcharts={Highcharts}
           options={this.options}
@@ -101,6 +101,7 @@ class MapHighchartsFC extends React.Component {
         </Chevron>
         <ActivityLeaders />
         <MapMacroStock />
+        <MapFooterFilter />
       </div>
     );
   }

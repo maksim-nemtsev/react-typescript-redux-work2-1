@@ -23,3 +23,46 @@
   border-bottom-color: white !important;
   color: black !important;
 }
+.modal-content {
+  border-radius: 20px;
+}
+.modal-search__close {
+  position: absolute;
+  font-size: 2rem;
+  top: -15px;
+  right: 29%;
+  background-color: #7c7c7c;
+  border: none;
+  color: #fff;
+}
+.modal-search__header.modal-header {
+  border-bottom: none;
+}
+.modal-search .modal-content {
+  width: 36.25rem;
+  height: 46.25rem;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.modal-tabs {
+  font-family: ArticulatCF;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+}
+.modal-tabs .active {
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+}

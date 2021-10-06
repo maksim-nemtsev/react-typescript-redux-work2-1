@@ -36,7 +36,7 @@ const CountriesAndRegions = () => {
         }
         tag="span"
       >
-        COUNTRIES AND REGIONS
+        COUNTRIES
         <Badge className="badge__count">1</Badge>
       </DropdownToggle>
       <DropdownMenu
@@ -44,7 +44,10 @@ const CountriesAndRegions = () => {
         className="drop-down-menu regions"
       >
         <AvForm className="drop-down__form">
-          <Input id="drop-down__country-input" className="drop-down__country-input" />
+          <Input
+            id="drop-down__country-input"
+            className="drop-down__country-input"
+          />
           <div className="drop-down__overflow">
             <AvGroup
               className="form-check p-0 d-flex justify-content-between"
