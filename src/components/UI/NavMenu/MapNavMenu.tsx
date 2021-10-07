@@ -4,6 +4,12 @@ import search from "../../../assets/svg/map/search.svg";
 import world from "../../../assets/svg/map/world.svg";
 import graf from "../../../assets/svg/map/graf.svg";
 import save from "../../../assets/svg/map/save.svg";
+import ajary from "../../../assets/svg/country/aj.svg";
+import kongo from "../../../assets/svg/country/kongo.svg";
+import estony from "../../../assets/svg/country/eston.svg";
+import senegal from "../../../assets/svg/country/seneg.svg";
+import parag from "../../../assets/svg/country/par.svg";
+import italy from "../../../assets/svg/country/ital.svg";
 import styled from "styled-components";
 import { Input, Nav, TabContent, TabPane, Tooltip } from "reactstrap";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
@@ -33,7 +39,7 @@ const MapNavItem = styled.div`
   margin-bottom: 2.5rem;
 `;
 
-const ModalHeaderTitle = styled.h3`
+const ModalHeaderTitle = styled.p`
   font-size: 2.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -52,6 +58,19 @@ const ModalHeaderSubTitle = styled.p`
   letter-spacing: normal;
   text-align: left;
   color: #9faab3;
+`;
+
+const ModalBodyCountiesListItem = styled.li`
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
+  margin-bottom: 2.5rem;
+  list-style-type: none;
 `;
 
 const MapNavMenu: React.FC = () => {
@@ -103,7 +122,7 @@ const MapNavMenu: React.FC = () => {
           </ModalHeader>
           <ModalBody>
             <Input className="mb-4" placeholder="Search" />
-            <Nav>
+            <Nav className="mb-4">
               <span
                 className={
                   activeTab === "1" ? "modal-tabs active" : "modal-tabs"
@@ -112,7 +131,7 @@ const MapNavMenu: React.FC = () => {
                   toggle("1");
                 }}
               >
-                Summary
+                Stock
               </span>
               <span
                 className={
@@ -122,7 +141,7 @@ const MapNavMenu: React.FC = () => {
                   toggle("2");
                 }}
               >
-                Performance
+                Futures
               </span>
               <span
                 className={
@@ -132,7 +151,7 @@ const MapNavMenu: React.FC = () => {
                   toggle("3");
                 }}
               >
-                Ratings & Risk
+                CFD
               </span>
               <span
                 className={
@@ -142,7 +161,7 @@ const MapNavMenu: React.FC = () => {
                   toggle("4");
                 }}
               >
-                View All Tabs
+                Cryptocurrencies
               </span>
               <span
                 className={
@@ -152,15 +171,187 @@ const MapNavMenu: React.FC = () => {
                   toggle("5");
                 }}
               >
-                Blog
+                Indexes
               </span>
             </Nav>
             <TabContent activeTab={activeTab}>
-              <TabPane tabId="1"></TabPane>
-              <TabPane tabId="2"></TabPane>
-              <TabPane tabId="3"></TabPane>
-              <TabPane tabId="4"></TabPane>
-              <TabPane tabId="5"></TabPane>
+              <TabPane tabId="1">
+            
+                <ul className="modal-coutries__list">
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={ajary}
+                      alt="country"
+                    />
+                    Грузия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={kongo}
+                      alt="country"
+                    />
+                    ДР Конго
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={estony}
+                      alt="country"
+                    />
+                    Эстония
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={senegal}
+                      alt="country"
+                    />
+                    Сенегал
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={parag}
+                      alt="country"
+                    />
+                    Парагвай
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={ajary}
+                      alt="country"
+                    />
+                    Грузия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={ajary}
+                      alt="country"
+                    />
+                    ДР Конго
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={ajary}
+                      alt="country"
+                    />
+                    Эстония
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={ajary}
+                      alt="country"
+                    />
+                    Сенегал
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={ajary}
+                      alt="country"
+                    />
+                    Парагвай
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem>
+                    <img
+                      className="modal-country__img"
+                      src={italy}
+                      alt="country"
+                    />
+                    Италия
+                  </ModalBodyCountiesListItem>
+                </ul>
+              </TabPane>
+              <TabPane tabId="2">Futures</TabPane>
+              <TabPane tabId="3">CFD</TabPane>
+              <TabPane tabId="4">Cryptocurrencies</TabPane>
+              <TabPane tabId="5">Indexes</TabPane>
             </TabContent>
           </ModalBody>
         </Modal>

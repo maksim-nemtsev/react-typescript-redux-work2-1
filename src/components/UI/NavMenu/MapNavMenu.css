@@ -55,8 +55,10 @@
   letter-spacing: normal;
   text-align: left;
   color: #9faab3;
+  margin-right: 1.75rem;
+  cursor: pointer;
 }
-.modal-tabs .active {
+.modal-tabs.active {
   font-size: 1rem;
   font-weight: 500;
   font-stretch: normal;
@@ -65,4 +67,22 @@
   letter-spacing: normal;
   text-align: left;
   color: #000b20;
+}
+.modal-country__img {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+.modal-coutries__list {
+  padding: 0;
+  height: 26rem;
+  overflow: auto;
+}
+.modal-coutries__list::-webkit-scrollbar {
+  height: 16px;
+}
+.modal-coutries__list::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  border-radius: 15px;
 }
