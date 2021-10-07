@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MapNavMenu.css";
+import arrowRight from "../../../assets/svg/arrow-right.svg";
 import search from "../../../assets/svg/map/search.svg";
 import world from "../../../assets/svg/map/world.svg";
 import graf from "../../../assets/svg/map/graf.svg";
@@ -11,7 +12,16 @@ import senegal from "../../../assets/svg/country/seneg.svg";
 import parag from "../../../assets/svg/country/par.svg";
 import italy from "../../../assets/svg/country/ital.svg";
 import styled from "styled-components";
-import { Input, Nav, TabContent, TabPane, Tooltip } from "reactstrap";
+import {
+  Button,
+  DropdownItem,
+  Input,
+  ModalFooter,
+  Nav,
+  TabContent,
+  TabPane,
+  Tooltip,
+} from "reactstrap";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 
 const MapNavContainer = styled.div`
@@ -71,7 +81,9 @@ const ModalBodyCountiesListItem = styled.li`
   color: #000b20;
   margin-bottom: 2.5rem;
   list-style-type: none;
+  cursor: pointer;
 `;
+const ModalBodyCountiesListItemMenu = styled.div``;
 
 const MapNavMenu: React.FC = () => {
   const [tooltipOpen1, setTooltipOpen1] = useState(false);
@@ -79,15 +91,45 @@ const MapNavMenu: React.FC = () => {
   const [tooltipOpen3, setTooltipOpen3] = useState(false);
   const [tooltipOpen4, setTooltipOpen4] = useState(false);
   const [modalSearch, setModalSearch] = useState(false);
+  const [modalMode, setModalMode] = useState(false);
+  const [modalType, setModalType] = useState(false);
+  const [modalSave, setModalSave] = useState(false);
+  const [countriesList, setCountriesList] = useState(false);
+  const [coutryBorderBottom, setCoutryBorderBottom] = useState(false);
 
   const [activeTab, setActiveTab] = useState("1");
   const toggle = (tab: string) => {
     if (activeTab !== tab) setActiveTab(tab);
   };
 
+  const toggleCountriesMenu = (
+    e: React.MouseEvent<HTMLLIElement, MouseEvent>
+  ) => {
+    setCountriesList(!countriesList);
+    setCoutryBorderBottom(!coutryBorderBottom);
+  };
+
   const toggleModalSearch = () => setModalSearch(!modalSearch);
-  const externalCloseBtn = (
+  const externalSearchCloseBtn = (
     <button className="modal-search__close" onClick={toggleModalSearch}>
+      &times;
+    </button>
+  );
+  const toggleModalMode = () => setModalMode(!modalMode);
+  const externalModeCloseBtn = (
+    <button className="modal-mode__close" onClick={toggleModalMode}>
+      &times;
+    </button>
+  );
+  const toggleModalType = () => setModalType(!modalType);
+  const externalTypeCloseBtn = (
+    <button className="modal-type__close" onClick={toggleModalType}>
+      &times;
+    </button>
+  );
+  const toggleModalSave = () => setModalSave(!modalSave);
+  const externalSaveCloseBtn = (
+    <button className="modal-save__close" onClick={toggleModalSave}>
       &times;
     </button>
   );
@@ -96,9 +138,18 @@ const MapNavMenu: React.FC = () => {
   const toggle3 = () => setTooltipOpen3(!tooltipOpen3);
   const toggle4 = () => setTooltipOpen4(!tooltipOpen4);
 
+  const countriesMenuArray = [
+    { country: "Commercial services", id: "1" },
+    { country: "Connection services", id: "2" },
+    { country: "Contact services", id: "3" },
+    { country: "Other services", id: "4" },
+    { country: "Other services", id: "5" },
+    { country: "Other services", id: "6" },
+  ];
+
   return (
     <MapNavContainer>
-      <MapNavItem onClick={() => toggleModalSearch()}>
+      <MapNavItem key="MapNavItem1" onClick={() => toggleModalSearch()}>
         <MapNavBlock>
           <img id="Search" className="map-nav__img" src={search} alt="search" />
         </MapNavBlock>
@@ -114,7 +165,7 @@ const MapNavMenu: React.FC = () => {
           isOpen={modalSearch}
           toggle={toggleModalSearch}
           className="modal-search"
-          external={externalCloseBtn}
+          external={externalSearchCloseBtn}
         >
           <ModalHeader className="modal-search__header">
             <ModalHeaderTitle>Search</ModalHeaderTitle>
@@ -176,17 +227,37 @@ const MapNavMenu: React.FC = () => {
             </Nav>
             <TabContent activeTab={activeTab}>
               <TabPane tabId="1">
-            
                 <ul className="modal-coutries__list">
-                  <ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem
+                    onClick={(e) => toggleCountriesMenu(e)}
+                  >
                     <img
                       className="modal-country__img"
                       src={ajary}
                       alt="country"
                     />
                     Грузия
+                    {coutryBorderBottom && (
+                      <DropdownItem className="mb-4 mt-4" divider />
+                    )}
+                    <ModalBodyCountiesListItemMenu>
+                      {countriesList &&
+                        countriesMenuArray.map((el) => (
+                          <div key={el.id} className="county-list-item active">
+                            <span>{el.country}</span>
+                            <img
+                              width="6px"
+                              height="12px"
+                              src={arrowRight}
+                              alt="open"
+                            />
+                          </div>
+                        ))}
+                    </ModalBodyCountiesListItemMenu>
                   </ModalBodyCountiesListItem>
-                  <ModalBodyCountiesListItem>
+                  <ModalBodyCountiesListItem
+                    onClick={(e) => toggleCountriesMenu(e)}
+                  >
                     <img
                       className="modal-country__img"
                       src={kongo}
@@ -356,7 +427,7 @@ const MapNavMenu: React.FC = () => {
           </ModalBody>
         </Modal>
       </MapNavItem>
-      <MapNavItem>
+      <MapNavItem key="MapNavItem2" onClick={() => toggleModalMode()}>
         <MapNavBlock>
           <img
             id="TooltipExample"
@@ -373,8 +444,41 @@ const MapNavMenu: React.FC = () => {
         >
           Mode
         </Tooltip>
+        <Modal
+          isOpen={modalMode}
+          toggle={toggleModalMode}
+          className="modal-mode"
+          external={externalModeCloseBtn}
+        >
+          <ModalHeader className="modal-search__header">
+            <ModalHeaderTitle>Mode</ModalHeaderTitle>
+            <ModalHeaderSubTitle>sub title</ModalHeaderSubTitle>
+          </ModalHeader>
+          <ModalBody className="modal-mode__body">
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Countries</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Industries</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Sectors</span>
+              </div>
+            </div>
+          </ModalBody>
+        </Modal>
       </MapNavItem>
-      <MapNavItem>
+      <MapNavItem key="MapNavItem3" onClick={() => toggleModalType()}>
         <MapNavBlock>
           <img id="Type" className="map-nav__img" src={graf} alt="search" />
         </MapNavBlock>
@@ -386,8 +490,55 @@ const MapNavMenu: React.FC = () => {
         >
           Type
         </Tooltip>
+        <Modal
+          isOpen={modalType}
+          toggle={toggleModalType}
+          className="modal-mode"
+          external={externalTypeCloseBtn}
+        >
+          <ModalHeader className="modal-search__header">
+            <ModalHeaderTitle>Type</ModalHeaderTitle>
+            <ModalHeaderSubTitle>sub title</ModalHeaderSubTitle>
+          </ModalHeader>
+          <ModalBody className="modal-mode__body">
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Капитализация</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Активность и рост</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Корпоративный долг</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Рентабельность</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Маржинальность</span>
+              </div>
+            </div>
+          </ModalBody>
+        </Modal>
       </MapNavItem>
-      <MapNavItem>
+      <MapNavItem key="MapNavItem4" onClick={() => toggleModalSave()}>
         <MapNavBlock>
           <img id="Save" className="map-nav__img" src={save} alt="Save" />
         </MapNavBlock>
@@ -399,6 +550,47 @@ const MapNavMenu: React.FC = () => {
         >
           Save
         </Tooltip>
+        <Modal
+          isOpen={modalSave}
+          toggle={toggleModalSave}
+          className="modal-mode"
+          external={externalSaveCloseBtn}
+        >
+          <ModalHeader className="modal-search__header">
+            <ModalHeaderTitle>Save</ModalHeaderTitle>
+            <ModalHeaderSubTitle>sub title</ModalHeaderSubTitle>
+          </ModalHeader>
+          <ModalBody className="modal-mode__body">
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Мой тип карты</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Мой тип карты 2</span>
+              </div>
+            </div>
+            <DropdownItem className="mb-4 mt-4" divider />
+            <div>
+              <div>
+                <Input type="checkbox" />
+                <span className="m-3">Мой тип карты 3</span>
+              </div>
+            </div>
+          </ModalBody>
+          <ModalFooter className="modal-footer__search">
+            <Button
+              className="btn-modal save"
+              onClick={() => console.log("click")}
+            >
+              Сохранить карту
+            </Button>
+          </ModalFooter>
+        </Modal>
       </MapNavItem>
     </MapNavContainer>
   );

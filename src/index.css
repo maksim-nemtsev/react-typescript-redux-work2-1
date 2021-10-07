@@ -30,3 +30,6 @@ body {
   src: local("ArticulatCF-Bold"),
     url(./assets/fonts//ArticulatCF/ArticulatCF-Bold.otf) format("opentype");
 }
+.modal-open {
+  padding-right: 0px !important;
+}

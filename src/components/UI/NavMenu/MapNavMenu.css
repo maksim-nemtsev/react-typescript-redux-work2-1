@@ -35,12 +35,44 @@
   border: none;
   color: #fff;
 }
+.modal-mode__close {
+  position: absolute;
+  font-size: 2rem;
+  top: -15px;
+  right: 36%;
+  background-color: #7c7c7c;
+  border: none;
+  color: #fff;
+}
+.modal-type__close {
+  position: absolute;
+  font-size: 2rem;
+  top: -15px;
+  right: 36%;
+  background-color: #7c7c7c;
+  border: none;
+  color: #fff;
+}
+.modal-save__close {
+  position: absolute;
+  font-size: 2rem;
+  top: -15px;
+  right: 36%;
+  background-color: #7c7c7c;
+  border: none;
+  color: #fff;
+}
 .modal-search__header.modal-header {
   border-bottom: none;
 }
 .modal-search .modal-content {
   width: 36.25rem;
   height: 46.25rem;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.modal-mode .modal-content {
   padding: 2.5rem;
   border-radius: 20px;
   background-color: #fff;
@@ -85,4 +117,22 @@
   border: 5px solid transparent;
   background-clip: content-box;
   border-radius: 15px;
+}
+.county-list-item {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+.btn-modal.save.btn.btn-secondary {
+  display: flex;
+  align-items: center;
+  height: 3.188rem;
+  padding: 1.125rem;
+  border-radius: 40px;
+  background-color: #5448c8;
+}
+.modal-footer__search.modal-footer {
+  justify-content: center;
 }
