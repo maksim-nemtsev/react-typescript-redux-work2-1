@@ -11,10 +11,17 @@ import estony from "../../../assets/svg/country/eston.svg";
 import senegal from "../../../assets/svg/country/seneg.svg";
 import parag from "../../../assets/svg/country/par.svg";
 import italy from "../../../assets/svg/country/ital.svg";
+import menuOpen from "../../../assets/svg/map/menu-open.svg";
+import doubleType from "../../../assets/svg/map/double.svg";
+import deleteType from "../../../assets/svg/map/delete.svg";
+import arrowLeft from "../../../assets/svg/card-page/arrow-left.svg";
 import styled from "styled-components";
 import {
   Button,
+  Dropdown,
   DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
   Input,
   ModalFooter,
   Nav,
@@ -84,6 +91,11 @@ const ModalBodyCountiesListItem = styled.li`
   cursor: pointer;
 `;
 const ModalBodyCountiesListItemMenu = styled.div``;
+const ModalSaveMenuOpen = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 const MapNavMenu: React.FC = () => {
   const [tooltipOpen1, setTooltipOpen1] = useState(false);
@@ -96,6 +108,10 @@ const MapNavMenu: React.FC = () => {
   const [modalSave, setModalSave] = useState(false);
   const [countriesList, setCountriesList] = useState(false);
   const [coutryBorderBottom, setCoutryBorderBottom] = useState(false);
+  const [dropDownSaveMenuOpen, setDropDownSaveMenuOpen] = useState(false);
+  const [saveContenShow, setSaveContenShow] = useState(true);
+  const [isDeleteWindowOpen, setIsDeleteWindowOpen] = useState(false);
+  const [isSaveWindowOpen, setIsSaveWindowOpen] = useState(false);
 
   const [activeTab, setActiveTab] = useState("1");
   const toggle = (tab: string) => {
@@ -133,6 +149,28 @@ const MapNavMenu: React.FC = () => {
       &times;
     </button>
   );
+
+  const openModalDelete = () => {
+    setSaveContenShow(false);
+    setIsDeleteWindowOpen(true);
+  };
+
+  const closeModalDelete = () => {
+    setIsDeleteWindowOpen(false);
+    setSaveContenShow(true);
+  };
+
+  const openModalSave = () => {
+    setIsDeleteWindowOpen(false);
+    setSaveContenShow(false);
+    setIsSaveWindowOpen(true);
+  };
+
+  const closeModalSave = () => {
+    setIsSaveWindowOpen(false);
+    setSaveContenShow(true);
+  };
+
   const toggle1 = () => setTooltipOpen1(!tooltipOpen1);
   const toggle2 = () => setTooltipOpen2(!tooltipOpen2);
   const toggle3 = () => setTooltipOpen3(!tooltipOpen3);
@@ -146,6 +184,10 @@ const MapNavMenu: React.FC = () => {
     { country: "Other services", id: "5" },
     { country: "Other services", id: "6" },
   ];
+
+  const isToggleSaveMenuOpen = () => {
+    setDropDownSaveMenuOpen((prevState) => !prevState);
+  };
 
   return (
     <MapNavContainer>
@@ -556,40 +598,100 @@ const MapNavMenu: React.FC = () => {
           className="modal-mode"
           external={externalSaveCloseBtn}
         >
-          <ModalHeader className="modal-search__header">
-            <ModalHeaderTitle>Save</ModalHeaderTitle>
-            <ModalHeaderSubTitle>sub title</ModalHeaderSubTitle>
-          </ModalHeader>
-          <ModalBody className="modal-mode__body">
+          {saveContenShow && (
             <div>
-              <div>
-                <Input type="checkbox" />
-                <span className="m-3">Мой тип карты</span>
-              </div>
+              <ModalHeader className="modal-search__header">
+                <ModalHeaderTitle>Save</ModalHeaderTitle>
+                <ModalHeaderSubTitle>sub title</ModalHeaderSubTitle>
+              </ModalHeader>
+              <ModalBody className="modal-mode__body">
+                <div>
+                  <ModalSaveMenuOpen>
+                    <div>
+                      <Input type="checkbox" />
+                      <span className="m-3">Мой тип карты</span>
+                    </div>
+                    <Dropdown
+                      isOpen={dropDownSaveMenuOpen}
+                      toggle={isToggleSaveMenuOpen}
+                    >
+                      <DropdownToggle
+                        className="dropdown-save__open"
+                        tag="span"
+                        data-toggle="dropdown"
+                        aria-expanded={dropDownSaveMenuOpen}
+                      >
+                        <img src={menuOpen} alt="open" />
+                      </DropdownToggle>
+                      <DropdownMenu>
+                        <DropdownItem
+                          className="dropdown__contant"
+                          onClick={isToggleSaveMenuOpen}
+                        >
+                          <div className="dropdown__icon">
+                            <img src={doubleType} alt="dobule" />
+                          </div>
+                          <div>Duplicate</div>
+                        </DropdownItem>
+                        <DropdownItem
+                          className="dropdown__contant"
+                          onClick={isToggleSaveMenuOpen}
+                        >
+                          <div className="dropdown__icon">
+                            <img src={deleteType} alt="dobule" />
+                          </div>
+                          <div onClick={openModalDelete}>Delete</div>
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </Dropdown>
+                  </ModalSaveMenuOpen>
+                </div>
+              </ModalBody>
+              <ModalFooter className="modal-footer__search">
+                <Button className="btn-modal save" onClick={openModalSave}>
+                  Create the Map
+                </Button>
+              </ModalFooter>
             </div>
-            <DropdownItem className="mb-4 mt-4" divider />
+          )}
+          {isDeleteWindowOpen && (
             <div>
-              <div>
-                <Input type="checkbox" />
-                <span className="m-3">Мой тип карты 2</span>
-              </div>
+              <ModalHeader onClick={closeModalDelete}>
+                <img className="modal-delete__img" src={arrowLeft} alt="back" />
+                Delete
+              </ModalHeader>
+              <ModalBody>
+                Внимание, после удаления, восстановление параметра карты будет
+                невозможным!
+              </ModalBody>
+              <ModalFooter className="modal-footer__delete">
+                <Button className="btn-modal delete" onClick={closeModalDelete}>
+                  Delete
+                </Button>
+              </ModalFooter>
             </div>
-            <DropdownItem className="mb-4 mt-4" divider />
+          )}
+          {isSaveWindowOpen && (
             <div>
-              <div>
-                <Input type="checkbox" />
-                <span className="m-3">Мой тип карты 3</span>
-              </div>
+              <ModalHeader
+                onClick={closeModalSave}
+                className="modal-save__header"
+              >
+                <img className="modal-delete__img" src={arrowLeft} alt="back" />
+                Save
+              </ModalHeader>
+              <ModalBody className="modal-mode__body">
+                Придумайте название и сохраните текущие параметры карты,чтобы в
+                будущем иметь быстрый доступ
+                <Input invalid className="mb-4 mt-4" placeholder="map name" />
+              </ModalBody>
+              <ModalFooter className="modal-save__footer">
+                <Button className="btn-modal save" onClick={closeModalSave}>
+                  Save the Map
+                </Button>
+              </ModalFooter>
             </div>
-          </ModalBody>
-          <ModalFooter className="modal-footer__search">
-            <Button
-              className="btn-modal save"
-              onClick={() => console.log("click")}
-            >
-              Сохранить карту
-            </Button>
-          </ModalFooter>
+          )}
         </Modal>
       </MapNavItem>
     </MapNavContainer>
