@@ -1,7 +1,14 @@
+.news-wrapper {
+  display: block;
+}
+.news-wrapper .hide {
+  display: none;
+}
+
 .news {
   position: absolute;
   border-top: 10px solid white;
-  top: 30px;
+  top: 80px;
   right: 0px;
   width: 200px;
   height: 534px;
@@ -24,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 564px;
+  top: 594px;
   right: 0px;
   width: 200px;
   height: 14px;

@@ -1,11 +1,11 @@
 /* Leaders Header */
-.aleaders__header {
+.gleaders__header {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
-  top: 78px;
+  bottom: 375px;
   left: 70px;
   width: 300px;
   height: 35px;
@@ -13,7 +13,7 @@
   background-color: #ffffff;
 }
 
-.aleaders__title {
+.gleaders__title {
   font-family: ArticulatCF;
   font-size: 0.75rem;
   font-weight: 500;
@@ -26,9 +26,9 @@
 }
 
 /* Leaders Main Content */
-.aleaders {
+.gleaders {
   position: absolute;
-  top: 114px;
+  bottom: 212px;
   left: 70px;
   width: 300px;
   height: 165px;
@@ -37,24 +37,24 @@
   padding: 10px 10px 0 0;
   border-radius: 8px;
 }
-.aleaders::-webkit-scrollbar {
+.gleaders::-webkit-scrollbar {
   height: 16px;
 }
-.aleaders::-webkit-scrollbar-thumb {
+.gleaders::-webkit-scrollbar-thumb {
   background-color: #b8b8b8;
   border: 5px solid transparent;
   background-clip: content-box;
   border-radius: 15px;
 }
-.aleaders--hide {
+.gleaders--hide {
   display: none;
 }
-.aleaders__footer {
+.gleaders__footer {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 280px;
+  bottom: 150px;
   left: 70px;
   width: 300px;
   height: 14px;
@@ -63,43 +63,17 @@
   background-color: #ffffff;
 }
 
-.aleaders__footer--hide {
+.gleaders__footer--hide {
   display: none;
 }
 
 /* Leaders List */
-.aleader__list {
+.gleader__list {
   background-color: #ffffff;
   padding-left: 1rem;
 }
-.aleader__item {
+.gleader__item {
   background-color: #ffffff;
   list-style: none;
   margin-bottom: 10px;
-}
-/* buttons toolbar top */
-#btn-sci-1,
-#btn-sci-2,
-#btn-sci-3 {
-  color: #000000;
-  background-color: white;
-  border-color: white;
-}
-#btn-sci-1:hover,
-#btn-sci-2:hover,
-#btn-sci-3:hover {
-  background-color: rgb(240, 240, 240);
-  border-radius: 7px;
-}
-#btn-top-e,
-#btn-top-p,
-#btn-top-c {
-  color: #000000;
-  background-color: white;
-  border-color: white;
-}
-#btn-top-e:hover,
-#btn-top-p:hover,
-#btn-top-c:hover {
-  background-color: rgb(241, 241, 241);
 }

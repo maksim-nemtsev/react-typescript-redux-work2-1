@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Highcharts from "highcharts";
 import HighchartsMap from "highcharts/modules/map";
 import HighchartsReact from "highcharts-react-official";
@@ -11,26 +11,42 @@ import chevron from "../../assets/svg/map/сhevron-right.svg";
 import styled from "styled-components";
 import MapNavMenu from "../UI/NavMenu/MapNavMenu";
 import MapFooterFilter from "../MapFooterFilter/MapFooterFilter";
+import DeclineLeaders from "../Leaders/DeclineLeaders/DeclineLeaders";
+import GrowthLeaders from "../Leaders/GrowthLeaders/GrowthLeaders";
 
 const Chevron = styled.div`
   position: absolute;
   display: flex;
-  top: 40%;
+  top: 41%;
   right: 220px;
   width: 2.5rem;
   height: 2.5rem;
   flex-grow: 0;
-  margin: 1.685rem 0.452rem 1.726rem 13.5rem;
   padding: 0.813rem 0.938rem 0.813rem 1.063rem;
   border-radius: 20px;
   background-color: #fff;
   cursor: pointer;
+  &:hover {
+    background-color: #f7f7f7;
+  }
+  transition: duration 0.9s;
+  transition-property: transform;
 `;
 
 HighchartsMap(Highcharts);
 
-class MapHighchartsFC extends React.Component {
-  options = {
+const MapHighchartsFC = () => {
+  const [isNewsClose, setIsNewsClose] = useState(false);
+
+  const newsToggleHandler = (): void => {
+    setIsNewsClose(!isNewsClose);
+    console.log(
+      "🚀 ~ file: MapHighchartsFC.tsx ~ line 39 ~ newsToggleHandler ~ isNewsOpen",
+      isNewsClose
+    );
+  };
+
+  const options = {
     chart: {
       width: 1320,
       height: 690,
@@ -86,24 +102,27 @@ class MapHighchartsFC extends React.Component {
       },
     ],
   };
-  render() {
-    return (
-      <div className="highcharts-container" id="highcharts-container">
-        <MapNavMenu />
-        <HighchartsReact
-          highcharts={Highcharts}
-          options={this.options}
-          constructorType={"mapChart"}
-        />
-        <MapNews />
-        <Chevron className="chevron">
-          <img src={chevron} alt="toggle" />
-        </Chevron>
-        <ActivityLeaders />
-        <MapMacroStock />
-        <MapFooterFilter />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="highcharts-container" id="highcharts-container">
+      <MapNavMenu />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options}
+        constructorType={"mapChart"}
+      />
+      {isNewsClose && <MapNews />}
+      <Chevron
+        onClick={newsToggleHandler}
+        className={isNewsClose ? "chevron" : "chevron close"}
+      >
+        <img src={chevron} alt="toggle" />
+      </Chevron>
+      <ActivityLeaders />
+      <DeclineLeaders />
+      <GrowthLeaders />
+      <MapMacroStock />
+      <MapFooterFilter />
+    </div>
+  );
+};
 export default MapHighchartsFC;

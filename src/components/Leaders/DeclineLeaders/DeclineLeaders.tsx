@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LeadersList from "./ActivityLeadersList";
-import "./ActivityLeaders.css";
+import LeadersList from "./DeclineLeadersList";
+import "./DeclineLeaders.css";
 import ButtonSettings from "../../UI/ButtonSettings/ButtonSettings";
 import ButtonsToolbarBoottom from "../../UI/ButtonsToolbar/ButtonsToolbarBoottom";
 import { Button, ButtonGroup } from "reactstrap";
@@ -8,21 +8,21 @@ import collapseSVG from "../../../assets/svg/collapse.svg";
 import pinSVG from "../../../assets/svg/pin.svg";
 import clearSVG from "../../../assets/svg/clear.svg";
 
-const ActivityLeaders: React.FC = () => {
+const DeclineLeaders: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const openActivityMenuHandler = () => {
+  const openDeclineMenuHandler = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="aleaders-wrapper">
-      <div className="aleaders__header">
-        <span className="aleaders__title">Activity Leaders</span>
+    <div className="dleaders-wrapper">
+      <div className="dleaders__header">
+        <span className="dleaders__title">Decline Leaders</span>
         <ButtonGroup size="sm">
           <Button
             id="btn-top-e"
-            onClick={openActivityMenuHandler}
+            onClick={openDeclineMenuHandler}
             outline
             color="secondary"
           >
@@ -36,12 +36,12 @@ const ActivityLeaders: React.FC = () => {
           </Button>
         </ButtonGroup>
       </div>
-      <div className={isOpen ? "aleaders" : "aleaders--hide"}>
-        <div className="aleaders__content">
+      <div className={isOpen ? "dleaders" : "dleaders--hide"}>
+        <div className="dleaders__content">
           <LeadersList />
         </div>
       </div>
-      <div className={isOpen ? "aleaders__footer" : "aleaders__footer--hide"}>
+      <div className={isOpen ? "dleaders__footer" : "dleaders__footer--hide"}>
         <ButtonSettings />
         <ButtonsToolbarBoottom />
       </div>
@@ -49,4 +49,4 @@ const ActivityLeaders: React.FC = () => {
   );
 };
 
-export default ActivityLeaders;
+export default DeclineLeaders;
