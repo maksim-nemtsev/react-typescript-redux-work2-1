@@ -10,7 +10,10 @@ const portfolioPage: React.FC = () => {
       <NavigationMenu />
       <h2 className="portfolio__title">HQ FINANCE PORTFOLIO</h2>
       <PortfolioPageNav />
-      <PortfolioCards />
+      <div className="portfolio-card__container">
+       <PortfolioCards /> 
+      </div>
+      
     </div>
   );
 };

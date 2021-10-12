@@ -9,6 +9,7 @@ import {
   DropdownItem,
   Nav,
   NavItem,
+  Container,
 } from "reactstrap";
 import LogoWS from "../../assets/svg/logo-ws.svg";
 import avatar1 from "../../assets/img/avatar1.jpg";
@@ -66,7 +67,7 @@ const NavigationMenu: React.FC = (props: Props) => {
         className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top mb-5"
         role="navigation"
       >
-        <div className="container-fluid">
+        <Container className="container-fluid">
           <Media left href="/home">
             <Media src={LogoWS} alt="Logo-WS" />
           </Media>
@@ -178,7 +179,7 @@ const NavigationMenu: React.FC = (props: Props) => {
                     />
                   </div>
                   <div className="drop-name-package">
-                  <NavLink
+                    <NavLink
                       to="/map"
                       exact={true}
                       className="link-drop"
@@ -276,7 +277,7 @@ const NavigationMenu: React.FC = (props: Props) => {
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
-        </div>
+        </Container>
       </nav>
       <nav
         className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav"

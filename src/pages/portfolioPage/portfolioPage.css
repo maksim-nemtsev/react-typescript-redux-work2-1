@@ -9,3 +9,8 @@
   text-align: left;
   color: #000b20;
 }
+.portfolio-card__container {
+  height: 70vh;
+  overflow-x: hidden;
+  padding: 2rem 0.8rem;
+}

@@ -36,7 +36,7 @@ const Chevron = styled.div`
 HighchartsMap(Highcharts);
 
 const MapHighchartsFC = () => {
-  const [isNewsClose, setIsNewsClose] = useState(false);
+  const [isNewsClose, setIsNewsClose] = useState(true);
 
   const newsToggleHandler = (): void => {
     setIsNewsClose(!isNewsClose);

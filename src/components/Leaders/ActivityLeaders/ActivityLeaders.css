@@ -8,14 +8,14 @@
   top: 78px;
   left: 70px;
   width: 300px;
-  height: 35px;
+  height: 55px;
   border-radius: 8px;
   background-color: #ffffff;
 }
 
 .aleaders__title {
   font-family: ArticulatCF;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -28,7 +28,7 @@
 /* Leaders Main Content */
 .aleaders {
   position: absolute;
-  top: 114px;
+  top: 134px;
   left: 70px;
   width: 300px;
   height: 165px;
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 280px;
+  top: 300px;
   left: 70px;
   width: 300px;
   height: 14px;
@@ -68,14 +68,33 @@
 }
 
 /* Leaders List */
-.aleader__list {
+.leader__list {
   background-color: #ffffff;
   padding-left: 1rem;
 }
-.aleader__item {
+.leader__item {
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000b20;
   background-color: #ffffff;
   list-style: none;
   margin-bottom: 10px;
+}
+.leader__count {
+  font-family: ArticulatCF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #64af8b;
 }
 /* buttons toolbar top */
 #btn-sci-1,
