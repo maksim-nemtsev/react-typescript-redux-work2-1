@@ -4,10 +4,13 @@ import MapWrapper from "../../components/Map/MapWrapper";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 import ButtonsYears from "../../components/UI/ButtonsYears/ButtonsYears";
 
-const mapPage: React.FC = () => {
+type Props = {
+  auth: boolean;
+};
+const mapPage = (props: Props) => {
   return (
     <div className="map-page">
-      <NavigationMenu />
+      <NavigationMenu auth={props.auth} />
       <h2 className="map__title">MAP</h2>
       <Row>
         <Col sm={{ size: 4, order: 2, offset: 9 }}>

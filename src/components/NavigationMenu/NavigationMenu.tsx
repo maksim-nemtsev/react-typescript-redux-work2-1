@@ -54,21 +54,24 @@ const tabs = [
   },
 ];
 
-interface Props {}
+type Props = {
+  auth: boolean;
+};
 
-const NavigationMenu: React.FC = (props: Props) => {
+const NavigationMenu = (props: Props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 
   return (
     <div>
+      {props.auth}
       <nav
         className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top mb-5"
         role="navigation"
       >
         <Container className="container-fluid">
-          <Media left href="/home">
+          <Media left href="/map">
             <Media src={LogoWS} alt="Logo-WS" />
           </Media>
           <Nav className="m-auto mr-2">

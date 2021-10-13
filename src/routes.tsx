@@ -11,7 +11,7 @@ export function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={mainPage} />
+        <Route path="/" exact component={mapPage} />
         <Route path="/map" exact component={mapPage} />
         <Route path="/lab" exact component={labPage} />
         <Route path="/main" exact component={mainPage} />

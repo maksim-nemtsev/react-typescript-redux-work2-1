@@ -1,12 +1,14 @@
 import React from "react";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 
-interface Props {}
+type Props = {
+  auth: boolean;
+};
 
-const mainPage: React.FC = (props: Props) => {
+const mainPage = (props: Props) => {
   return (
     <div>
-      <NavigationMenu />
+      <NavigationMenu auth={props.auth} />
     </div>
   );
 };

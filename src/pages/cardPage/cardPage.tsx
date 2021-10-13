@@ -24,7 +24,9 @@ const OverviewWater = styled.p`
   color: #9faab3;
 `;
 
-interface Props {}
+type Props = {
+  auth: boolean;
+}
 
 type Params = {
   id: string;
@@ -42,7 +44,7 @@ export const CardPage = (props: Props) => {
   return (
     <div className="App-wrapper">
       <div className="App-div">
-        <NavigationMenu />
+        <NavigationMenu auth={props.auth} />
         <div className="card-contant">
           <div className="card-contant_title">
             <img

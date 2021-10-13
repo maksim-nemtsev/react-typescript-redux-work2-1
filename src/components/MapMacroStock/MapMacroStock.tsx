@@ -10,7 +10,7 @@ import plusSVG from "../../assets/svg/plus.svg";
 interface Props {}
 
 const MapMacroStock = (props: Props) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openStockMenuHandler = () => {
     setIsOpen(!isOpen);

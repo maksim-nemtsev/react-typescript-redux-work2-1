@@ -62,8 +62,9 @@ const OverviewWater = styled.p`
   text-align: right;
   color: #9faab3;
 `;
-
-interface Props {}
+type Props = {
+  auth: boolean;
+};
 
 type Params = {
   idBlog: string;
@@ -82,7 +83,7 @@ export const BlogPage = (props: Props) => {
   return (
     <div className="App-wrapper">
       <div className="App-div">
-        <NavigationMenu />
+        <NavigationMenu auth={props.auth} />
         <div className="card-contant">
           <div className="card-contant_title">
             <img

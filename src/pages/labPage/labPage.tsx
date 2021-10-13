@@ -1,12 +1,14 @@
 import React from "react";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 
-interface Props {}
+type Props = {
+  auth: boolean;
+};
 
-const labPage: React.FC = (props: Props) => {
+const labPage = (props: Props) => {
   return (
     <div>
-      <NavigationMenu />
+      <NavigationMenu auth={props.auth} />
       <h2 className="lab__title">LABARATORY</h2>
     </div>
   );

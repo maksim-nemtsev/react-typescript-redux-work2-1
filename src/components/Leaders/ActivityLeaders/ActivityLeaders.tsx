@@ -9,7 +9,7 @@ import pinSVG from "../../../assets/svg/pin.svg";
 import clearSVG from "../../../assets/svg/clear.svg";
 
 const ActivityLeaders: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openActivityMenuHandler = () => {
     setIsOpen(!isOpen);

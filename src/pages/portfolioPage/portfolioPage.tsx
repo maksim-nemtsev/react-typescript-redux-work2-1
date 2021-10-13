@@ -4,16 +4,19 @@ import PortfolioCards from "../../components/Cards/PortfolioCards";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 import "./portfolioPage.css";
 
-const portfolioPage: React.FC = () => {
+type Props = {
+  auth: boolean;
+};
+
+const portfolioPage = (props: Props) => {
   return (
     <div>
-      <NavigationMenu />
+      <NavigationMenu auth={props.auth} />
       <h2 className="portfolio__title">HQ FINANCE PORTFOLIO</h2>
       <PortfolioPageNav />
       <div className="portfolio-card__container">
-       <PortfolioCards /> 
+        <PortfolioCards />
       </div>
-      
     </div>
   );
 };

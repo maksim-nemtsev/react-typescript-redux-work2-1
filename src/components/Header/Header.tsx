@@ -11,12 +11,14 @@ const Header = styled.header`
   background-color: #fff;
 `;
 
-interface Props {}
+type Props = {
+  auth: boolean;
+};
 
 const MobileHeader = (props: Props) => {
   return (
     <Header>
-      <NavigationMenu />
+      <NavigationMenu auth={props.auth} />
     </Header>
   );
 };

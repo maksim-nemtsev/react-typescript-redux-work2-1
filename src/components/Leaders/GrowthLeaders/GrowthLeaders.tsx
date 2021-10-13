@@ -9,7 +9,7 @@ import clearSVG from "../../../assets/svg/clear.svg";
 import { Button, ButtonGroup } from "reactstrap";
 
 const GrowthLeaders: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openGrowthMenuHandler = () => {
     setIsOpen(!isOpen);
@@ -21,7 +21,6 @@ const GrowthLeaders: React.FC = () => {
         <span className="gleaders__title">Growth Leaders</span>
         <ButtonGroup size="sm">
           <Button
-            className="m-1"
             id="btn-top-e"
             onClick={openGrowthMenuHandler}
             outline
@@ -29,10 +28,10 @@ const GrowthLeaders: React.FC = () => {
           >
             <img src={collapseSVG} alt="collapse" />
           </Button>
-          <Button className="m-1" id="btn-top-p" outline color="secondary">
+          <Button id="btn-top-p" outline color="secondary">
             <img src={pinSVG} alt="pin" />
           </Button>
-          <Button className="m-1" id="btn-top-c" outline color="secondary">
+          <Button id="btn-top-c" outline color="secondary">
             <img src={clearSVG} alt="clear" />
           </Button>
         </ButtonGroup>
