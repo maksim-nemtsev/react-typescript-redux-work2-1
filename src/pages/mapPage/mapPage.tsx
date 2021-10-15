@@ -5,12 +5,12 @@ import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 import ButtonsYears from "../../components/UI/ButtonsYears/ButtonsYears";
 
 type Props = {
-  auth: boolean;
+  userTarrifId: number;
 };
 const mapPage = (props: Props) => {
   return (
     <div className="map-page">
-      <NavigationMenu auth={props.auth} />
+      <NavigationMenu userTarrifId={props.userTarrifId} />
       <h2 className="map__title">MAP</h2>
       <Row>
         <Col sm={{ size: 4, order: 2, offset: 9 }}>

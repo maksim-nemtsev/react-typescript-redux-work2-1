@@ -1,8 +1,5 @@
 import axios from "axios";
-import { store } from "../store/store";
-// import { reqAuth401 } from "../actions/AuthActions";
 
-//REACT_APP_API_HOST=http://localhost:3003
 let _serverAdress = process.env.REACT_APP_API_HOST;
 let _pathPrefix = "api/v1";
 let getPath = (name: any) => {
@@ -40,7 +37,7 @@ _api.interceptors.response.use(
   }
 );
 class WebApi {
-  static setPathPrefix(prefix: any) {
+  static setPathPrefix(prefix: string) {
     // _pathPrefix = prefix;
 
     _pathTable.set("userInfo", getPath("userInfo"));

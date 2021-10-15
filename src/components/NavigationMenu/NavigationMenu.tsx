@@ -55,17 +55,15 @@ const tabs = [
 ];
 
 type Props = {
-  auth: boolean;
+  userTarrifId: number;
 };
 
 const NavigationMenu = (props: Props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 
   return (
     <div>
-      {props.auth}
       <nav
         className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top mb-5"
         role="navigation"

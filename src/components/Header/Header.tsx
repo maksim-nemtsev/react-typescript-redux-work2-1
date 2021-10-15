@@ -12,13 +12,13 @@ const Header = styled.header`
 `;
 
 type Props = {
-  auth: boolean;
+  userTarrifId: number;
 };
 
 const MobileHeader = (props: Props) => {
   return (
     <Header>
-      <NavigationMenu auth={props.auth} />
+      <NavigationMenu userTarrifId={props.userTarrifId} />
     </Header>
   );
 };

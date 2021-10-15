@@ -13,6 +13,8 @@ import MapNavMenu from "../UI/NavMenu/MapNavMenu";
 import MapFooterFilter from "../MapFooterFilter/MapFooterFilter";
 import DeclineLeaders from "../Leaders/DeclineLeaders/DeclineLeaders";
 import GrowthLeaders from "../Leaders/GrowthLeaders/GrowthLeaders";
+// import { AppDispatch } from "../../store/store";
+// import { useAppDispatch } from "../../hooks/hooks";
 
 const Chevron = styled.div`
   position: absolute;
@@ -36,7 +38,9 @@ const Chevron = styled.div`
 HighchartsMap(Highcharts);
 
 const MapHighchartsFC = () => {
+  console.log("REnder ~ MapHighchartsFC");
   const [isNewsClose, setIsNewsClose] = useState(false);
+  // const dispatch: AppDispatch = useAppDispatch();
 
   const newsToggleHandler = (): void => {
     setIsNewsClose(!isNewsClose);

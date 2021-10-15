@@ -63,7 +63,7 @@ const OverviewWater = styled.p`
   color: #9faab3;
 `;
 type Props = {
-  auth: boolean;
+  userTarrifId: number;
 };
 
 type Params = {
@@ -83,7 +83,7 @@ export const BlogPage = (props: Props) => {
   return (
     <div className="App-wrapper">
       <div className="App-div">
-        <NavigationMenu auth={props.auth} />
+        <NavigationMenu userTarrifId={props.userTarrifId} />
         <div className="card-contant">
           <div className="card-contant_title">
             <img

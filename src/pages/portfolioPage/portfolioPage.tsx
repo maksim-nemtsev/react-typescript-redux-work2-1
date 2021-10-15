@@ -5,13 +5,13 @@ import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 import "./portfolioPage.css";
 
 type Props = {
-  auth: boolean;
+  userTarrifId: number;
 };
 
 const portfolioPage = (props: Props) => {
   return (
     <div>
-      <NavigationMenu auth={props.auth} />
+      <NavigationMenu userTarrifId={props.userTarrifId} />
       <h2 className="portfolio__title">HQ FINANCE PORTFOLIO</h2>
       <PortfolioPageNav />
       <div className="portfolio-card__container">

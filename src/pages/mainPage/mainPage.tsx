@@ -2,13 +2,13 @@ import React from "react";
 import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
 
 type Props = {
-  auth: boolean;
+  userTarrifId: number;
 };
 
 const mainPage = (props: Props) => {
   return (
     <div>
-      <NavigationMenu auth={props.auth} />
+      <NavigationMenu userTarrifId={props.userTarrifId} />
     </div>
   );
 };
