@@ -13,8 +13,7 @@ import MapNavMenu from "../UI/NavMenu/MapNavMenu";
 import MapFooterFilter from "../MapFooterFilter/MapFooterFilter";
 import DeclineLeaders from "../Leaders/DeclineLeaders/DeclineLeaders";
 import GrowthLeaders from "../Leaders/GrowthLeaders/GrowthLeaders";
-// import { AppDispatch } from "../../store/store";
-// import { useAppDispatch } from "../../hooks/hooks";
+import { useAppSelector } from "../../hooks/hooks";
 
 const Chevron = styled.div`
   position: absolute;
@@ -40,7 +39,20 @@ HighchartsMap(Highcharts);
 const MapHighchartsFC = () => {
   console.log("REnder ~ MapHighchartsFC");
   const [isNewsClose, setIsNewsClose] = useState(false);
-  // const dispatch: AppDispatch = useAppDispatch();
+  const mapCountyNameCode = useAppSelector(
+    (state: any) => state.initData.ents.countries
+  );
+  const getCountryNames = () => {
+    const countryNamesCode3 = Object.values(mapCountyNameCode);
+
+    return countryNamesCode3.map((el: any) => ({
+      code3: el.ISO3,
+      // z: el.countryInfo.stockShort["Last Close Market Cap"],
+      z: 12345,
+      code: el.ISO3,
+      countryId: el.id,
+    }));
+  };
 
   const newsToggleHandler = (): void => {
     setIsNewsClose(!isNewsClose);
@@ -73,8 +85,20 @@ const MapHighchartsFC = () => {
 
     mapNavigation: {
       enabled: true,
+      enableMouseWheelZoom: true,
       buttonOptions: {
         verticalAlign: "bottom",
+      },
+    },
+    plotOptions: {
+      series: {
+        //shadow: true,
+        cursor: "pointer",
+        events: {
+          click: function clickEvent(event: any) {
+            console.log("click");
+          },
+        },
       },
     },
 
@@ -91,15 +115,9 @@ const MapHighchartsFC = () => {
         animation: false,
         name: "highcharts map",
         joinBy: ["iso-a3", "code3"],
-        data: [
-          {
-            code3: "AFG",
-            z: 34656,
-            code: "AF",
-          },
-        ],
+        data: getCountryNames(),
         minSize: 10,
-        maxSize: "12%",
+        maxSize: "6%",
         tooltip: {
           pointFormat: "{point.properties.hc-a2}: {point.z}",
         },

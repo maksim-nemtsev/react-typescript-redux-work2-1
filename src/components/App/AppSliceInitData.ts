@@ -25,11 +25,6 @@ export const InitData = createSlice({
   initialState,
   reducers: {
     reqInitData: (state, action) => {
-      console.log(
-        "🚀 ~ file: AppSliceInitData.ts ~ line 28 ~ action",
-        action.payload
-      );
-
       state.ents = action.payload.ents;
       state.mapData = action.payload.mapData;
       state.sce = action.payload.sce;
