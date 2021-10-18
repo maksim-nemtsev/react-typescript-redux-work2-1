@@ -1,13 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {};
+type IInitialState = {
+  countryId: number | string;
+  isFetching: boolean;
+};
+
+const initialState: IInitialState = {
+  countryId: 7,
+  isFetching: false,
+};
 
 export const CountryData = createSlice({
-  name: "request-country-data",
+  name: "request-init-data",
   initialState,
   reducers: {
     reqCountryData: (state, action) => {
-      state = action.payload;
+      state.countryId = action.payload;
+      state.isFetching = true;
     },
   },
 });

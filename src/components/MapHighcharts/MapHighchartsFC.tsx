@@ -13,7 +13,10 @@ import MapNavMenu from "../UI/NavMenu/MapNavMenu";
 import MapFooterFilter from "../MapFooterFilter/MapFooterFilter";
 import DeclineLeaders from "../Leaders/DeclineLeaders/DeclineLeaders";
 import GrowthLeaders from "../Leaders/GrowthLeaders/GrowthLeaders";
-import { useAppSelector } from "../../hooks/hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
+import { AppDispatch } from "../../store/store";
+import WebApi from "../../api/WebApi";
+import { reqCountryData } from "./MapHCH_SliceCountryData";
 
 const Chevron = styled.div`
   position: absolute;
@@ -42,6 +45,7 @@ const MapHighchartsFC = () => {
   const mapCountyNameCode = useAppSelector(
     (state: any) => state.initData.ents.countries
   );
+  const dispatch: AppDispatch = useAppDispatch();
   const getCountryNames = () => {
     const countryNamesCode3 = Object.values(mapCountyNameCode);
 
@@ -56,10 +60,6 @@ const MapHighchartsFC = () => {
 
   const newsToggleHandler = (): void => {
     setIsNewsClose(!isNewsClose);
-    console.log(
-      "🚀 ~ file: MapHighchartsFC.tsx ~ line 39 ~ newsToggleHandler ~ isNewsOpen",
-      isNewsClose
-    );
   };
 
   const options = {
@@ -92,11 +92,17 @@ const MapHighchartsFC = () => {
     },
     plotOptions: {
       series: {
-        //shadow: true,
         cursor: "pointer",
         events: {
-          click: function clickEvent(event: any) {
-            console.log("click");
+          click: async function (event: any) {
+            const response = await WebApi.getCountryInfo(
+              event.point.countryId,
+              "d"
+            )
+              .then((response) => response.data)
+              .catch((error) => console.error(error));
+            dispatch(reqCountryData(event.point.countryId));
+            return response;
           },
         },
       },
