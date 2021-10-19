@@ -16,7 +16,7 @@ const ActivityLeaders: React.FC = () => {
   };
 
   return (
-    <div className="aleaders-wrapper">
+    <div className="aleaders-wrapper d-none d-lg-block">
       <div className="aleaders__header">
         <span className="aleaders__title">Activity Leaders</span>
         <ButtonGroup size="sm">

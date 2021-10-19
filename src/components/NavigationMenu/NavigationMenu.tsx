@@ -48,7 +48,7 @@ const tabs = [
     label: "Main Page",
   },
   {
-    route: "/profile",
+    route: "/",
     icon: iconProfile,
     label: "Profile",
   },

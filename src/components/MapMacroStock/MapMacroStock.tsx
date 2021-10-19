@@ -16,7 +16,7 @@ const MapMacroStock = (props: Props) => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="map-stock-wrapper">
+    <div className="map-stock-wrapper d-none d-lg-block">
       <div className="map-stock__header">
         <img className="country" src={countryTur} alt="country" />
         <div className="map-stock__country">

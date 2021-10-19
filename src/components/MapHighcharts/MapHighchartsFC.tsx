@@ -139,12 +139,15 @@ const MapHighchartsFC = () => {
         constructorType={"mapChart"}
       />
       {isNewsClose && <MapNews />}
-      <Chevron
-        onClick={newsToggleHandler}
-        className={isNewsClose ? "chevron" : "chevron close"}
-      >
-        <img src={chevron} alt="toggle" />
-      </Chevron>
+      <div className="d-none d-lg-block">
+        <Chevron
+          onClick={newsToggleHandler}
+          className={isNewsClose ? "chevron" : "chevron close"}
+        >
+          <img src={chevron} alt="toggle" />
+        </Chevron>
+      </div>
+
       <ActivityLeaders />
       <DeclineLeaders />
       <GrowthLeaders />

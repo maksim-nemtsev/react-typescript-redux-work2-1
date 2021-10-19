@@ -16,7 +16,7 @@ const GrowthLeaders: React.FC = () => {
   };
 
   return (
-    <div className="gleaders-wrapper">
+    <div className="gleaders-wrapper d-none d-lg-block">
       <div className="gleaders__header">
         <span className="gleaders__title">Growth Leaders</span>
         <ButtonGroup size="sm">

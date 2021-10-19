@@ -16,7 +16,7 @@ const DeclineLeaders: React.FC = () => {
   };
 
   return (
-    <div className="dleaders-wrapper">
+    <div className="dleaders-wrapper d-none d-lg-block">
       <div className="dleaders__header">
         <span className="dleaders__title">Decline Leaders</span>
         <ButtonGroup size="sm">

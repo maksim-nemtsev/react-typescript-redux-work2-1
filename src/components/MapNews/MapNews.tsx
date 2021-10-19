@@ -4,11 +4,9 @@ import "./MapNews.css";
 import ButtonsToolbar from "../UI/ButtonsToolbar/ButtonsToolbarBoottom";
 import ButtonSettings from "../UI/ButtonSettings/ButtonSettings";
 
-
 const MapNews = () => {
-
   return (
-    <div className={ "news-wrapper"}>
+    <div className="news-wrapper d-none d-lg-block">
       <div className="news">
         <div className="news__content">
           <MapNewsItem />
