@@ -35,7 +35,12 @@ const MapNavContainer = styled.div`
   position: absolute;
   top: 20%;
   z-index: 2;
+  @media (max-width: 960px) {
+    top: 34%;
+    left: 10px;
+  }
 `;
+
 const MapNavBlock = styled.div`
   display: flex;
   flex-direction: column;
@@ -196,6 +201,7 @@ const MapNavMenu: React.FC = () => {
           <img id="Search" className="map-nav__img" src={search} alt="search" />
         </MapNavBlock>
         <Tooltip
+          className="modal-search__tooltip"
           placement="right"
           isOpen={tooltipOpen1}
           target="Search"
@@ -215,7 +221,7 @@ const MapNavMenu: React.FC = () => {
           </ModalHeader>
           <ModalBody>
             <Input className="mb-4" placeholder="Search" />
-            <Nav className="mb-4">
+            <Nav className="modal-search__nav">
               <span
                 className={
                   activeTab === "1" ? "modal-tabs active" : "modal-tabs"

@@ -1006,3 +1006,6 @@ text.highcharts-drilldown-data-label,
   transform: rotate(180deg);
   right: 0;
 }
+@media only screen and (max-width: 960px) {
+  
+}

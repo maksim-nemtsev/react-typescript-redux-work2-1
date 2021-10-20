@@ -30,8 +30,25 @@ const Chevron = styled.div`
   border-radius: 20px;
   background-color: #fff;
   cursor: pointer;
+
   &:hover {
     background-color: #f7f7f7;
+  }
+  @media (max-width: 960px) {
+    top: 93%;
+    left: 44%;
+    -webkit-transform: rotate(270deg) !important;
+    -moz-transform: rotate(270deg) !important;
+    -o-transform: rotate(270deg) !important;
+    -ms-transform: rotate(270deg) !important;
+    transform: rotate(270deg) !important;
+    &:hover {
+      -webkit-transform: rotate(90deg) !important;
+      -moz-transform: rotate(90deg) !important;
+      -o-transform: rotate(90deg) !important;
+      -ms-transform: rotate(90deg) !important;
+      transform: rotate(90deg) !important;
+    }
   }
   transition: duration 0.9s;
   transition-property: transform;
@@ -62,10 +79,13 @@ const MapHighchartsFC = () => {
     setIsNewsClose(!isNewsClose);
   };
 
+  const widthScreen = document.body.clientWidth / 1.08;
+  // const heightScreen = document.body.clientHeight;
+
   const options = {
     chart: {
-      width: 1320,
-      height: 690,
+      width: widthScreen,
+      height: 735,
       map: map,
       marginTop: 70,
       ackgroundColor: "transparent",
@@ -147,7 +167,14 @@ const MapHighchartsFC = () => {
           <img src={chevron} alt="toggle" />
         </Chevron>
       </div>
-
+      <div className="d-block d-lg-none">
+        <Chevron
+          onClick={newsToggleHandler}
+          className={isNewsClose ? "chevron mob" : "chevron mob close"}
+        >
+          <img src={chevron} alt="toggle" />
+        </Chevron>
+      </div>
       <ActivityLeaders />
       <DeclineLeaders />
       <GrowthLeaders />
