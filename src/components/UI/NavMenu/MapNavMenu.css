@@ -222,4 +222,32 @@
   .modal-coutries__list {
     height: 19rem;
   }
+  .modal-search__close {
+    top: 9px;
+    right: 5%;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+    z-index: 1;
+  }
+  .modal-mode__close {
+    top: 9px;
+    right: 5%;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+    z-index: 1;
+  }
+  .modal-type__close {
+    top: 9px;
+    right: 5%;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+    z-index: 1;
+  }
+  .modal-save__close {
+    top: 9px;
+    right: 5%;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+    z-index: 1;
+  }
 }

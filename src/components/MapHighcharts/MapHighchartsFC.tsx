@@ -17,6 +17,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { AppDispatch } from "../../store/store";
 import WebApi from "../../api/WebApi";
 import { reqCountryData } from "./MapHCH_SliceCountryData";
+import MapMobBottomMenu from "../mobile/MapMobBottomMenu/MapMobBottomMenu";
 
 const Chevron = styled.div`
   position: absolute;
@@ -59,6 +60,7 @@ HighchartsMap(Highcharts);
 const MapHighchartsFC = () => {
   console.log("REnder ~ MapHighchartsFC");
   const [isNewsClose, setIsNewsClose] = useState(false);
+  const [isMobileBottomMenuClose, setIsMobileBottomMenuClose] = useState(false);
   const mapCountyNameCode = useAppSelector(
     (state: any) => state.initData.ents.countries
   );
@@ -77,6 +79,9 @@ const MapHighchartsFC = () => {
 
   const newsToggleHandler = (): void => {
     setIsNewsClose(!isNewsClose);
+  };
+  const mobileBottomMenuToggleHandler = (): void => {
+    setIsMobileBottomMenuClose(!isMobileBottomMenuClose);
   };
 
   const widthScreen = document.body.clientWidth / 1.08;
@@ -167,10 +172,18 @@ const MapHighchartsFC = () => {
           <img src={chevron} alt="toggle" />
         </Chevron>
       </div>
+      {isMobileBottomMenuClose && (
+        <MapMobBottomMenu
+          isMobileBottomMenuClose={isMobileBottomMenuClose}
+          mobileBottomMenuToggleHandler={mobileBottomMenuToggleHandler}
+        />
+      )}
       <div className="d-block d-lg-none">
         <Chevron
-          onClick={newsToggleHandler}
-          className={isNewsClose ? "chevron mob" : "chevron mob close"}
+          onClick={mobileBottomMenuToggleHandler}
+          className={
+            isMobileBottomMenuClose ? "chevron mob" : "chevron mob close"
+          }
         >
           <img src={chevron} alt="toggle" />
         </Chevron>
