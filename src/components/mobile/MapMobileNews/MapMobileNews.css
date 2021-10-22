@@ -1,0 +1,100 @@
+@media only screen and (max-width: 960px) {
+  .map-mob-news__footer.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-news-body.modal-body {
+    height: 9vh;
+    overflow: auto;
+  }
+  .modal-search .modal-content {
+    width: 27.8rem;
+  }
+  .modal-search__nav.nav {
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  .modal-search__close {
+    top: 9px;
+    right: 5%;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+    z-index: 1;
+  }
+  .modal-tabs {
+    font-family: ArticulatCF;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9faab3;
+    cursor: pointer;
+    margin-right: 4rem;
+    margin-left: 2.5em;
+    border-bottom: none;
+    text-transform: uppercase;
+  }
+
+  .modal-tabs.active {
+    font-family: ArticulatCF;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000b20;
+  }
+
+  .modal-tabs:hover {
+    font-family: ArticulatCF;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000b20;
+  }
+
+  .modal-tabs:hover::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 2px;
+    margin-top: 1.5rem;
+    border-radius: 2px;
+    background-color: #5448c8;
+  }
+  .mobile-news__news {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-news__country,
+  .mobile-news__info {
+    display: block;
+    word-wrap: break-word;
+    background-color: #fff;
+  }
+
+  .mobile-news__country {
+    color: #64af8b;
+    font-weight: bold;
+  }
+  .mobile-news__title {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    margin: 1rem 0;
+  }
+  .mobile-news-info {
+    display: inline-block;
+  }
+}
