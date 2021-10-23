@@ -67,4 +67,100 @@
     border-radius: 2px;
     background-color: #5448c8;
   }
+  .map-mob-coutry-info__last-close {
+    font-family: ArticulatCF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000b20;
+  }
+  .map-mob-coutry-info__last-close-count {
+    margin-left: 0.75rem;
+    font-family: ArticulatCF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #64af8b;
+  }
+  .modal-search__header.modal-header {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .map-mob-stock-info__last-close {
+    font-family: ArticulatCF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000b20;
+  }
+  .map-mob-stock-info__last-close-count {
+    margin-left: 0.75rem;
+    font-family: ArticulatCF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #64af8b;
+  }
+  .sector__title {
+    font-family: ArticulatCF;
+    font-size: 1rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9faab3;
+  }
+  .height__list-item {
+    font-family: ArticulatCF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000b20;
+  }
+  .height__list-count {
+    font-family: ArticulatCF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #64af8b;
+  }
+  .modal-footer.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .modal-footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

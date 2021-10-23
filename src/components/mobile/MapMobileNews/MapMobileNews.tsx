@@ -150,28 +150,32 @@ const MapMobileNews = (props: {
           <ModalHeaderTitle>Monitoring</ModalHeaderTitle>
         </ModalHeader>
         <ModalBody className="mobile-news-body">
-          {monitoringListMocks.map((el) => (
-            <div className="mobile-news">
+          {monitoringListMocks.map((el, idx1) => (
+            <div key={idx1} className="mobile-news">
               <span className="mobile-news__title">{el.date}</span>
               <div className="mobile-news__content">
                 <span className="mobile-news__country">{el.country}</span>
                 <div className="d-flex justify-content-between">
                   <div>
                     <span className="mobile-news__branch">
-                      {Object.values(el.branch).map((branch) => (
-                        <div>
-                          <span className="mobile-news-info">{branch}</span>
-                        </div>
-                      ))}
+                      <div>
+                        {Object.values(el.branch).map((branch, i) => (
+                          <span key={i} className="mobile-news-info">
+                            {branch}
+                          </span>
+                        ))}
+                      </div>
                     </span>
                   </div>
                   <div>
                     <span className="mobile-news__branch">
-                      {Object.values(el.branchCounts).map((branch) => (
-                        <div>
-                          <span className="mobile-news-info">{branch}</span>
-                        </div>
-                      ))}
+                      <div>
+                        {Object.values(el.branchCounts).map((branch, idx) => (
+                          <span key={idx} className="mobile-news-info">
+                            {branch}
+                          </span>
+                        ))}
+                      </div>
                     </span>
                   </div>
                 </div>
