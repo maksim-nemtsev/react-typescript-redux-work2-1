@@ -192,101 +192,84 @@ const MapMobBottomMenu = (props: {
                     13.2%
                   </span>
                 </p>
-              </div>
-            </TabPane>
-            <TabPane tabId="2">
-              <div>
-                <div>
-                  <p className="map-mob-stock-info__last-close">
-                    GDP
-                    <span className="map-mob-stock-info__last-close-count">
-                      -36,5700 %
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="d-flex w-50 justify-content-between">
-                  <div>
-                    <p className="map-mob-stock-info__last-close">
-                      2021
-                      <span className="map-mob-stock-info__last-close-count">
-                        740
-                      </span>
-                    </p>
-                  </div>
-                  <div>
-                    <p className="map-mob-stock-info__last-close">
-                      2021
-                      <span className="map-mob-stock-info__last-close-count">
-                        740
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p className="map-mob-stock-info__last-close">
-                    GDP
-                    <span className="map-mob-stock-info__last-close-count">
-                      -36,5700 %
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="d-flex w-50 justify-content-between">
-                  <div>
-                    <p className="map-mob-stock-info__last-close">
-                      2021
-                      <span className="map-mob-stock-info__last-close-count">
-                        740
-                      </span>
-                    </p>
-                  </div>
-                  <div>
-                    <p className="map-mob-stock-info__last-close">
-                      2021
-                      <span className="map-mob-stock-info__last-close-count">
-                        740
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p className="map-mob-stock-info__last-close">
-                    GDP
-                    <span className="map-mob-stock-info__last-close-count">
-                      -36,5700 %
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div>
-                <p className="map-mob-stock-info__last-close">
-                  Unemployed Rate
-                  <span className="map-mob-stock-info__last-close-count">
-                    13.2 % (May/21)
-                  </span>
-                </p>
-              </div>
-              <ModalFooter className="m-0 p-0">
-                <Button>ADD ANOTHER +</Button>
-                <Button>MORE</Button>
-              </ModalFooter>
-            </TabPane>
-            <TabPane tabId="3">
-              <ModalBody>
-                <p className="map-mob-stock-info__last-close">
+                <p className="map-mob-coutry-info__last-close">
                   Unemployed
-                  <span className="map-mob-stock-info__last-close-count">
+                  <span className="map-mob-coutry-info__last-close-count">
                     13.2%
                   </span>
                 </p>
-                <div className="d-flex justify-content-between">
+                <p className="map-mob-coutry-info__last-close">
+                  Unemployed
+                  <span className="map-mob-coutry-info__last-close-count">
+                    13.2%
+                  </span>
+                </p>
+                <p className="map-mob-coutry-info__last-close">
+                  Unemployed
+                  <span className="map-mob-coutry-info__last-close-count">
+                    13.2%
+                  </span>
+                </p>
+                <p className="map-mob-coutry-info__last-close">
+                  Unemployed
+                  <span className="map-mob-coutry-info__last-close-count">
+                    13.2%
+                  </span>
+                </p>
+                <p className="map-mob-coutry-info__last-close">
+                  Unemployed
+                  <span className="map-mob-coutry-info__last-close-count">
+                    13.2%
+                  </span>
+                </p>
+                <p className="map-mob-coutry-info__last-close">
+                  Unemployed
+                  <span className="map-mob-coutry-info__last-close-count">
+                    13.2%
+                  </span>
+                </p>
+                <p className="map-mob-coutry-info__last-close">
+                  Unemployed
+                  <span className="map-mob-coutry-info__last-close-count">
+                    13.2%
+                  </span>
+                </p>
+              </div>
+            </TabPane>
+            <TabPane tabId="2">
+              <div className="map-mob-stock">
+                <div>
                   <div>
                     <p className="map-mob-stock-info__last-close">
-                      D
+                      GDP
+                      <span className="map-mob-stock-info__last-close-count">
+                        -36,5700 %
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div className="d-flex w-50 justify-content-between">
+                    <div>
+                      <p className="map-mob-stock-info__last-close">
+                        2021
+                        <span className="map-mob-stock-info__last-close-count">
+                          740
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <p className="map-mob-stock-info__last-close">
+                        2021
+                        <span className="map-mob-stock-info__last-close-count">
+                          740
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="map-mob-stock-info__last-close">
+                      GDP
                       <span className="map-mob-stock-info__last-close-count">
                         -36,5700 %
                       </span>
@@ -294,7 +277,67 @@ const MapMobBottomMenu = (props: {
                   </div>
                   <div>
                     <p className="map-mob-stock-info__last-close">
-                      D
+                      GDP
+                      <span className="map-mob-stock-info__last-close-count">
+                        -36,5700 %
+                      </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p className="map-mob-stock-info__last-close">
+                      GDP
+                      <span className="map-mob-stock-info__last-close-count">
+                        -36,5700 %
+                      </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p className="map-mob-stock-info__last-close">
+                      GDP
+                      <span className="map-mob-stock-info__last-close-count">
+                        -36,5700 %
+                      </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p className="map-mob-stock-info__last-close">
+                      GDP
+                      <span className="map-mob-stock-info__last-close-count">
+                        -36,5700 %
+                      </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p className="map-mob-stock-info__last-close">
+                      GDP
+                      <span className="map-mob-stock-info__last-close-count">
+                        -36,5700 %
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div className="d-flex w-50 justify-content-between">
+                    <div>
+                      <p className="map-mob-stock-info__last-close">
+                        2021
+                        <span className="map-mob-stock-info__last-close-count">
+                          740
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <p className="map-mob-stock-info__last-close">
+                        2021
+                        <span className="map-mob-stock-info__last-close-count">
+                          740
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="map-mob-stock-info__last-close">
+                      GDP
                       <span className="map-mob-stock-info__last-close-count">
                         -36,5700 %
                       </span>
@@ -302,266 +345,680 @@ const MapMobBottomMenu = (props: {
                   </div>
                 </div>
                 <hr />
-                <div className="sector">
-                  <p className="gain-sector__title">Gain Sector</p>
-                  <div>
-                    <div className="mb-1">Энергетика</div>
-                    <p className="map-mob-stock-info__last-close">
-                      D
-                      <span className="map-mob-stock-info__last-close-count">
-                        -36,5700 %
-                      </span>
-                    </p>
-                  </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
                 </div>
-                <div className="sector">
-                  <p className="gain-sector__title">Loser Sector</p>
-                  <div>
-                    <div className="mb-1">Энергетика</div>
-                    <p className="map-mob-stock-info__last-close">
-                      D
-                      <span className="map-mob-stock-info__last-close-count">
-                        -36,5700 %
-                      </span>
-                    </p>
-                  </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
                 </div>
-              </ModalBody>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed Rate
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2 % (May/21)
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <ModalFooter className="m-0 p-0">
+                <Button>ADD ANOTHER +</Button>
+                <Button>MORE</Button>
+              </ModalFooter>
+            </TabPane>
+            <TabPane tabId="3">
+              <div className="map-mob-stock">
+                <ModalBody>
+                  <p className="map-mob-stock-info__last-close">
+                    Unemployed
+                    <span className="map-mob-stock-info__last-close-count">
+                      13.2%
+                    </span>
+                  </p>
+                  <div className="d-flex justify-content-between">
+                    <div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div className="sector">
+                    <p className="gain-sector__title">Gain Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sector">
+                    <p className="gain-sector__title">Loser Sector</p>
+                    <div>
+                      <div className="mb-1">Энергетика</div>
+                      <p className="map-mob-stock-info__last-close">
+                        D
+                        <span className="map-mob-stock-info__last-close-count">
+                          -36,5700 %
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </ModalBody>
+              </div>
               <ModalFooter className="m-0 p-0">
                 <Button>ADD ANOTHER +</Button>
                 <Button>MORE</Button>
               </ModalFooter>
             </TabPane>
             <TabPane tabId="4">
-              <div className="height">
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>1. Инвестиционные фонды</p>
+              <div className="map-mob-height">
+                <div className="height">
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>2. Казино и азартные игры</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>2. Казино и азартные игры</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>3. Отели, курорты и крузные</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>4. Радиовещание</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>3. Отели, курорты и крузные</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>5. Авиалинии</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>6. Золото</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>4. Радиовещание</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>7. Коммерческая печать</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>5. Авиалинии</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>6. Золото</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>7. Коммерческая печать</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>1. Инвестиционные фонды</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
+                  </div>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <hr />
-              <div className="modal-footer__content">
+              <ModalFooter className="modal-footer__content">
                 <div>
                   <ButtonSettings />
                 </div>
                 <div>
                   <ButtonsToolbarBoottom />
                 </div>
-              </div>
+              </ModalFooter>
             </TabPane>
             <TabPane tabId="5">
-              <div className="height">
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>1. Инвестиционные фонды</p>
+              <div className="map-mob-height">
+                <div className="height">
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>2. Казино и азартные игры</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>2. Казино и азартные игры</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>3. Отели, курорты и крузные</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>4. Радиовещание</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>3. Отели, курорты и крузные</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>5. Авиалинии</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>6. Золото</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>4. Радиовещание</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>7. Коммерческая печать</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>5. Авиалинии</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>6. Золото</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>7. Коммерческая печать</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>1. Инвестиционные фонды</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
+                  </div>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
+                  </div>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <hr />
-              <div className="modal-footer__content">
+              <ModalFooter className="modal-footer__content">
                 <div>
                   <ButtonSettings />
                 </div>
                 <div>
                   <ButtonsToolbarBoottom />
                 </div>
-              </div>
+              </ModalFooter>
             </TabPane>
             <TabPane tabId="6">
-              <div className="height">
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>1. Инвестиционные фонды</p>
+              <div className="map-mob-height">
+                <div className="height">
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>2. Казино и азартные игры</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>2. Казино и азартные игры</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>3. Отели, курорты и крузные</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>4. Радиовещание</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>3. Отели, курорты и крузные</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>5. Авиалинии</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>6. Золото</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>4. Радиовещание</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>7. Коммерческая печать</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>5. Авиалинии</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>6. Золото</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>7. Коммерческая печать</p>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
-                </div>
-                <div className="height__list d-flex justify-content-between">
-                  <div className="height__list-item">
-                    <p>1. Инвестиционные фонды</p>
-                  </div>
-                  <div className="height__list-count">
-                    <span>(3,15) D</span>
+                  <div className="height__list d-flex justify-content-between">
+                    <div className="height__list-item">
+                      <p>1. Инвестиционные фонды</p>
+                    </div>
+                    <div className="height__list-count">
+                      <span>(3,15) D</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <hr />
-              <div className="modal-footer__content">
+              <ModalFooter className="modal-footer__content">
                 <div>
                   <ButtonSettings />
                 </div>
                 <div>
                   <ButtonsToolbarBoottom />
                 </div>
-              </div>
+              </ModalFooter>
             </TabPane>
           </TabContent>
         </ModalBody>
