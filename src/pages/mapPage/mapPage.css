@@ -93,9 +93,11 @@
   }
   .filters_modal-body.modal-body {
     margin-top: 3rem;
-    height: 86vh;
+    height: 85vh;
   }
   .filters__item {
+    display: inline-blocks;
+    margin-bottom: 2.5rem;
     font-family: ArticulatCF;
     font-size: 1rem;
     font-weight: 500;
@@ -105,5 +107,22 @@
     letter-spacing: normal;
     text-align: left;
     color: #000b20;
+  }
+  .drop-down__overflow.filters {
+    height: 82vh;
+  }
+  .filter__country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .drop-down__country-input.filters.form-control {
+    display: block;
+    margin-top: 1rem;
+  }
+  .filters__country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
