@@ -14,6 +14,10 @@
   background-color: #fff;
   cursor: pointer;
 }
+.portfolio-card.card {
+  width: 320px;
+  height: 416px;
+}
 .card-header__svg {
   display: inline-block;
   margin: 0 -4px;
@@ -134,7 +138,11 @@
 }
 .card-body-graf--right {
   position: absolute;
+  top: -40px;
   opacity: 0.3;
+}
+.card-body-graf__img {
+  width: 240px;
 }
 #card-btn-1,
 #card-btn-2,
@@ -163,4 +171,9 @@
 .growth-img {
   display: inline-block;
   margin-right: 0.5rem;
+}
+@media only screen and (max-width: 960px) {
+  .card-header__notification--plan {
+    top: -25px;
+  }
 }

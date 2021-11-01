@@ -910,7 +910,7 @@ const MapHighchartsFC = () => {
   const options = {
     chart: {
       width: widthScreen,
-      height: 735,
+      height: 670,
       map: map,
       marginTop: 70,
       ackgroundColor: "transparent",
@@ -947,7 +947,9 @@ const MapHighchartsFC = () => {
               .then((response) => response.data)
               .catch((error) => console.error(error));
             dispatch(reqCountryData(event.point.countryId));
-            mobileBottomMenuToggleHandler();
+            if(document.body.clientWidth < 960) {
+              mobileBottomMenuToggleHandler();
+            }
             return response;
           },
         },

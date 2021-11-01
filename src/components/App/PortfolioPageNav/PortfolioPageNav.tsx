@@ -7,11 +7,9 @@ import Segment from "./Segment/Segment";
 import Size from "./Size/Size";
 import TimeFrames from "./TimeFrames/TimeFrames";
 
-interface Props {}
-
-const PortfolioPageNav = (props: Props) => {
+const PortfolioPageNav = () => {
   return (
-    <div className="nav main">
+    <div className="nav main d-none d-lg-block">
       <ul className="nav__list portfolio">
         <li className="nav__item portfolio">
           <Segment />

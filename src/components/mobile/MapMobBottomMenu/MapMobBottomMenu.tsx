@@ -34,7 +34,7 @@ const MapMobBottomMenu = (props: {
   const { isMobileBottomMenuClose, mobileBottomMenuToggleHandler } = props;
   const externalSearchCloseBtn = (
     <button
-      className="modal-search__close"
+      className="modal-search__close d-block d-lg-none"
       onClick={mobileBottomMenuToggleHandler}
     >
       &times;
@@ -50,7 +50,7 @@ const MapMobBottomMenu = (props: {
       <Modal
         isOpen={isMobileBottomMenuClose}
         toggle={mobileBottomMenuToggleHandler}
-        className="modal-search"
+        className="modal-search d-block d-lg-none"
         external={externalSearchCloseBtn}
       >
         <ModalHeader className="modal-search__header">

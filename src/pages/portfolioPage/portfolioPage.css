@@ -14,3 +14,8 @@
   overflow-x: hidden;
   padding: 2rem 0.8rem;
 }
+@media only screen and (max-width: 906px) {
+  .portfolio-card__container {
+    height: 87vh;
+  }
+}

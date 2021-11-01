@@ -30,7 +30,7 @@ type CardInfo = {
 
 export const PortfolioCard = (props: CardInfo) => {
   return (
-    <Card onClick={() => props.handleClick()} className="portfolio-card pb-0">
+    <Card onClick={() => props.handleClick()} className="portfolio-card">
       <CardBody className="d-flex pt-0 justify-content-between">
         <div className="card-header__left">
           <img className="card-header__svg" src={growSVG} alt="growth" />
@@ -121,9 +121,33 @@ export const PortfolioCard = (props: CardInfo) => {
                 <span className="banks-count">5.00%</span>
               </div>
             </div>
+            <div className="d-flex p-0">
+              <div className="banks">
+                <span className="banks-name">SBERP</span>
+              </div>
+              <div>
+                <span className="banks-count">5.00%</span>
+              </div>
+            </div>
+            <div className="d-flex p-0">
+              <div className="banks">
+                <span className="banks-name">SBERP</span>
+              </div>
+              <div>
+                <span className="banks-count">5.00%</span>
+              </div>
+            </div>
+            <div className="d-flex p-0">
+              <div className="banks">
+                <span className="banks-name">SBERP</span>
+              </div>
+              <div>
+                <span className="banks-count">5.00%</span>
+              </div>
+            </div>
           </div>
           <div className="card-body-graf--right">
-            <img src={graf1} width="240px" height="166px" alt="graf" />
+            <img className="card-body-graf__img" src={graf1} alt="graf" />
           </div>
         </div>
         <Button size="sm" color="light" className="m-1">
