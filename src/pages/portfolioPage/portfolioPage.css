@@ -16,6 +16,69 @@
 }
 @media only screen and (max-width: 906px) {
   .portfolio-card__container {
-    height: 87vh;
+    height: 79vh;
+  }
+  .portfolio-header,
+  .portfolio-header__filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .favorites {
+    display: block;
+    margin: 0 1rem;
+  }
+  .favorites,
+  .filters {
+    cursor: pointer;
+  }
+  .portfolio__btn {
+    padding: 0.938rem 1.875rem 1.063rem;
+    border-radius: 40px;
+    background-color: #5448c8;
+    font-family: ArticulatCF;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #fff;
+  }
+  .portfolio-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filters__list {
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+  }
+  .filters__list-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+  .filter-modal__footer.modal-footer {
+    justify-content: center;
+  }
+  .filters-modal__coinsidences {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .filters-modal__coinsidences:nth-child(1) {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+  .coinsidences {
+    display: inline-block;
+    padding-right: 2rem;
+  }
+  .modal-footer.modal-footer {
+    justify-content: end;
   }
 }
