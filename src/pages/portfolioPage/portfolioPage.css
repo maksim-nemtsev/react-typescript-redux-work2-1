@@ -81,4 +81,21 @@
   .modal-footer.modal-footer {
     justify-content: end;
   }
+  .filters-modal__body {
+    height: 480px;
+    overflow: auto;
+    padding: 30px 20px;
+  }
+  .modal-header.modal-header {
+    justify-content: center;
+  }
+  .Search {
+    display: block;
+    height: 40px;
+    width: 320px;
+    border-radius: 20px;
+    border: none;
+    background: #f7f7f7;
+    padding: 10px 30px;
+  }
 }

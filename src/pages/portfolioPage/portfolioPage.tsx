@@ -10,7 +10,16 @@ import coinsidences from "../../assets/svg/mobile/coinsidences.svg";
 import growth from "../../assets/svg/oriented.svg";
 import percent from "../../assets/svg/percent.svg";
 import money from "../../assets/svg/money.svg";
-import { Modal, ModalBody, ModalFooter } from "reactstrap";
+import aj from "../../assets/svg/country/aj.svg"
+import brs from "../../assets/svg/country/brs.svg"
+import eng from "../../assets/svg/country/england.svg"
+import est from "../../assets/svg/country/eston.svg"
+import grec from "../../assets/svg/country/grec.svg"
+import ital from "../../assets/svg/country/ital.svg"
+import kongo from "../../assets/svg/country/kongo.svg"
+import par from "../../assets/svg/country/par.svg"
+import seneg from "../../assets/svg/country/seneg.svg"
+import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 import { AvForm, AvInput } from "availity-reactstrap-validation";
 import styled from "styled-components";
 
@@ -192,15 +201,332 @@ const PortfolioPage = (props: Props) => {
                   isOpen={modalCountries}
                   toggle={toggleModalCountries}
                 >
+                  <ModalHeader className="modal-header">
+                  <input type="text" className="Search" placeholder="Search" />
+                  </ModalHeader>
                   <ModalBody>
-                    <div className="filters-modal__body">
+                  <div className="filters-modal__body">
                       <div className="filters-modal__coinsidences">
-                        <div>
-                          <img src={coinsidences} alt="coinsidences" />
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={coinsidences}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>At least one match</SegmentImgLabel>
                         </div>
                         <div>
                           <AvForm className="filters-modal__form">
-                            <SegmentImgLabel>At least one </SegmentImgLabel>
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={aj}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>
+                          Грузия
+                          </SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={ital}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>ДР Конго</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={grec}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={kongo}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={brs}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={eng}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={par}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={seneg}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={est}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={money}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={money}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={money}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={money}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
+                            <AvInput
+                              style={{ marginLeft: "8px", cursor: "pointer" }}
+                              className="segment-input"
+                              type="checkbox"
+                              name="inOrOut"
+                              trueValue="Yes, I'm in!"
+                              falseValue="NOPE!"
+                            />
+                          </AvForm>
+                        </div>
+                      </div>
+                      <div className="filters-modal__coinsidences">
+                        <div className="d-flex">
+                          <img
+                            className="coinsidences"
+                            src={money}
+                            alt="coinsidences"
+                          />
+                          <SegmentImgLabel>Эстония</SegmentImgLabel>
+                        </div>
+                        <div>
+                          <AvForm className="filters-modal__form">
                             <AvInput
                               style={{ marginLeft: "8px", cursor: "pointer" }}
                               className="segment-input"
