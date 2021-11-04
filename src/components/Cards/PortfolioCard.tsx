@@ -20,17 +20,19 @@ import graf1 from "../../assets/img/graf1.jpg";
 import countryBrsSVG from "../../assets/svg/country/brs.svg";
 import countryEnglandSVG from "../../assets/svg/country/england.svg";
 import countryGrecSVG from "../../assets/svg/country/grec.svg";
+import './PortfolioCards.css'
 
 type CardInfo = {
   title: string;
   key: string;
   id: string;
   handleClick: () => void;
+  handleModalFavorites: () => void;
 };
 
 export const PortfolioCard = (props: CardInfo) => {
   return (
-    <Card onClick={() => props.handleClick()} className="portfolio-card">
+    <Card  className="portfolio-card">
       <CardBody className="d-flex pt-0 justify-content-between">
         <div className="card-header__left">
           <img className="card-header__svg" src={growSVG} alt="growth" />
@@ -40,6 +42,7 @@ export const PortfolioCard = (props: CardInfo) => {
         </div>
         <div className="card-header__right">
           <img
+            onClick={() => props.handleModalFavorites()}
             className="card-header__favorites"
             src={favoritesSVG}
             alt="favorites"
@@ -56,7 +59,7 @@ export const PortfolioCard = (props: CardInfo) => {
           />
         </div>
       </CardBody>
-      <CardBody className="pt-0">
+      <CardBody onClick={() => props.handleClick()} className="pt-0">
         <CardTitle className="" tag="h5">
           <Badge className="badge cards" color="primary">
             Big

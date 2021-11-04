@@ -176,4 +176,49 @@
   .card-header__notification--plan {
     top: -25px;
   }
+  .modal-header__title {
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000b20;
+  }
+  .modal-header__subtitle {
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9faab3;
+  }
+  .modal-header__content {
+    display: block;
+    padding: 40px 40px 20px 0px;
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000b20;
+  }
+  .modal-subscribe.modal-body {
+    padding: 30px 20px 0 20px;
+  }
+  .modal-subscribe__btn {
+    width: 249px;
+    height: 51px;
+    background: #5448c8;
+    border-radius: 40px;
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  .modal-footer__btn.modal-footer {
+    justify-content: center !important;
+    margin-bottom: 10px;
+  }
 }
